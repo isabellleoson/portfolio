@@ -4,7 +4,9 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "build-frontend": "npm run --prefix ../frontend build && rm -Rf public && cp -R ../frontend/dist public",
+        "build-frontend": "npm run --prefix ../frontend build && rm -Rf public && cp -R ../frontend/build public",
+        "dev": "nodemon index.js",
+        "start": "node index.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
