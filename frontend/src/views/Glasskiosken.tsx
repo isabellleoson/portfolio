@@ -17,7 +17,7 @@ const ImgDiv = styled.div`
 `;
 
 const Img = styled.img`
-    width: 100%;
+    max-width: 20vh;
     // padding-left: 30px;
     margin: 10px;
 `;

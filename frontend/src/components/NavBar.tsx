@@ -45,6 +45,10 @@ const P = styled.p`
 
     font-size: 12px;
     font-weight: bolder;
+
+    &:hover {
+        color: grey;
+    }
 `;
 
 export default NavBar;

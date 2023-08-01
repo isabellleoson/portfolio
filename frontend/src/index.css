@@ -10,8 +10,7 @@
 
     background-color: #342f2a;
     color: #f0e8e3;
-
-    margin: -20px;
+    margin: 20px;
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -31,10 +30,11 @@ a:hover {
 }
 
 body {
-    margin: 20px;
     display: flex;
-    place-items: center;
-    min-width: 320px;
+    justify-content: end;
+    /* place-items: center; */
+    min-width: 100%;
+    width: 100%;
     min-height: 200%;
     background-color: #342f2a;
     color: rgb(240, 232, 227);

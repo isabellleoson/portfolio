@@ -1,19 +1,28 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import me from "../assets/me.jpg";
 import NavBar from "../components/NavBar";
-
-import React from "react";
-import Fade from "react-reveal/Fade";
 
 const HomePageContainer = styled.div`
     background-image: url(${me});
     background-size: cover;
     background-position: center;
     height: 900px;
-    // width: 120%;
+    margin: -40px;
+`;
 
-    // width: 150%;
-    // margin: -60px;
+const fadeInFromTop = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
+
+const FadingText = styled.div`
+    animation: ${fadeInFromTop} 1s ease;
 `;
 
 const Header = styled.div`
@@ -41,6 +50,7 @@ const P = styled.p`
     font-size: 14px;
     text-align: center;
     margin-top: 40px;
+    margin-left: 230px;
     width: 35%;
     color: #342f2a;
     background-color: rgba(240, 232, 227, 0.5);
@@ -61,20 +71,24 @@ function Home() {
         <>
             <HomePageContainer>
                 <Header>
-                    <Fade top>
+                    {" "}
+                    <FadingText>
                         <H1>Portfolio.</H1>
                         <H2>Isabell Leoson.</H2>
-                    </Fade>
-
-                    <NavBar />
-
-                    <P>
-                        I am a frontend developer student who is passionate
-                        about creative solutions, stylish design, and
-                        user-friendly functionality.
-                    </P>
-
-                    <Button>Let's talk!</Button>
+                    </FadingText>
+                    <FadingText>
+                        <NavBar />
+                    </FadingText>
+                    <FadingText>
+                        <P>
+                            I am a frontend developer student who is passionate
+                            about creative solutions, stylish design, and
+                            user-friendly functionality.
+                        </P>
+                    </FadingText>
+                    <FadingText>
+                        <Button>Let's talk!</Button>
+                    </FadingText>
                 </Header>
 
                 {/* <Main></Main> */}
