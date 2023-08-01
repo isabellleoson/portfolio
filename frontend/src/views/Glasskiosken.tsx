@@ -10,14 +10,23 @@ const HeadingDiv = styled.div`
     align-items: center;
 `;
 
+const ImgDiv = styled.div`
+    width: auto;
+    // padding-left: 30px;
+    margin: 10px;
+`;
+
 const Img = styled.img`
-    width: 200%;
+    width: 100%;
     // padding-left: 30px;
     margin: 10px;
 `;
 
 const StyledFirstPContainer = styled.div`
     display: flex;
+    max-width: 600px;
+    align-items: center;
+    justify-content: center;
 `;
 
 const Span = styled.span`
@@ -47,7 +56,9 @@ function Glasskiosken() {
                     accordning to Google's SEO recommendations and accessibility
                     recommendations, with a focus on making semantic code.{" "}
                 </p>
-                <Img src={glasskiosk} alt="" />
+                <ImgDiv>
+                    <Img src={glasskiosk} alt="" />
+                </ImgDiv>
             </StyledFirstPContainer>
             <p>
                 <Span>This thought me </Span>to write clear code. I used
