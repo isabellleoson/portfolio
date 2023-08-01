@@ -2,6 +2,9 @@ import styled from "styled-components";
 import me from "../assets/me.jpg";
 import NavBar from "../components/NavBar";
 
+import React from "react";
+import Fade from "react-reveal/Fade";
+
 const HomePageContainer = styled.div`
     background-image: url(${me});
     background-size: cover;
@@ -58,8 +61,10 @@ function Home() {
         <>
             <HomePageContainer>
                 <Header>
-                    <H1>Portfolio.</H1>
-                    <H2>Isabell Leoson.</H2>
+                    <Fade top>
+                        <H1>Portfolio.</H1>
+                        <H2>Isabell Leoson.</H2>
+                    </Fade>
 
                     <NavBar />
 
