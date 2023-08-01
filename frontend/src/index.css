@@ -42,8 +42,11 @@ body {
 
 h1 {
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     letter-spacing: 2px;
+
+    border-bottom: solid #f0e8e3 1px;
+
     /* line-height: 1.1; */
 }
 
@@ -75,7 +78,8 @@ button {
     transition: border-color 0.25s;
 }
 button:hover {
-    border-color: white;
+    background-color: rgb(62, 47, 42);
+    color: #706a66;
 }
 button:focus,
 button:focus-visible {

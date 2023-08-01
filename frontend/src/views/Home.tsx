@@ -6,6 +6,8 @@ const HomePageContainer = styled.div`
     background-image: url(${me});
     background-size: cover;
     background-position: center;
+    justify-content: end;
+    align-items: flex-end;
     height: 900px;
     margin: -40px;
 `;
@@ -37,6 +39,7 @@ const Header = styled.div`
 `;
 
 const H1 = styled.h1`
+    font-size: 30px;
     color: #342f2a;
     margin-bottom: -20px;
 `;
@@ -44,13 +47,18 @@ const H1 = styled.h1`
 const H2 = styled.h1`
     color: #342f2a;
 `;
+const Div = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+`;
 
 const P = styled.p`
     display: flex;
     font-size: 14px;
     text-align: center;
     margin-top: 40px;
-    margin-left: 230px;
+    // margin-left: 240px;
     width: 35%;
     color: #342f2a;
     background-color: rgba(240, 232, 227, 0.5);
@@ -64,6 +72,7 @@ const Button = styled.button`
     width: 100px;
     height: 50px;
     border-radius: 40px 40px 999em 999em;
+    margin-right: 15px;
 `;
 
 function Home() {
@@ -80,14 +89,14 @@ function Home() {
                         <NavBar />
                     </FadingText>
                     <FadingText>
-                        <P>
-                            I am a frontend developer student who is passionate
-                            about creative solutions, stylish design, and
-                            user-friendly functionality.
-                        </P>
-                    </FadingText>
-                    <FadingText>
-                        <Button>Let's talk!</Button>
+                        <Div>
+                            <P>
+                                I am a frontend developer student who is
+                                passionate about creative solutions, stylish
+                                design, and user-friendly functionality.
+                            </P>
+                            <Button>Let's talk!</Button>
+                        </Div>
                     </FadingText>
                 </Header>
 

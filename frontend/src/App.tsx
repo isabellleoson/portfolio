@@ -5,6 +5,8 @@ import DevProjects from "./views/DevProjects";
 import Glasskiosken from "./views/Glasskiosken";
 import UrbanGreens from "./views/UrbanGreens";
 import Resume from "./views/Resume";
+import InspoSite from "./views/InspoSite";
+import Globalize from "./views/Globalize";
 
 import { createHashRouter, RouterProvider } from "react-router-dom";
 
@@ -35,6 +37,16 @@ function App() {
                 {
                     element: <UrbanGreens />,
                     path: "/urbangreens",
+                },
+
+                {
+                    element: <InspoSite />,
+                    path: "/insposite",
+                },
+
+                {
+                    element: <Globalize />,
+                    path: "/globalize",
                 },
             ],
             element: <Root />,

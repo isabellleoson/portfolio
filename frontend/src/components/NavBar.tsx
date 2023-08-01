@@ -6,11 +6,6 @@ function NavBar() {
         <>
             <StyledMenu>
                 <Li>
-                    <Link className="link" to="/">
-                        <P>Home.</P>
-                    </Link>
-                </Li>
-                <Li>
                     <Link className="link" to="/devprojects">
                         <P>Frontend Development.</P>
                     </Link>
@@ -30,7 +25,7 @@ const StyledMenu = styled.div`
     display: flex;
     justify-content: center;
     align-items: space-between;
-    background-color: rgba(240, 232, 227, 0.5);
+    // background-color: rgba(240, 232, 227, 0.5);
     // flex-direction: column;
 `;
 

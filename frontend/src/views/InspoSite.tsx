@@ -2,16 +2,13 @@ import styled from "styled-components";
 
 import MiniNavbar from "../components/MiniNavbar";
 
-import urbangreens from "../assets/urbangreens.png";
+import insposite from "../assets/insposite.png";
+import cities from "../assets/cities.png";
 
 const HeadingDiv = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-`;
-
-const H2 = styled.h2`
-    text-align: center;
 `;
 
 const ImgDiv = styled.div`
@@ -43,34 +40,37 @@ const A = styled.a`
     align-items: center;
 `;
 
-function UrbanGreens() {
+function InspoSite() {
     return (
         <>
             <MiniNavbar />
             <HeadingDiv>
-                <h1>Urban Greens</h1>
-                <H2>JAVASCRIPT / VUE / VITE / NODE.JS</H2>
-                <H2> Agile / Figma / Bootstrap / Responsive design</H2>
+                <h1>Inspirationssidan</h1>
+                <h2>NATIVE JAVASCRIPT</h2>
+                <h2> API / CHART.JS </h2>
             </HeadingDiv>
             <StyledFirstPContainer>
                 <p>
-                    <Span>This was a group project</Span> that was first
-                    designed in Figma. We worked with agile.... We created a
-                    fake backend by adding all the information in a json file
-                    and fetching to it. We used Vuex ......
+                    <Span>
+                        This project was the first time I tried out Javascript.
+                        Love at first sight?
+                    </Span>{" "}
+                    Yes. The misson was to use API. I used two different API:s,
+                    one for getting colors and one for getting images. We also
+                    needed to fetch from a cities-api where and I created
+                    functions to add, change and delete cities.
                 </p>
                 <ImgDiv>
-                    <Img src={urbangreens} alt="" />
+                    <Img src={insposite} alt="" />
+                    <Img src={cities} alt="" />
                 </ImgDiv>
             </StyledFirstPContainer>
             <p>
-                <Span>This thought me </Span>to code with other people. I
-                learned a lot both watching other code, and by explaining my own
-                code.
+                <Span>This thought me </Span>to
             </p>
-            <A href="">Link to Urban Greens</A>{" "}
+            <A href="">Link to Inspirationssidan</A>{" "}
         </>
     );
 }
 
-export default UrbanGreens;
+export default InspoSite;
