@@ -15,11 +15,6 @@ function MiniNavbar() {
                         Back.
                     </Link>
                 </Li>
-                <Li>
-                    <Link className="link" to="/art">
-                        Art.
-                    </Link>
-                </Li>
             </StyledMenu>{" "}
         </>
     );

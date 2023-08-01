@@ -45,11 +45,9 @@ function Home() {
                     <NavBar />
 
                     <P>
-                        Jag studerar till frontend-utvecklare på IT-högskolan,
-                        och detta är mitt portfolio för projekten jag gjort
-                        under mitt första år på utbildningen. Portfoliot i sig
-                        är ett projekt i kursen "portfolio och grafisk desgin"
-                        som jag just nu läser på högskolan i Borås.
+                        I am a frontendutveckla-student who is passionate about
+                        creative solutions, stylish design, and user-friendly
+                        functionality.
                     </P>
                 </Header>
 
