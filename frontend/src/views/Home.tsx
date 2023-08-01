@@ -7,31 +7,50 @@ const HomePageContainer = styled.div`
     background-size: cover;
     background-position: center;
     height: 900px;
-    width: 100%;
+    // width: 120%;
+
+    // width: 150%;
+    // margin: -60px;
 `;
 
 const Header = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding-top: 40px;
+    // padding-top: 40px;
     padding-right: 40px;
+    color: #342f2a;
+    background-color: rgba(240, 232, 227, 0.5);
+    height: 100%;
 `;
 
-const Main = styled.div`
-    // display: flex;
-    // flex-direction: column;
-    // align-items: flex-end;
-    // padding: 40px;
-    // margin-left: 680px;
-    // text-align: right;
+const H1 = styled.h1`
+    color: #342f2a;
+    margin-bottom: -20px;
+`;
+
+const H2 = styled.h1`
+    color: #342f2a;
 `;
 
 const P = styled.p`
     display: flex;
     font-size: 14px;
-    text-align: justify;
-    width: 40%;
+    text-align: center;
+    margin-top: 40px;
+    width: 35%;
+    color: #342f2a;
+    background-color: rgba(240, 232, 227, 0.5);
+`;
+
+const Button = styled.button`
+    background-color: #342f2a;
+    color: rgba(240, 232, 227, 1);
+    padding-top: 0;
+    font-size: 13px;
+    width: 100px;
+    height: 50px;
+    border-radius: 40px 40px 999em 999em;
 `;
 
 function Home() {
@@ -39,19 +58,21 @@ function Home() {
         <>
             <HomePageContainer>
                 <Header>
-                    <h1>Portfolio.</h1>
-                    <h2>Isabell Leoson.</h2>
+                    <H1>Portfolio.</H1>
+                    <H2>Isabell Leoson.</H2>
 
                     <NavBar />
 
                     <P>
-                        I am a frontendutveckla-student who is passionate about
-                        creative solutions, stylish design, and user-friendly
-                        functionality.
+                        I am a frontend developer student who is passionate
+                        about creative solutions, stylish design, and
+                        user-friendly functionality.
                     </P>
+
+                    <Button>Let's talk!</Button>
                 </Header>
 
-                <Main></Main>
+                {/* <Main></Main> */}
             </HomePageContainer>
         </>
     );

@@ -30,7 +30,7 @@ const StyledFirstPContainer = styled.div`
 `;
 
 const Span = styled.span`
-    font-size: 14px;
+    font-size: 15px;
 `;
 
 const A = styled.a`
@@ -53,8 +53,9 @@ function Glasskiosken() {
                     <Span>This was my very first time coding.</Span> The project
                     is build with only HTML and CSS. I wanted to create a fun,
                     colorful site that makes you happy. The website is build
-                    accordning to Google's SEO recommendations and accessibility
-                    recommendations, with a focus on making semantic code.{" "}
+                    "mobile first", and accordning to Google's SEO
+                    recommendations and accessibility recommendations, with a
+                    focus on making semantic code.{" "}
                 </p>
                 <ImgDiv>
                     <Img src={glasskiosk} alt="" />

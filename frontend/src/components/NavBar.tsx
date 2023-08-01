@@ -7,18 +7,18 @@ function NavBar() {
             <StyledMenu>
                 <Li>
                     <Link className="link" to="/">
-                        Home.
+                        <P>Home.</P>
                     </Link>
                 </Li>
                 <Li>
                     <Link className="link" to="/devprojects">
-                        Frontend Development.
+                        <P>Frontend Development.</P>
                     </Link>
                 </Li>
 
                 <Li>
                     <Link className="link" to="/resume">
-                        Resume.
+                        <P>Resumé.</P>
                     </Link>
                 </Li>
             </StyledMenu>{" "}
@@ -29,20 +29,22 @@ function NavBar() {
 const StyledMenu = styled.div`
     display: flex;
     justify-content: center;
+    align-items: space-between;
+    background-color: rgba(240, 232, 227, 0.5);
     // flex-direction: column;
 `;
 
 const Li = styled.li`
     color: black;
-    margin-left: 10px;
-    padding-left: 10px;
+    margin-left: 5px;
     list-style: none;
+`;
 
-    // &:hover {
-    //     // font-size: 17px;
-    //     color: red;
-    //     cursor: pointer;
-    // }
+const P = styled.p`
+    color: #342f2a;
+
+    font-size: 12px;
+    font-weight: bolder;
 `;
 
 export default NavBar;

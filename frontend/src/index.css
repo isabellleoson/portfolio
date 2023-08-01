@@ -11,6 +11,8 @@
     background-color: #342f2a;
     color: #f0e8e3;
 
+    margin: -20px;
+
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -22,6 +24,7 @@ a {
     font-weight: 500;
     color: #f0e8e3;
     text-decoration: inherit;
+    letter-spacing: 2px;
 }
 a:hover {
     color: #998e87;
@@ -34,25 +37,30 @@ body {
     min-width: 320px;
     min-height: 200%;
     background-color: #342f2a;
-    color: #f0e8e3;
+    color: rgb(240, 232, 227);
 }
 
 h1 {
     font-size: 20px;
     margin-bottom: 20px;
+    letter-spacing: 2px;
     /* line-height: 1.1; */
 }
 
 h2 {
     font-size: 16px;
     margin-top: -15px;
+    letter-spacing: 2px;
+    font-weight: normal;
 }
 
 h3 {
     font-size: 14px;
+    letter-spacing: 2px;
 }
 p {
     font-size: 12px;
+    letter-spacing: 1px;
 }
 
 button {
@@ -71,7 +79,7 @@ button:hover {
 }
 button:focus,
 button:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
+    /* outline: 4px auto -webkit-focus-ring-color; */
 }
 
 @media (prefers-color-scheme: dark) {
