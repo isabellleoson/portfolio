@@ -59,12 +59,12 @@ const StyledMenu = styled.div`
     // flex-direction: column;
 `;
 
-const Li = styled.li`
-    color: black;
-    margin-left: 10px;
-    padding-left: 10px;
-    list-style: none;
-`;
+// const Li = styled.li`
+//     color: black;
+//     margin-left: 10px;
+//     padding-left: 10px;
+//     list-style: none;
+// `;
 
 const Button = styled.button`
     margin: 3px;
