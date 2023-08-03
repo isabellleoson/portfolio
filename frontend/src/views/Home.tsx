@@ -32,9 +32,12 @@ const HomePageContainer = styled.div`
     flex-direction: column;
 
     @media (min-width: 750px) {
-        width: 136.7%;
+        width: 135%;
         margin: 0px;
+        padding: 0px;
         height: 100vh;
+        justify-content: center;
+        align-items: center;
     }
 `;
 
@@ -50,8 +53,16 @@ const HomePageContainer = styled.div`
 // `;
 
 const HeaderContainer = styled.div`
-    // display: flex;
-    // flex-direction: column;
+    padding-top: 20px;
+    align-items: flex-end;
+    justify-content: end;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 750px) {
+        padding-right: 0px;
+        padding-top: 0px;
+    }
 `;
 
 const H1 = styled.h1`
@@ -60,6 +71,9 @@ const H1 = styled.h1`
     margin-bottom: -20px;
     border: none;
     width: 100%;
+
+    justify-content: end;
+    display: flex;
 
     @media (min-width: 750px) {
         font-size: 70px;
@@ -80,14 +94,40 @@ const H2 = styled.h1`
         display: flex;
     }
 `;
+
+const SmilyContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+    // padding-right: 30px;
+
+    @media (min-width: 750px) {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(235, 230, 162);
+        max-width: 30%;
+        height: 300px;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        border-radius: 50%;
+    }
+`;
 const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    // padding-right: 30px;
+
+    @media (max-width: 750px) {
+        padding-right: 30px;
+    }
 
     @media (min-width: 750px) {
         align-items: flex-end;
-        padding-right: 50px;
+        // padding-right: 50px;
+        // padding-left: 50px;
 
         // padding-right: 50px;
 
@@ -100,14 +140,20 @@ const P = styled.p`
     font-size: 14px;
     text-align: end;
     margin-top: 40px;
-    // margin-left: 240px;
     width: 35%;
     color: #342f2a;
-    background-color: rgba(240, 232, 227, 0.5);
+    // background-color: rgba(240, 232, 227, 0.5);
+    margin-top: 0;
 
     @media (min-width: 750px) {
         margin-top: 10px;
-        // margin-right: 50px;
+        width: 85%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+        // font-weight: bold;
+        // margin-left: 50px;
     }
 `;
 
@@ -119,10 +165,14 @@ const Button = styled.button`
     width: 100px;
     height: 50px;
     border-radius: 40px 40px 999em 999em;
-    margin-right: 15px;
 
     @media (min-width: 750px) {
-        margin-right: 95px;
+        // margin-right: 10px;
+        margin-top: 10px;
+        // margin: 0;
+        width: 200px;
+        height: 100px;
+        font-size: 20px;
     }
 `;
 
@@ -146,16 +196,17 @@ function Home() {
                                 <H1>Portfolio.</H1>
                                 <H2>Isabell Leoson.</H2>
                             </HeaderContainer>
+                            <SmilyContainer>
+                                <NavBar />
 
-                            <NavBar />
+                                <P>
+                                    I am a frontend developer student who is
+                                    passionate about creative solutions, stylish
+                                    design, and user-friendly functionality.
+                                </P>
 
-                            <P>
-                                I am a frontend developer student who is
-                                passionate about creative solutions, stylish
-                                design, and user-friendly functionality.
-                            </P>
-
-                            <Button>Let's talk!</Button>
+                                <Button>Let's talk!</Button>
+                            </SmilyContainer>
                         </Container>
                     </div>
                 </FadingText>

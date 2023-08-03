@@ -7,7 +7,7 @@ function NavBar() {
             <StyledMenu>
                 <Li>
                     <Link className="link" to="/devprojects">
-                        <P>Frontend Development.</P>
+                        <P>Projects.</P>
                     </Link>
                 </Li>
 
@@ -24,14 +24,17 @@ function NavBar() {
 const StyledMenu = styled.div`
     display: flex;
     justify-content: center;
-    align-items: space-between;
+    // align-items: space-between;
     // background-color: rgba(240, 232, 227, 0.5);
     // flex-direction: column;
 
     @media (min-width: 750px) {
         display: flex;
         flex-direction: row;
-        align-items: center;
+        // align-items: center;
+        width: 280px;
+
+        justify-content: space-around;
     }
 `;
 
@@ -43,15 +46,17 @@ const Li = styled.li`
     @media (min-width: 750px) {
         display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-content: center;
+        align-content: space-between;
+        justify-content: space-between;
+        // align-items: center;
+        // justify-content: center;
     }
 `;
 
 const P = styled.p`
     color: #342f2a;
 
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bolder;
 
     &:hover {
@@ -61,9 +66,12 @@ const P = styled.p`
     @media (min-width: 750px) {
         display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        font-size: 15px;
+
+        align-content: space-between;
+        justify-content: space-between;
+        // align-items: center;
+        // justify-content: center;
+        font-size: 18px;
     }
 `;
 

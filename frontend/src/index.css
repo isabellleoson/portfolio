@@ -13,7 +13,7 @@
     background-color: #342c2a;
 
     color: #f0e8e3;
-    margin: 20px;
+    /* margin: 20px; */
     /* 
     display: flex;
     justify-content: center; */
@@ -28,6 +28,34 @@
 @media (min-width: 750px) {
     :root {
         margin: 0;
+        padding: 0;
+        /* width: 1200px;
+        height: 0;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column; */
+    }
+
+    body {
+        display: flex;
+        /* align-items: start; */
+        /* justify-content: center; */
+        /* justify-content: end; */
+        /* place-items: center;
+        flex-direction: column; */
+
+        /* width: 150vh; */
+        /* width: 100vh;
+        height: 100vh; */
+
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        /* width: 100%; */
+        /* min-height: 100%; */
+        background-color: #342c2a;
+        color: rgb(240, 232, 227);
     }
 }
 
@@ -45,11 +73,14 @@ body {
     display: flex;
     /* justify-content: end; */
     /* place-items: center; */
-    width: 100;
+    width: 89%;
     margin: 0;
+    padding: 0;
+    /* margin-right: 50px; */
+    /* padding-right: 30px; */
 
     /* width: 100%; */
-    min-height: 200%;
+    /* min-height: 250%; */
     background-color: #342c2a;
     color: rgb(240, 232, 227);
 }
