@@ -20,10 +20,29 @@ const Img = styled.img`
     max-width: 20vh;
     // padding-left: 30px;
     margin: 10px;
+
+    @media (min-width: 750px) {
+        min-width: 30vh;
+    }
+`;
+
+const Container = styled.div`
+    @media (min-width: 750px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+`;
+
+const Div = styled.div`
+    display: flex;
 `;
 
 const StyledFirstPContainer = styled.div`
     display: flex;
+    flex-direction: column;
     max-width: 600px;
     align-items: center;
     justify-content: center;
@@ -54,28 +73,37 @@ function Glasskiosken() {
                 <h2>HTML / CSS</h2>
                 <h2>Grid layout / Responsive design</h2>
             </HeadingDiv>
-            <StyledFirstPContainer>
-                <p>
-                    <Span>This was my very first time coding.</Span> The project
-                    is build with only HTML and CSS. I wanted to create a fun,
-                    colorful site that makes you happy. The website is build
-                    "mobile first", and accordning to Google's SEO
-                    recommendations and accessibility recommendations, with a
-                    focus on making semantic code.{" "}
-                </p>
-                <ImgDiv>
-                    <Img src={glasskiosk} alt="" />
-                </ImgDiv>
-            </StyledFirstPContainer>
-            <p>
-                <Span>This thought me </Span>to write clear code. I used
-                prettier for making the code look good. This also thought me
-                that grid is fine, but I never used it since. I heart Flexbox.
-                And the hover-effects? Well, I thought that it would be good for
-                someone with visual impairment, but instead it just made
-                everything look like links. I would not have done that today!
-            </p>
-            <A href="">Link to Glasskiosken</A>{" "}
+            <Container>
+                <Div>
+                    <StyledFirstPContainer>
+                        <p>
+                            <Span>This was my very first time coding.</Span> The
+                            project is build with only HTML and CSS. I wanted to
+                            create a fun, colorful site that makes you happy.
+                            The website is build "mobile first", and accordning
+                            to Google's SEO recommendations and accessibility
+                            recommendations, with a focus on making semantic
+                            code.{" "}
+                        </p>
+                        <p>
+                            <Span>This thought me </Span>to write clear code. I
+                            used prettier for making the code look good. This
+                            also thought me that grid is fine, but I never used
+                            it since. I heart Flexbox. And the hover-effects?
+                            Well, I thought that it would be good for someone
+                            with visual impairment, but instead it just made
+                            everything look like links. I would not have done
+                            that today!
+                        </p>
+                    </StyledFirstPContainer>
+
+                    <ImgDiv>
+                        <Img src={glasskiosk} alt="" />
+                    </ImgDiv>
+                </Div>
+
+                <A href="">Link to Glasskiosken</A>
+            </Container>{" "}
         </>
     );
 }

@@ -25,34 +25,21 @@ function DevNavbar() {
                         Globalize.
                     </Link>
                 </Li> */}
-                <Button>
-                    <Link className="link" to="/glasskiosken">
-                        Glasskiosken.
-                    </Link>
-                </Button>
-                <Button>
-                    <Link className="link" to="/insposite">
-                        Inspirationssidan.
-                    </Link>
-                </Button>
-                <Button>
-                    {" "}
-                    <Link className="link" to="/fakestore">
-                        Fake Store.
-                    </Link>
-                </Button>
-                <Button>
-                    {" "}
-                    <Link className="link" to="/urbangreens">
-                        Urban Greens.
-                    </Link>
-                </Button>
-                <Button>
-                    {" "}
-                    <Link className="link" to="/globalize">
-                        Globalize.
-                    </Link>
-                </Button>
+                <Link className="link" to="/glasskiosken">
+                    <Button>Glasskiosken.</Button>
+                </Link>
+                <Link className="link" to="/insposite">
+                    <Button>Inspirationssidan.</Button>{" "}
+                </Link>
+                <Link className="link" to="/fakestore">
+                    <Button>Fake Store.</Button>
+                </Link>
+                <Link className="link" to="/urbangreens">
+                    <Button>Urban Greens.</Button>
+                </Link>{" "}
+                <Link className="link" to="/globalize">
+                    <Button>Globalize.</Button>
+                </Link>
             </StyledMenu>{" "}
         </>
     );
@@ -89,6 +76,7 @@ const Button = styled.button`
     background-color: #1a1a1a;
     cursor: pointer;
     transition: border-color 0.25s;
+    color: rgb(240, 232, 227);
 
     @media (min-width: 750px) {
         width: 250px;

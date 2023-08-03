@@ -2,8 +2,7 @@ import styled from "styled-components";
 
 import MiniNavbar from "../components/MiniNavbar";
 
-import insposite from "../assets/insposite.png";
-import cities from "../assets/cities.png";
+import glasskiosk from "../assets/glasskiosken.png";
 
 const HeadingDiv = styled.div`
     display: flex;
@@ -21,13 +20,38 @@ const Img = styled.img`
     max-width: 20vh;
     // padding-left: 30px;
     margin: 10px;
+
+    @media (min-width: 750px) {
+        min-width: 30vh;
+    }
+`;
+
+const Container = styled.div`
+    @media (min-width: 750px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+`;
+
+const Div = styled.div`
+    display: flex;
 `;
 
 const StyledFirstPContainer = styled.div`
     display: flex;
+    flex-direction: column;
     max-width: 600px;
     align-items: center;
     justify-content: center;
+
+    // @media (min-width: 750px) {
+    //     max-width: 100%;
+    //     padding-left: 150px;
+    //     padding-right: 150px;
+    // }
 `;
 
 const Span = styled.span`
@@ -46,22 +70,27 @@ function FakeStore() {
             <MiniNavbar />
             <HeadingDiv>
                 <h1>FakeStore</h1>
-                <h2>NATIVE JAVASCRIPT</h2>
-                <h2> API / </h2>
+                <h2>HTML / CSS</h2>
+                <h2>Grid layout / Responsive design</h2>
             </HeadingDiv>
-            <StyledFirstPContainer>
-                <p>
-                    <Span>This project........</Span>{" "}
-                </p>
-                <ImgDiv>
-                    <Img src={insposite} alt="" />
-                    <Img src={cities} alt="" />
-                </ImgDiv>
-            </StyledFirstPContainer>
-            <p>
-                <Span>This thought me </Span>to
-            </p>
-            <A href="">Link to FakeStore</A>{" "}
+            <Container>
+                <Div>
+                    <StyledFirstPContainer>
+                        <p>
+                            <Span>This project..</Span>
+                        </p>
+                        <p>
+                            <Span>This thought me </Span>to
+                        </p>
+                    </StyledFirstPContainer>
+
+                    <ImgDiv>
+                        <Img src={glasskiosk} alt="" />
+                    </ImgDiv>
+                </Div>
+
+                <A href="">Link to Fake store</A>
+            </Container>{" "}
         </>
     );
 }
