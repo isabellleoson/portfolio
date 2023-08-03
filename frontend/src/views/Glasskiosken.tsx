@@ -27,6 +27,12 @@ const StyledFirstPContainer = styled.div`
     max-width: 600px;
     align-items: center;
     justify-content: center;
+
+    // @media (min-width: 750px) {
+    //     max-width: 100%;
+    //     padding-left: 150px;
+    //     padding-right: 150px;
+    // }
 `;
 
 const Span = styled.span`

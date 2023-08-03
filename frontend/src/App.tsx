@@ -7,6 +7,7 @@ import UrbanGreens from "./views/UrbanGreens";
 import Resume from "./views/Resume";
 import InspoSite from "./views/InspoSite";
 import Globalize from "./views/Globalize";
+import FakeStore from "./views/FakeStore";
 
 import { createHashRouter, RouterProvider } from "react-router-dom";
 
@@ -47,6 +48,11 @@ function App() {
                 {
                     element: <Globalize />,
                     path: "/globalize",
+                },
+
+                {
+                    element: <FakeStore />,
+                    path: "/fakestore",
                 },
             ],
             element: <Root />,
