@@ -1,6 +1,6 @@
 import styled, { keyframes } from "styled-components";
-import me from "../assets/me.jpg";
-import jag from "../assets/jag.jpg";
+// import me from "../assets/me.jpg";
+// import jag from "../assets/jag.jpg";
 import io from "../assets/io.jpg";
 import NavBar from "../components/NavBar";
 
@@ -38,16 +38,16 @@ const HomePageContainer = styled.div`
     }
 `;
 
-const Header = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    // padding-top: 40px;
-    padding-right: 40px;
-    color: #342f2a;
-    background-color: rgba(240, 232, 227, 0.5);
-    height: 100%;
-`;
+// const Header = styled.div`
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-end;
+//     // padding-top: 40px;
+//     padding-right: 40px;
+//     color: #342f2a;
+//     background-color: rgba(240, 232, 227, 0.5);
+//     height: 100%;
+// `;
 
 const HeaderContainer = styled.div`
     // display: flex;
@@ -126,14 +126,14 @@ const Button = styled.button`
     }
 `;
 
-const TextContainer = styled.div`
-    @media (min-width: 750px) {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: center;
-    }
-`;
+// const TextContainer = styled.div`
+//     @media (min-width: 750px) {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: flex-end;
+//         justify-content: center;
+//     }
+// `;
 
 function Home() {
     return (
