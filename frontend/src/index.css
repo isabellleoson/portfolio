@@ -10,7 +10,12 @@
 
     /* background-color: #342f2a;
      */
-    background-color: #342c2a;
+
+    /* background-color: #342c2a; */
+    background-color: #9a6d61;
+
+    margin: 0px;
+    padding: 0px;
 
     color: #f0e8e3;
     /* margin: 20px; */
@@ -18,16 +23,31 @@
     display: flex;
     justify-content: center; */
 
-    font-synthesis: none;
+    /* font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%; */
 }
 
+html {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    width: 95%;
+}
+
+@media (max-width: 750px) {
+    body {
+        width: 89%;
+    }
+}
 @media (min-width: 750px) {
     :root {
-        margin: 0;
+        margin-right: 60px;
+        /* margin: 0; */
         padding: 0;
         /* width: 1200px;
         height: 0;
@@ -37,8 +57,16 @@
         flex-direction: column; */
     }
 
+    html {
+        margin: 0;
+        padding: 0;
+
+        /* width: 100%; */
+    }
+
     body {
         display: flex;
+        margin-right: 200px;
         /* align-items: start; */
         /* justify-content: center; */
         /* justify-content: end; */
@@ -46,12 +74,13 @@
         flex-direction: column; */
 
         /* width: 150vh; */
-        /* width: 100vh;
-        height: 100vh; */
-
         width: 100%;
-        margin: 0;
-        padding: 0;
+
+        /* height: 100vh; */
+
+        /* width: 100%; */
+        margin: 0px;
+        padding: 0px;
         /* width: 100%; */
         /* min-height: 100%; */
         background-color: #342c2a;
@@ -73,9 +102,10 @@ body {
     display: flex;
     /* justify-content: end; */
     /* place-items: center; */
-    width: 89%;
-    margin: 0;
-    padding: 0;
+
+    /* width: 89%; */
+    /* margin: 0;
+    padding: 0; */
     /* margin-right: 50px; */
     /* padding-right: 30px; */
 

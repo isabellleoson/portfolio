@@ -27,12 +27,18 @@ const Img = styled.img`
 `;
 
 const Container = styled.div`
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+    margin-left: 40px;
+
     @media (min-width: 750px) {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-left: 300px;
-        margin-right: 300px;
+        margin-left: 150px;
+        margin-right: 150px;
     }
 `;
 
@@ -43,7 +49,7 @@ const Div = styled.div`
 const StyledFirstPContainer = styled.div`
     display: flex;
     flex-direction: column;
-    max-width: 600px;
+    // max-width: 600px;
     align-items: center;
     justify-content: center;
 
@@ -53,6 +59,8 @@ const StyledFirstPContainer = styled.div`
     //     padding-right: 150px;
     // }
 `;
+
+const SecondP = styled.p``;
 
 const Span = styled.span`
     font-size: 15px;
@@ -85,7 +93,7 @@ function Glasskiosken() {
                             recommendations, with a focus on making semantic
                             code.{" "}
                         </p>
-                        <p>
+                        <SecondP>
                             <Span>This thought me </Span>to write clear code. I
                             used prettier for making the code look good. This
                             also thought me that grid is fine, but I never used
@@ -94,7 +102,7 @@ function Glasskiosken() {
                             with visual impairment, but instead it just made
                             everything look like links. I would not have done
                             that today!
-                        </p>
+                        </SecondP>
                     </StyledFirstPContainer>
 
                     <ImgDiv>

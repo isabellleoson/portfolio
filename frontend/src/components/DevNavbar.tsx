@@ -48,11 +48,14 @@ function DevNavbar() {
 const StyledMenu = styled.div`
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: end;
+    // width: 300px;
+    margin-left: 50px;
 
     @media (min-width: 750px) {
         padding-left: 200px;
         padding-right: 200px;
+        justify-content: center;
     }
 
     // flex-direction: column;

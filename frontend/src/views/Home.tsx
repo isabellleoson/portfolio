@@ -25,19 +25,21 @@ const HomePageContainer = styled.div`
     background-position: center;
     // justify-content: end;
     // align-items: flex-end;
-    height: 100vh;
+    height: 105vh;
 
-    margin: -40px;
+    margin: -38px;
     display: flex;
     flex-direction: column;
 
     @media (min-width: 750px) {
-        width: 135%;
+        background-size: cover;
+
+        width: 94vw;
         margin: 0px;
-        padding: 0px;
+        // padding: 10px;
+        padding-left: 76px;
         height: 100vh;
-        justify-content: center;
-        align-items: center;
+        // justify-content: center;
     }
 `;
 
@@ -105,13 +107,17 @@ const SmilyContainer = styled.div`
     @media (min-width: 750px) {
         display: flex;
         flex-direction: column;
-        background-color: rgb(235, 230, 162);
-        max-width: 30%;
+        // background-color: rgb(235, 230, 162);
+        background-color: rgba(255, 255, 133, 0.8);
+
+        max-width: 27%;
         height: 300px;
         justify-content: center;
         align-items: center;
         padding: 30px;
         border-radius: 50%;
+        margin-left: 40px;
+        margin-right: 50px;
     }
 `;
 const Container = styled.div`
@@ -126,7 +132,6 @@ const Container = styled.div`
 
     @media (min-width: 750px) {
         align-items: flex-end;
-        // padding-right: 50px;
         // padding-left: 50px;
 
         // padding-right: 50px;
