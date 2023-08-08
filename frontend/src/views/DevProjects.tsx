@@ -34,6 +34,13 @@ const P = styled.p`
     }
 `;
 
+const Container = styled.div`
+    @media (min-width: 750px) {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+`;
+
 const Div = styled.div`
     display: flex;
     flex-direction: column;
@@ -52,7 +59,7 @@ const Header = styled.div`
     justify-content: end;
 
     @media (min-width: 750px) {
-        padding-right: 20px;
+        // padding-right: 20px;
     }
     // padding-top: 40px;
     // padding-right: 40px;
@@ -66,16 +73,18 @@ function DevProjects() {
                     Home.
                 </Link>
             </Li>
-            <Header>
-                <Div>
-                    <H1>Frontend Development.</H1>
-                    <P>
-                        These are the projects I've created during my first year
-                        as a student at IT-Högskolan in Gothenburg.
-                    </P>
-                </Div>
-            </Header>
-            <DevNavbar />
+            <Container>
+                <Header>
+                    <Div>
+                        <H1>Frontend Development.</H1>
+                        <P>
+                            These are the projects I've created during my first
+                            year as a student at IT-Högskolan in Gothenburg.
+                        </P>
+                    </Div>
+                </Header>
+                <DevNavbar />
+            </Container>
         </>
     );
 }

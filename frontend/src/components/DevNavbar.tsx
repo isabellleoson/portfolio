@@ -76,14 +76,14 @@ const Button = styled.button`
     font-size: 1em;
     font-weight: 500;
     font-family: inherit;
-    background-color: #1a1a1a;
     cursor: pointer;
     transition: border-color 0.25s;
     color: rgb(240, 232, 227);
+    background-color: #1a1a1a;
 
     @media (min-width: 750px) {
         width: 250px;
-        height: 150px;
+        height: 100px;
     }
 `;
 
