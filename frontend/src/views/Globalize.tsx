@@ -96,18 +96,30 @@ function Globalize() {
                         <p>
                             <Span>This is a fullstack project.</Span> I created
                             a solution for an admin to handle their webshop. I
-                            created a database using Mongo DB and created a
-                            backend that handles calls to add, change and delete
+                            created a database using MongoDB and created a
+                            backend that handels adding, changing and deleting
                             products to the webshop using the database.
                         </p>
                         <p>
-                            <Span>This thought me </Span>to ...................
+                            <Span>I made the background and the logos </Span>
+                            (such as the hamburgermenu (pun intended), symbol
+                            for the cart etc). The customer asked for a orange
+                            and blue design, and I choose to add a light pink
+                            background to capture the feeling of the physical
+                            resturant.
                         </p>
                     </StyledFirstPContainer>
                     <ImgDiv>
                         <Img src={globalize} alt="" />
                     </ImgDiv>
                 </Div>
+
+                <p>
+                    At the moment, the backend is not connected to the server
+                    (due to swapping from mongodb to fit the render-server
+                    better), so the webshop and the login is currently not
+                    working, but you can see the essence of the site at;
+                </p>
                 <A href="https://globalize.onrender.com/">Globalize</A>
             </Container>
         </>
