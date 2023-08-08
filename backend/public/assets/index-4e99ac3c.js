@@ -274,6 +274,7 @@ Error generating stack: `+o.message+`
         padding-left: 200px;
         padding-right: 200px;
         justify-content: center;
+        flex-direction: column;
     }
 
     // flex-direction: column;
@@ -292,9 +293,9 @@ Error generating stack: `+o.message+`
 
     @media (min-width: 750px) {
         width: 250px;
-        height: 100px;
+        height: 80px;
     }
-`,Jy=_.div`
+`,Jy="/assets/devbackground-e444c00a.png",Zy=_.div`
     display: flex;
     justify-content: end;
     font-size: 10px;
@@ -302,31 +303,37 @@ Error generating stack: `+o.message+`
     @media (min-width: 750px) {
         padding: 20px;
     }
-`,Zy=_.h1`
+`,qy=_.h1`
     margin-bottom: 0;
 
     @media (min-width: 750px) {
         margin-top: 0;
         font-size: 25px;
     }
-`,qy=_.p`
+`,by=_.p`
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: end;
-    margin-left: 70px;
+    // margin-left: 70px;
     margin-bottom: 40px;
 
     @media (min-width: 750px) {
         font-size: 14px;
         max-width: 320px;
     }
-`,by=_.div`
+`,e1=_.div`
+    background-image: url(${Jy});
+    background-size: cover;
+    background-position: center;
+`,t1=_.div`
     @media (min-width: 750px) {
         display: flex;
+        // flex-direction: column;
+
         flex-direction: row-reverse;
     }
-`,e1=_.div`
+`,n1=_.div`
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -335,18 +342,20 @@ Error generating stack: `+o.message+`
     @media (min-width: 750px) {
         padding: 20px;
     }
-`,t1=_.div`
+`,r1=_.div`
+    margin-right: 10px;
+`,i1=_.div`
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    justify-content: end;
+    // align-items: flex-end;
+    // justify-content: end;
 
     @media (min-width: 750px) {
         // padding-right: 20px;
     }
     // padding-top: 40px;
     // padding-right: 40px;
-`;function n1(){return f.jsxs(f.Fragment,{children:[f.jsx(Jy,{children:f.jsx(xt,{className:"link",to:"/",children:"Home."})}),f.jsxs(by,{children:[f.jsx(t1,{children:f.jsxs(e1,{children:[f.jsx(Zy,{children:"Frontend Development."}),f.jsx(qy,{children:"These are the projects I've created during my first year as a student at IT-Högskolan in Gothenburg."})]})}),f.jsx(Yy,{})]})]})}function Qn(){return f.jsxs(f.Fragment,{children:[f.jsxs(r1,{children:[f.jsx(kd,{children:f.jsx(xt,{className:"link",to:"/",children:"Home."})}),f.jsx(kd,{children:f.jsx(xt,{className:"link",to:"/devprojects",children:"Projects."})})]})," "]})}const r1=_.div`
+`;function o1(){return f.jsx(f.Fragment,{children:f.jsxs(e1,{children:[f.jsx(Zy,{children:f.jsx(xt,{className:"link",to:"/",children:"Home."})}),f.jsxs(t1,{children:[f.jsx(i1,{children:f.jsxs(n1,{children:[f.jsx(qy,{children:"Frontend Development."}),f.jsx(by,{children:"These are the projects I've created during my first year as a student at IT-Högskolan in Gothenburg."})]})}),f.jsx(r1,{children:f.jsx(Yy,{})})]})]})})}function Qn(){return f.jsxs(f.Fragment,{children:[f.jsxs(l1,{children:[f.jsx(kd,{children:f.jsx(xt,{className:"link",to:"/",children:"Home."})}),f.jsx(kd,{children:f.jsx(xt,{className:"link",to:"/devprojects",children:"Projects."})})]})," "]})}const l1=_.div`
     display: flex;
     justify-content: end;
     margin-right: 20px;
@@ -364,15 +373,15 @@ Error generating stack: `+o.message+`
 
     //     cursor: pointer;
     // }
-`,Eu="/assets/glasskiosken-77a48cff.png",i1=_.div`
+`,Eu="/assets/glasskiosken-77a48cff.png",a1=_.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-`,o1=_.div`
+`,s1=_.div`
     width: auto;
     // padding-left: 30px;
     margin: 10px;
-`,l1=_.img`
+`,u1=_.img`
     max-width: 20vh;
     // padding-left: 30px;
     margin: 10px;
@@ -380,7 +389,7 @@ Error generating stack: `+o.message+`
     @media (min-width: 750px) {
         min-width: 30vh;
     }
-`,a1=_.div`
+`,c1=_.div`
     // display: flex;
     // flex-direction: column;
     // align-items: center;
@@ -394,9 +403,9 @@ Error generating stack: `+o.message+`
         margin-left: 150px;
         margin-right: 150px;
     }
-`,s1=_.div`
+`,d1=_.div`
     display: flex;
-`,u1=_.div`
+`,f1=_.div`
     display: flex;
     flex-direction: column;
     // max-width: 600px;
@@ -408,17 +417,17 @@ Error generating stack: `+o.message+`
     //     padding-left: 150px;
     //     padding-right: 150px;
     // }
-`,c1=_.p``,Ed=_.span`
+`,p1=_.p``,Ed=_.span`
     font-size: 15px;
-`,d1=_.a`
+`,h1=_.a`
     display: flex;
     flex-direction: column;
     align-items: center;
-`;function f1(){return f.jsxs(f.Fragment,{children:[f.jsx(Qn,{}),f.jsxs(i1,{children:[f.jsx("h1",{children:"Glasskiosken"}),f.jsx("h2",{children:"HTML / CSS"}),f.jsx("h2",{children:"Grid layout / Responsive design"})]}),f.jsxs(a1,{children:[f.jsxs(s1,{children:[f.jsxs(u1,{children:[f.jsxs("p",{children:[f.jsx(Ed,{children:"This was my very first time coding."}),` The project is build with only HTML and CSS. I wanted to create a fun, colorful site that makes you happy. The website is build "mobile first", and accordning to Google's SEO recommendations and accessibility recommendations, with a focus on making semantic code.`," "]}),f.jsxs(c1,{children:[f.jsx(Ed,{children:"This thought me "}),"to write clear code. I used prettier for making the code look good. This also thought me that grid is fine, but I never used it since. I heart Flexbox. And the hover-effects? Well, I thought that it would be good for someone with visual impairment, but instead it just made everything look like links. I would not have done that today!"]})]}),f.jsx(o1,{children:f.jsx(l1,{src:Eu,alt:""})})]}),f.jsx(d1,{href:"",children:"Link to Glasskiosken"})]})," "]})}const p1="/assets/urbangreens-79f0e67d.png",h1=_.div`
+`;function m1(){return f.jsxs(f.Fragment,{children:[f.jsx(Qn,{}),f.jsxs(a1,{children:[f.jsx("h1",{children:"Glasskiosken"}),f.jsx("h2",{children:"HTML / CSS"}),f.jsx("h2",{children:"Grid layout / Responsive design"})]}),f.jsxs(c1,{children:[f.jsxs(d1,{children:[f.jsxs(f1,{children:[f.jsxs("p",{children:[f.jsx(Ed,{children:"This was my very first time coding."}),` The project is build with only HTML and CSS. I wanted to create a fun, colorful site that makes you happy. The website is build "mobile first", and accordning to Google's SEO recommendations and accessibility recommendations, with a focus on making semantic code.`," "]}),f.jsxs(p1,{children:[f.jsx(Ed,{children:"This thought me "}),"to write clear code. I used prettier for making the code look good. This also thought me that grid is fine, but I never used it since. I heart Flexbox. And the hover-effects? Well, I thought that it would be good for someone with visual impairment, but instead it just made everything look like links. I would not have done that today!"]})]}),f.jsx(s1,{children:f.jsx(u1,{src:Eu,alt:""})})]}),f.jsx(h1,{href:"",children:"Link to Glasskiosken"})]})," "]})}const g1="/assets/urbangreens-79f0e67d.png",v1=_.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-`,m1=_.div`
+`,y1=_.div`
     margin-left: 20px;
 
     @media (min-width: 750px) {
@@ -428,15 +437,15 @@ Error generating stack: `+o.message+`
         margin-left: 300px;
         margin-right: 300px;
     }
-`,g1=_.div`
+`,x1=_.div`
     display: flex;
 `,Cd=_.h2`
     text-align: center;
-`,v1=_.div`
+`,w1=_.div`
     width: auto;
     // padding-left: 30px;
     margin: 10px;
-`,y1=_.img`
+`,S1=_.img`
     max-width: 20vh;
     // padding-left: 30px;
     margin: 10px;
@@ -444,7 +453,7 @@ Error generating stack: `+o.message+`
     @media (min-width: 750px) {
         max-width: 30vh;
     }
-`,x1=_.div`
+`,k1=_.div`
     display: flex;
     flex-direction: column;
 
@@ -453,15 +462,15 @@ Error generating stack: `+o.message+`
     justify-content: center;
 `,jd=_.span`
     font-size: 14px;
-`,w1=_.a`
+`,E1=_.a`
     display: flex;
     flex-direction: column;
     align-items: center;
-`;function S1(){return f.jsxs(f.Fragment,{children:[f.jsx(Qn,{}),f.jsxs(h1,{children:[f.jsx("h1",{children:"Urban Greens"}),f.jsx(Cd,{children:"JAVASCRIPT / VUE / VITE / NODE.JS"}),f.jsx(Cd,{children:" Agile / Figma / Bootstrap / Responsive design"})]}),f.jsxs(m1,{children:[f.jsxs(g1,{children:[f.jsxs(x1,{children:[f.jsxs("p",{children:[f.jsx(jd,{children:"This was a group project"})," that was first designed in Figma. We worked with agile.... We created a fake backend by adding all the information in a json file and fetching to it. We used Vuex ......"]}),f.jsxs("p",{children:[f.jsx(jd,{children:"This thought me "}),"to code with other people. I learned a lot both watching other code, and by explaining my own code."]})]}),f.jsx(v1,{children:f.jsx(y1,{src:p1,alt:""})})]}),f.jsx(w1,{href:"",children:"Link to Urban Greens"})," "]})," "]})}const Pd=_.h2`
+`;function C1(){return f.jsxs(f.Fragment,{children:[f.jsx(Qn,{}),f.jsxs(v1,{children:[f.jsx("h1",{children:"Urban Greens"}),f.jsx(Cd,{children:"JAVASCRIPT / VUE / VITE / NODE.JS"}),f.jsx(Cd,{children:" Agile / Figma / Bootstrap / Responsive design"})]}),f.jsxs(y1,{children:[f.jsxs(x1,{children:[f.jsxs(k1,{children:[f.jsxs("p",{children:[f.jsx(jd,{children:"This was a group project"})," that was first designed in Figma. We worked with agile.... We created a fake backend by adding all the information in a json file and fetching to it. We used Vuex ......"]}),f.jsxs("p",{children:[f.jsx(jd,{children:"This thought me "}),"to code with other people. I learned a lot both watching other code, and by explaining my own code."]})]}),f.jsx(w1,{children:f.jsx(S1,{src:g1,alt:""})})]}),f.jsx(E1,{href:"",children:"Link to Urban Greens"})," "]})," "]})}const Pd=_.h2`
     padding-top: 25px;
     border-bottom: solid white 1px;
     margin-left: 12px;
-`,k1=Th`
+`,j1=Th`
   from {
     opacity: 0;
     transform: translateX(-20px);
@@ -472,13 +481,13 @@ Error generating stack: `+o.message+`
   }
 `,Ot=_.div`
     opacity: 0;
-    animation: ${k1} 1s ease forwards;
-`,E1=_.div`
+    animation: ${j1} 1s ease forwards;
+`,P1=_.div`
     @media (min-width: 750px) {
         display: flex;
         flex-direction: column;
     }
-`,C1=_.div`
+`,R1=_.div`
     @media (min-width: 750px) {
         width: 98vw;
 
@@ -486,13 +495,13 @@ Error generating stack: `+o.message+`
         display: flex;
         flex-direction: column;
     }
-`,j1=_.div`
+`,_1=_.div`
     @media (min-width: 750px) {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-`,P1=_.div`
+`,T1=_.div`
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -504,7 +513,7 @@ Error generating stack: `+o.message+`
         margin-right: 200px;
         margin-left 300px;
     }
-`,R1=_.div`
+`,L1=_.div`
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -533,7 +542,7 @@ Error generating stack: `+o.message+`
     font-size: 12px;
     padding-top: 5px;
     text-align: end;
-`,_1=_.div`
+`,N1=_.div`
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -568,16 +577,16 @@ Error generating stack: `+o.message+`
         padding: 6px 12px;
         font-size: 12px;
     }
-`,T1=_.div`
+`,D1=_.div`
     display: flex;
     flex-direction: column;
 
     text-align: end;
-`;function L1(){const[e,t]=N.useState(!1),[n,r]=N.useState(!1),[i,o]=N.useState(!1),[l,a]=N.useState(!1),s=()=>{t(!e),r(!1),o(!1),a(!1)},u=()=>{t(!1),r(!n),o(!1),a(!1)},p=()=>{t(!1),r(!1),o(!i),a(!1)},v=()=>{t(!1),r(!1),o(!1),a(!l)};return f.jsx(f.Fragment,{children:f.jsx(E1,{children:f.jsxs(C1,{children:[f.jsx(Qn,{}),f.jsx(P1,{children:f.jsx(Pd,{children:"Resumé."})}),f.jsxs(_1,{children:[f.jsx(po,{onClick:s,children:e?"":"About Isabell"}),f.jsx(po,{onClick:u,children:n?"":"Work experience"}),f.jsx(po,{onClick:p,children:i?"":"Technical Skills "}),f.jsx(po,{onClick:v,children:l?"":"Education"})]}),f.jsxs(j1,{children:[e&&f.jsx(f.Fragment,{children:f.jsxs(R1,{children:[f.jsxs(Ot,{children:[f.jsx(Pd,{children:"About Isabell"}),f.jsxs(Jn,{children:[f.jsx(bt,{children:"Hello"}),", I'm Isabell, a versatile professional with a"," ",f.jsx(bt,{children:"passion for healthcare, artistic expression, and technology"}),". With a solid foundation as an assistant nurse and a background in painting, I am currently harnessing my creativity and determination to embark on an exciting journey as a frontend developer."]})]}),f.jsx(Ot,{children:f.jsxs(Jn,{children:["For over 12 years, I honed my interpersonal and caregiving skills as an ",f.jsx(bt,{children:"assistant nurse"}),". This experience not only allowed me to provide essential medical support but also instilled in me a deep sense of empathy and a commitment to making a positive impact on people's lives."]})}),f.jsx(Ot,{children:f.jsxs(Jn,{children:["Beyond the healthcare field, I explored my artistic inclinations as a ",f.jsx(bt,{children:"painting artist"}),". This endeavor cultivated my"," ",f.jsx(bt,{children:"eye for detail, innovative thinking, and the ability to transform abstract concepts into tangible creations"}),". These artistic skills have seamlessly translated into my pursuit of becoming a skilled Frontend Developer."]})}),f.jsx(Ot,{children:f.jsxs(Jn,{children:["Currently enrolled as a Frontend Developer student, I am excited to leverage my diverse background to bring a unique perspective to the world of web development. My experience as an assistant nurse taught me the value of"," ",f.jsx(bt,{children:"precision, adaptability, and teamwork"}),"—qualities that resonate in the realm of coding and design."]})}),f.jsx(Ot,{children:f.jsxs(Jn,{children:["As a dedicated learner and aspiring developer, I am committed to continuous growth and enhancing my technical expertise. My goal is to"," ",f.jsx(bt,{children:"merge my passion for aesthetics, problem-solving, and user-centric design"})," ","to craft seamless and captivating digital experiences."]})}),f.jsx(Ot,{children:f.jsxs(Jn,{children:["I am eagerly seeking opportunities to apply my skills and embark on a new chapter in my career journey. With a solid foundation in healthcare, a flair for artistic expression, and"," ",f.jsx(bt,{children:"a drive to excel as a Frontend Developer"}),", I am excited to contribute my unique perspective and dedication to any innovative team."]})})]})}),n&&f.jsx(Ot,{children:f.jsxs("ul",{children:[f.jsx(_t,{children:"Morängatans elderly care, Gothenburg - 2012-2012. Assistant nurse"}),f.jsx(_t,{children:"La Gran Becca, Cervinia, Italy. Winter season work 2013-2015. Bartender/barista"}),f.jsx(_t,{children:"Tallgläntan short term home, rehab, Falkenberg 2015-2022. Assistant nurse"}),f.jsxs(_t,{children:["Elected representative Kommunal & LO, Falkenberg/Värnamo/Gothenburg/Stockholm. 2016-2019."," ",f.jsxs(Rd,{children:["Youth responsible with responsibilities both locally, at the department level, and centrally within the organization. This has included tasks such as conducting internal training sessions."," "]}),f.jsx(Rd,{children:"School presenter. Conducted courses for high school students, adult learners, and Swedish for Immigrants (SFI) students about the Swedish model and the Swedish job market."})]}),f.jsxs(_t,{children:["IssaJosephine Art, 2020 - on going. My own company as an painting artist"," "]})]})}),i&&f.jsx(Ot,{children:f.jsxs(T1,{children:[f.jsx("p",{children:"HTML / CSS / JAVASCRIPT / TYPESCRIPT / VUE / REACT / VITE / NODE.JS"}),f.jsx("p",{children:"MongoDB / SQLite / EXPRESS "}),f.jsx("p",{children:"GRID LAYOUT / FLEXBOX LAYOUT / RESPONSIVE DESIGN / FIGMA / BOOTSTRAP"}),f.jsx("p",{children:"During my education I've also worked with agile methods such as Scrum."})]})}),l&&f.jsx(Ot,{children:f.jsxs("ul",{children:[f.jsx(_t,{children:"Frontend Developer, IT-Högskolan Gothenburg, 2022 - on going"}),f.jsx(_t,{children:"Portfolio och graphic design 15hp, University of Borås 2023"}),f.jsx(_t,{children:"Fashion sketching and illustation 15hp, University of Borås 2021"}),f.jsx(_t,{children:"Occupational psychology and health 15hp, University of Halmstad 2015"}),f.jsx(_t,{children:"Caregiving Program, assistans nurse with a specialization in healtcare. Göteborgs Praktiska (high school) 2009-2012"})]})})]})]})})})}const N1="/assets/insposite-c3a7d15c.png",D1="/assets/cities-1945799d.png",z1=_.div`
+`;function z1(){const[e,t]=N.useState(!1),[n,r]=N.useState(!1),[i,o]=N.useState(!1),[l,a]=N.useState(!1),s=()=>{t(!e),r(!1),o(!1),a(!1)},u=()=>{t(!1),r(!n),o(!1),a(!1)},p=()=>{t(!1),r(!1),o(!i),a(!1)},v=()=>{t(!1),r(!1),o(!1),a(!l)};return f.jsx(f.Fragment,{children:f.jsx(P1,{children:f.jsxs(R1,{children:[f.jsx(Qn,{}),f.jsx(T1,{children:f.jsx(Pd,{children:"Resumé."})}),f.jsxs(N1,{children:[f.jsx(po,{onClick:s,children:e?"":"About Isabell"}),f.jsx(po,{onClick:u,children:n?"":"Work experience"}),f.jsx(po,{onClick:p,children:i?"":"Technical Skills "}),f.jsx(po,{onClick:v,children:l?"":"Education"})]}),f.jsxs(_1,{children:[e&&f.jsx(f.Fragment,{children:f.jsxs(L1,{children:[f.jsxs(Ot,{children:[f.jsx(Pd,{children:"About Isabell"}),f.jsxs(Jn,{children:[f.jsx(bt,{children:"Hello"}),", I'm Isabell, a versatile professional with a"," ",f.jsx(bt,{children:"passion for healthcare, artistic expression, and technology"}),". With a solid foundation as an assistant nurse and a background in painting, I am currently harnessing my creativity and determination to embark on an exciting journey as a frontend developer."]})]}),f.jsx(Ot,{children:f.jsxs(Jn,{children:["For over 12 years, I honed my interpersonal and caregiving skills as an ",f.jsx(bt,{children:"assistant nurse"}),". This experience not only allowed me bto get a deep sense of empathy and a commitment to making a positive impact on people's lives, but also experiences (and interest) of the digitalization of healthcare, witch led to my current career change."]})}),f.jsx(Ot,{children:f.jsxs(Jn,{children:["Beyond the healthcare field, I explored my artistic inclinations as a ",f.jsx(bt,{children:"painting artist"}),". This endeavor cultivated my"," ",f.jsx(bt,{children:"eye for detail, innovative thinking, and the ability to transform abstract concepts into tangible creations"}),". These artistic skills have seamlessly translated into my pursuit of becoming a skilled Frontend Developer."]})}),f.jsx(Ot,{children:f.jsxs(Jn,{children:["Currently enrolled as a Frontend Developer student, I am excited to leverage my diverse background to bring a unique perspective to the world of web development. My experience as an assistant nurse taught me the value of"," ",f.jsx(bt,{children:"precision, adaptability, and teamwork"}),"—qualities that resonate in the realm of coding and design."]})}),f.jsx(Ot,{children:f.jsxs(Jn,{children:["As a dedicated learner and aspiring developer, I am committed to continuous growth and enhancing my technical expertise. My goal is to"," ",f.jsx(bt,{children:"merge my passion for aesthetics, problem-solving, and user-centric design"})," ","to craft seamless and captivating digital experiences."]})}),f.jsx(Ot,{children:f.jsxs(Jn,{children:["I am eagerly seeking opportunities to apply my skills and embark on a new chapter in my career journey. With a solid foundation in healthcare, a flair for artistic expression, and"," ",f.jsx(bt,{children:"a drive to excel as a Frontend Developer"}),", I am excited to contribute my unique perspective and dedication to any innovative team."]})})]})}),n&&f.jsx(Ot,{children:f.jsxs("ul",{children:[f.jsx(_t,{children:"Morängatans elderly care, Gothenburg - 2012-2012. Assistant nurse"}),f.jsx(_t,{children:"La Gran Becca, Cervinia, Italy. Winter season work 2013-2015. Bartender/barista"}),f.jsx(_t,{children:"Tallgläntan short term home, rehab, Falkenberg 2015-2022. Assistant nurse"}),f.jsxs(_t,{children:["Elected representative Kommunal & LO, Falkenberg/Värnamo/Gothenburg/Stockholm. 2016-2019."," ",f.jsxs(Rd,{children:["Youth responsible with responsibilities both locally, at the department level, and centrally within the organization. This has included tasks such as conducting internal training sessions."," "]}),f.jsx(Rd,{children:"School presenter. Conducted courses for high school students, adult learners, and Swedish for Immigrants (SFI) students about the Swedish model and the Swedish job market."})]}),f.jsxs(_t,{children:["IssaJosephine Art, 2020 - on going. My own company as an painting artist"," "]})]})}),i&&f.jsx(Ot,{children:f.jsxs(D1,{children:[f.jsx("p",{children:"HTML / CSS / JAVASCRIPT / TYPESCRIPT / VUE / REACT / VITE / NODE.JS"}),f.jsx("p",{children:"MongoDB / SQLite / EXPRESS "}),f.jsx("p",{children:"GRID LAYOUT / FLEXBOX LAYOUT / RESPONSIVE DESIGN / FIGMA / BOOTSTRAP"}),f.jsx("p",{children:"During my education I've also worked with agile methods such as Scrum."})]})}),l&&f.jsx(Ot,{children:f.jsxs("ul",{children:[f.jsx(_t,{children:"Frontend Developer, IT-Högskolan Gothenburg, 2022 - on going"}),f.jsx(_t,{children:"Portfolio och graphic design 15hp, University of Borås 2023"}),f.jsx(_t,{children:"Fashion sketching and illustation 15hp, University of Borås 2021"}),f.jsx(_t,{children:"Occupational psychology and health 15hp, University of Halmstad 2015"}),f.jsx(_t,{children:"Caregiving Program, assistans nurse with a specialization in healtcare. Göteborgs Praktiska (high school) 2009-2012"})]})})]})]})})})}const I1="/assets/insposite-c3a7d15c.png",M1="/assets/cities-1945799d.png",$1=_.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-`,I1=_.div`
+`,O1=_.div`
     width: auto;
     // padding-left: 30px;
     margin: 10px;
@@ -589,7 +598,7 @@ Error generating stack: `+o.message+`
     @media (min-width: 750px) {
         min-width: 30vh;
     }
-`,M1=_.div`
+`,F1=_.div`
     margin-left: 20px;
     @media (min-width: 750px) {
         display: flex;
@@ -598,9 +607,9 @@ Error generating stack: `+o.message+`
         margin-left: 300px;
         margin-right: 300px;
     }
-`,$1=_.div`
+`,A1=_.div`
     display: flex;
-`,O1=_.div`
+`,U1=_.div`
     display: flex;
     flex-direction: column;
 
@@ -609,18 +618,18 @@ Error generating stack: `+o.message+`
     justify-content: center;
 `,Td=_.span`
     font-size: 14px;
-`,F1=_.a`
+`,B1=_.a`
     display: flex;
     flex-direction: column;
     align-items: center;
-`;function A1(){return f.jsxs(f.Fragment,{children:[f.jsx(Qn,{}),f.jsxs(z1,{children:[f.jsx("h1",{children:"Inspirationssidan"}),f.jsx("h2",{children:"NATIVE JAVASCRIPT"}),f.jsx("h2",{children:" API / CHART.JS "})]}),f.jsxs(M1,{children:[f.jsxs($1,{children:[f.jsxs(O1,{children:[f.jsxs("p",{children:[f.jsx(Td,{children:"This project was the first time I tried out Javascript. Love at first sight?"})," ","Yes. The misson was to use API. I used two different API:s, one for getting colors and one for getting images. We also needed to fetch from a cities-api where and I created functions to add, change and delete cities."]}),f.jsxs("p",{children:[f.jsx(Td,{children:"This thought me "}),"to"]})]}),f.jsxs(I1,{children:[f.jsx(_d,{src:N1,alt:""}),f.jsx(_d,{src:D1,alt:""})]})]}),f.jsx(F1,{href:"",children:"Link to Inspirationssidan"})," "]})," "]})}const U1="/assets/globalize-22f89da9.png",B1=_.div`
+`;function H1(){return f.jsxs(f.Fragment,{children:[f.jsx(Qn,{}),f.jsxs($1,{children:[f.jsx("h1",{children:"Inspirationssidan"}),f.jsx("h2",{children:"NATIVE JAVASCRIPT"}),f.jsx("h2",{children:" API / CHART.JS "})]}),f.jsxs(F1,{children:[f.jsxs(A1,{children:[f.jsxs(U1,{children:[f.jsxs("p",{children:[f.jsx(Td,{children:"This project was the first time I tried out Javascript. Love at first sight?"})," ","Yes. The misson was to use API. I used two different API:s, one for getting colors and one for getting images. We also needed to fetch from a cities-api where and I created functions to add, change and delete cities."]}),f.jsxs("p",{children:[f.jsx(Td,{children:"This thought me "}),"to"]})]}),f.jsxs(O1,{children:[f.jsx(_d,{src:I1,alt:""}),f.jsx(_d,{src:M1,alt:""})]})]}),f.jsx(B1,{href:"",children:"Link to Inspirationssidan"})," "]})," "]})}const W1="/assets/globalize-22f89da9.png",V1=_.div`
     display: flex;
     flex-direction: column;
 
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-`,H1=_.div`
+`,Q1=_.div`
     display: flex;
 
     flex-wrap: wrap;
@@ -628,11 +637,11 @@ Error generating stack: `+o.message+`
     text-align: center;
     align-items: center;
     justify-content: center;
-`,W1=_.div`
+`,G1=_.div`
     width: auto;
     // padding-left: 30px;
     margin: 10px;
-`,V1=_.img`
+`,K1=_.img`
     max-width: 20vh;
     // padding-left: 30px;
     margin: 10px;
@@ -640,7 +649,7 @@ Error generating stack: `+o.message+`
     @media (min-width: 750px) {
         max-width: 30vh;
     }
-`,Q1=_.div`
+`,Y1=_.div`
     margin-left: 20px;
 
     @media (min-width: 750px) {
@@ -650,9 +659,9 @@ Error generating stack: `+o.message+`
         margin-left: 300px;
         margin-right: 300px;
     }
-`,G1=_.div`
+`,X1=_.div`
     display: flex;
-`,K1=_.div`
+`,J1=_.div`
     display: flex;
     flex-direction: column;
 
@@ -661,19 +670,19 @@ Error generating stack: `+o.message+`
     justify-content: center;
 `,Ld=_.span`
     font-size: 14px;
-`,Y1=_.a`
+`,Z1=_.a`
     display: flex;
     flex-direction: column;
     align-items: center;
-`;function X1(){return f.jsxs(f.Fragment,{children:[f.jsx(Qn,{}),f.jsxs(B1,{children:[f.jsx("h1",{children:"Globalize"}),f.jsxs(H1,{children:[f.jsx("h2",{children:"REACT / TYPESCRIPT / MongoDB / BACKEND"}),f.jsxs("h2",{children:[" ","Singel Page Application / React hooks (useEffect, useContext) / Formik / Styled-Components / CORS-prevention"," "]})]})]}),f.jsxs(Q1,{children:[f.jsxs(G1,{children:[f.jsxs(K1,{children:[f.jsxs("p",{children:[f.jsx(Ld,{children:"This is a fullstack project."})," I created a solution for an admin to handle their webshop. I created a database using Mongo DB and created a backend that handles calls to add, change and delete products to the webshop using the database."]}),f.jsxs("p",{children:[f.jsx(Ld,{children:"This thought me "}),"to ..................."]})]}),f.jsx(W1,{children:f.jsx(V1,{src:U1,alt:""})})]}),f.jsx(Y1,{href:"https://globalize.onrender.com/",children:"Globalize"})]})]})}const J1=_.div`
+`;function q1(){return f.jsxs(f.Fragment,{children:[f.jsx(Qn,{}),f.jsxs(V1,{children:[f.jsx("h1",{children:"Globalize"}),f.jsxs(Q1,{children:[f.jsx("h2",{children:"REACT / TYPESCRIPT / MongoDB / BACKEND"}),f.jsxs("h2",{children:[" ","Singel Page Application / React hooks (useEffect, useContext) / Formik / Styled-Components / CORS-prevention"," "]})]})]}),f.jsxs(Y1,{children:[f.jsxs(X1,{children:[f.jsxs(J1,{children:[f.jsxs("p",{children:[f.jsx(Ld,{children:"This is a fullstack project."})," I created a solution for an admin to handle their webshop. I created a database using Mongo DB and created a backend that handles calls to add, change and delete products to the webshop using the database."]}),f.jsxs("p",{children:[f.jsx(Ld,{children:"This thought me "}),"to ..................."]})]}),f.jsx(G1,{children:f.jsx(K1,{src:W1,alt:""})})]}),f.jsx(Z1,{href:"https://globalize.onrender.com/",children:"Globalize"})]})]})}const b1=_.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-`,Z1=_.div`
+`,ex=_.div`
     width: auto;
     // padding-left: 30px;
     margin: 10px;
-`,q1=_.img`
+`,tx=_.img`
     max-width: 20vh;
     // padding-left: 30px;
     margin: 10px;
@@ -681,7 +690,7 @@ Error generating stack: `+o.message+`
     @media (min-width: 750px) {
         min-width: 30vh;
     }
-`,b1=_.div`
+`,nx=_.div`
     margin-left: 20px;
 
     @media (min-width: 750px) {
@@ -691,9 +700,9 @@ Error generating stack: `+o.message+`
         margin-left: 300px;
         margin-right: 300px;
     }
-`,ex=_.div`
+`,rx=_.div`
     display: flex;
-`,tx=_.div`
+`,ix=_.div`
     display: flex;
     flex-direction: column;
     max-width: 600px;
@@ -707,19 +716,19 @@ Error generating stack: `+o.message+`
     // }
 `,Nd=_.span`
     font-size: 14px;
-`,nx=_.a`
+`,ox=_.a`
     display: flex;
     flex-direction: column;
     align-items: center;
-`;function rx(){return f.jsxs(f.Fragment,{children:[f.jsx(Qn,{}),f.jsxs(J1,{children:[f.jsx("h1",{children:"FakeStore"}),f.jsx("h2",{children:"HTML / CSS"}),f.jsx("h2",{children:"Grid layout / Responsive design"})]}),f.jsxs(b1,{children:[f.jsxs(ex,{children:[f.jsxs(tx,{children:[f.jsx("p",{children:f.jsx(Nd,{children:"This project.."})}),f.jsxs("p",{children:[f.jsx(Nd,{children:"This thought me "}),"to"]})]}),f.jsx(Z1,{children:f.jsx(q1,{src:Eu,alt:""})})]}),f.jsx(nx,{href:"",children:"Link to Fake store"})]})," "]})}const ix=_.div`
+`;function lx(){return f.jsxs(f.Fragment,{children:[f.jsx(Qn,{}),f.jsxs(b1,{children:[f.jsx("h1",{children:"FakeStore"}),f.jsx("h2",{children:"HTML / CSS"}),f.jsx("h2",{children:"Grid layout / Responsive design"})]}),f.jsxs(nx,{children:[f.jsxs(rx,{children:[f.jsxs(ix,{children:[f.jsx("p",{children:f.jsx(Nd,{children:"This project.."})}),f.jsxs("p",{children:[f.jsx(Nd,{children:"This thought me "}),"to"]})]}),f.jsx(ex,{children:f.jsx(tx,{src:Eu,alt:""})})]}),f.jsx(ox,{href:"",children:"Link to Fake store"})]})," "]})}const ax=_.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-`,ox=_.div`
+`,sx=_.div`
     width: auto;
     // padding-left: 30px;
     margin: 10px;
-`,lx=_.img`
+`,ux=_.img`
     max-width: 20vh;
     // padding-left: 30px;
     margin: 10px;
@@ -727,7 +736,7 @@ Error generating stack: `+o.message+`
     @media (min-width: 750px) {
         min-width: 30vh;
     }
-`,ax=_.div`
+`,cx=_.div`
     margin-left: 20px;
 
     @media (min-width: 750px) {
@@ -737,9 +746,9 @@ Error generating stack: `+o.message+`
         margin-left: 300px;
         margin-right: 300px;
     }
-`,sx=_.div`
+`,dx=_.div`
     display: flex;
-`,ux=_.div`
+`,fx=_.div`
     display: flex;
     flex-direction: column;
     max-width: 600px;
@@ -753,8 +762,8 @@ Error generating stack: `+o.message+`
     // }
 `,Dd=_.span`
     font-size: 14px;
-`,cx=_.a`
+`,px=_.a`
     display: flex;
     flex-direction: column;
     align-items: center;
-`;function dx(){return f.jsxs(f.Fragment,{children:[f.jsx(Qn,{}),f.jsxs(ix,{children:[f.jsx("h1",{children:"FakeStore"}),f.jsx("h2",{children:"HTML / CSS"}),f.jsx("h2",{children:"Grid layout / Responsive design"})]}),f.jsxs(ax,{children:[f.jsxs(sx,{children:[f.jsxs(ux,{children:[f.jsxs("p",{children:[f.jsx(Dd,{children:"This project was a group ptoject.."})," that I, togheter with two developer from my class, and four designers from the UX design class created."]}),f.jsxs("p",{children:[f.jsx(Dd,{children:"This thought me "}),"to"]})]}),f.jsx(ox,{children:f.jsx(lx,{src:Eu,alt:""})})]}),f.jsx(cx,{href:"https://fullstack-9mbp.onrender.com/",children:"Link CloseBuy"})]})," "]})}function fx(){const e=Rv([{children:[{element:f.jsx(Ky,{}),path:"/"},{element:f.jsx(n1,{}),path:"/devprojects"},{element:f.jsx(L1,{}),path:"/resume"},{element:f.jsx(f1,{}),path:"/glasskiosken"},{element:f.jsx(S1,{}),path:"/urbangreens"},{element:f.jsx(A1,{}),path:"/insposite"},{element:f.jsx(X1,{}),path:"/globalize"},{element:f.jsx(rx,{}),path:"/fakestore"},{element:f.jsx(dx,{}),path:"/closebuy"}],element:f.jsx(zv,{})}]);return f.jsxs(f.Fragment,{children:[" ",f.jsx(yv,{router:e})]})}ma.createRoot(document.getElementById("root")).render(f.jsx(Mn.StrictMode,{children:f.jsx(fx,{})}));
+`;function hx(){return f.jsxs(f.Fragment,{children:[f.jsx(Qn,{}),f.jsxs(ax,{children:[f.jsx("h1",{children:"FakeStore"}),f.jsx("h2",{children:"HTML / CSS"}),f.jsx("h2",{children:"Grid layout / Responsive design"})]}),f.jsxs(cx,{children:[f.jsxs(dx,{children:[f.jsxs(fx,{children:[f.jsxs("p",{children:[f.jsx(Dd,{children:"This project was a group ptoject.."})," that I, togheter with two developer from my class, and four designers from the UX design class created."]}),f.jsxs("p",{children:[f.jsx(Dd,{children:"This thought me "}),"to"]})]}),f.jsx(sx,{children:f.jsx(ux,{src:Eu,alt:""})})]}),f.jsx(px,{href:"https://fullstack-9mbp.onrender.com/",children:"Link CloseBuy"})]})," "]})}function mx(){const e=Rv([{children:[{element:f.jsx(Ky,{}),path:"/"},{element:f.jsx(o1,{}),path:"/devprojects"},{element:f.jsx(z1,{}),path:"/resume"},{element:f.jsx(m1,{}),path:"/glasskiosken"},{element:f.jsx(C1,{}),path:"/urbangreens"},{element:f.jsx(H1,{}),path:"/insposite"},{element:f.jsx(q1,{}),path:"/globalize"},{element:f.jsx(lx,{}),path:"/fakestore"},{element:f.jsx(hx,{}),path:"/closebuy"}],element:f.jsx(zv,{})}]);return f.jsxs(f.Fragment,{children:[" ",f.jsx(yv,{router:e})]})}ma.createRoot(document.getElementById("root")).render(f.jsx(Mn.StrictMode,{children:f.jsx(mx,{})}));

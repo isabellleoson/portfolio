@@ -59,6 +59,7 @@ const StyledMenu = styled.div`
         padding-left: 200px;
         padding-right: 200px;
         justify-content: center;
+        flex-direction: column;
     }
 
     // flex-direction: column;
@@ -86,7 +87,7 @@ const Button = styled.button`
 
     @media (min-width: 750px) {
         width: 250px;
-        height: 100px;
+        height: 80px;
     }
 `;
 

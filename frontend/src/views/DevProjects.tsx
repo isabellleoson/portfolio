@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 import DevNavbar from "../components/DevNavbar";
+import background from "../assets/devbackground.png";
 
 const Li = styled.div`
     display: flex;
@@ -25,7 +26,7 @@ const P = styled.p`
     flex-direction: column;
     align-items: flex-end;
     justify-content: end;
-    margin-left: 70px;
+    // margin-left: 70px;
     margin-bottom: 40px;
 
     @media (min-width: 750px) {
@@ -34,9 +35,17 @@ const P = styled.p`
     }
 `;
 
+const BackgroundContainer = styled.div`
+    background-image: url(${background});
+    background-size: cover;
+    background-position: center;
+`;
+
 const Container = styled.div`
     @media (min-width: 750px) {
         display: flex;
+        // flex-direction: column;
+
         flex-direction: row-reverse;
     }
 `;
@@ -52,11 +61,15 @@ const Div = styled.div`
     }
 `;
 
+const NavbarDiv = styled.div`
+    margin-right: 10px;
+`;
+
 const Header = styled.div`
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    justify-content: end;
+    // align-items: flex-end;
+    // justify-content: end;
 
     @media (min-width: 750px) {
         // padding-right: 20px;
@@ -68,23 +81,28 @@ const Header = styled.div`
 function DevProjects() {
     return (
         <>
-            <Li>
-                <Link className="link" to="/">
-                    Home.
-                </Link>
-            </Li>
-            <Container>
-                <Header>
-                    <Div>
-                        <H1>Frontend Development.</H1>
-                        <P>
-                            These are the projects I've created during my first
-                            year as a student at IT-Högskolan in Gothenburg.
-                        </P>
-                    </Div>
-                </Header>
-                <DevNavbar />
-            </Container>
+            <BackgroundContainer>
+                <Li>
+                    <Link className="link" to="/">
+                        Home.
+                    </Link>
+                </Li>
+                <Container>
+                    <Header>
+                        <Div>
+                            <H1>Frontend Development.</H1>
+                            <P>
+                                These are the projects I've created during my
+                                first year as a student at IT-Högskolan in
+                                Gothenburg.
+                            </P>
+                        </Div>
+                    </Header>
+                    <NavbarDiv>
+                        <DevNavbar />
+                    </NavbarDiv>
+                </Container>
+            </BackgroundContainer>
         </>
     );
 }

@@ -240,11 +240,12 @@ function Resume() {
                                             interpersonal and caregiving skills
                                             as an <Span>assistant nurse</Span>.
                                             This experience not only allowed me
-                                            to provide essential medical support
-                                            but also instilled in me a deep
-                                            sense of empathy and a commitment to
-                                            making a positive impact on people's
-                                            lives.
+                                            bto get a deep sense of empathy and
+                                            a commitment to making a positive
+                                            impact on people's lives, but also
+                                            experiences (and interest) of the
+                                            digitalization of healthcare, witch
+                                            led to my current career change.
                                         </P>
                                     </FadingText>
 
