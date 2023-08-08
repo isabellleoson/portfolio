@@ -8,6 +8,7 @@ import Resume from "./views/Resume";
 import InspoSite from "./views/InspoSite";
 import Globalize from "./views/Globalize";
 import FakeStore from "./views/FakeStore";
+import CloseBuy from "./views/CloseBuy";
 
 import { createHashRouter, RouterProvider } from "react-router-dom";
 
@@ -53,6 +54,11 @@ function App() {
                 {
                     element: <FakeStore />,
                     path: "/fakestore",
+                },
+
+                {
+                    element: <CloseBuy />,
+                    path: "/closebuy",
                 },
             ],
             element: <Root />,

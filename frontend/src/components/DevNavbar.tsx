@@ -40,6 +40,9 @@ function DevNavbar() {
                 <Link className="link" to="/globalize">
                     <Button>Globalize.</Button>
                 </Link>
+                <Link className="link" to="/closebuy">
+                    <Button>CloseBuy.</Button>
+                </Link>
             </StyledMenu>{" "}
         </>
     );

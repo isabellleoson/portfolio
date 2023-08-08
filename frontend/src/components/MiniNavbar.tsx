@@ -12,9 +12,14 @@ function MiniNavbar() {
                 </Li>
                 <Li>
                     <Link className="link" to="/devprojects">
-                        Back.
+                        Projects.
                     </Link>
                 </Li>
+                {/* <Li>
+                    <Link className="link" to="/resume">
+                        Resumé.
+                    </Link>
+                </Li> */}
             </StyledMenu>{" "}
         </>
     );

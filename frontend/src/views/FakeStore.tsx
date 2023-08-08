@@ -27,6 +27,8 @@ const Img = styled.img`
 `;
 
 const Container = styled.div`
+    margin-left: 20px;
+
     @media (min-width: 750px) {
         display: flex;
         flex-direction: column;
@@ -55,7 +57,7 @@ const StyledFirstPContainer = styled.div`
 `;
 
 const Span = styled.span`
-    font-size: 15px;
+    font-size: 14px;
 `;
 
 const A = styled.a`

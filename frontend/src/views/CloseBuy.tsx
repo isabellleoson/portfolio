@@ -2,12 +2,28 @@ import styled from "styled-components";
 
 import MiniNavbar from "../components/MiniNavbar";
 
-import urbangreens from "../assets/urbangreens.png";
+import glasskiosk from "../assets/glasskiosken.png";
 
 const HeadingDiv = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+`;
+
+const ImgDiv = styled.div`
+    width: auto;
+    // padding-left: 30px;
+    margin: 10px;
+`;
+
+const Img = styled.img`
+    max-width: 20vh;
+    // padding-left: 30px;
+    margin: 10px;
+
+    @media (min-width: 750px) {
+        min-width: 30vh;
+    }
 `;
 
 const Container = styled.div`
@@ -26,33 +42,18 @@ const Div = styled.div`
     display: flex;
 `;
 
-const H2 = styled.h2`
-    text-align: center;
-`;
-
-const ImgDiv = styled.div`
-    width: auto;
-    // padding-left: 30px;
-    margin: 10px;
-`;
-
-const Img = styled.img`
-    max-width: 20vh;
-    // padding-left: 30px;
-    margin: 10px;
-
-    @media (min-width: 750px) {
-        max-width: 30vh;
-    }
-`;
-
 const StyledFirstPContainer = styled.div`
     display: flex;
     flex-direction: column;
-
     max-width: 600px;
     align-items: center;
     justify-content: center;
+
+    // @media (min-width: 750px) {
+    //     max-width: 100%;
+    //     padding-left: 150px;
+    //     padding-right: 150px;
+    // }
 `;
 
 const Span = styled.span`
@@ -65,40 +66,37 @@ const A = styled.a`
     align-items: center;
 `;
 
-function UrbanGreens() {
+function CloseBuy() {
     return (
         <>
             <MiniNavbar />
             <HeadingDiv>
-                <h1>Urban Greens</h1>
-                <H2>JAVASCRIPT / VUE / VITE / NODE.JS</H2>
-                <H2> Agile / Figma / Bootstrap / Responsive design</H2>
+                <h1>FakeStore</h1>
+                <h2>HTML / CSS</h2>
+                <h2>Grid layout / Responsive design</h2>
             </HeadingDiv>
             <Container>
                 <Div>
                     <StyledFirstPContainer>
                         <p>
-                            <Span>This was a group project</Span> that was first
-                            designed in Figma. We worked with agile.... We
-                            created a fake backend by adding all the information
-                            in a json file and fetching to it. We used Vuex
-                            ......
+                            <Span>This project was a group ptoject..</Span> that
+                            I, togheter with two developer from my class, and
+                            four designers from the UX design class created.
                         </p>
                         <p>
-                            <Span>This thought me </Span>to code with other
-                            people. I learned a lot both watching other code,
-                            and by explaining my own code.
+                            <Span>This thought me </Span>to
                         </p>
                     </StyledFirstPContainer>
 
                     <ImgDiv>
-                        <Img src={urbangreens} alt="" />
+                        <Img src={glasskiosk} alt="" />
                     </ImgDiv>
                 </Div>
-                <A href="">Link to Urban Greens</A>{" "}
+
+                <A href="https://fullstack-9mbp.onrender.com/">Link CloseBuy</A>
             </Container>{" "}
         </>
     );
 }
 
-export default UrbanGreens;
+export default CloseBuy;

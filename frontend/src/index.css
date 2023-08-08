@@ -11,7 +11,8 @@
     /* background-color: #342f2a;
      */
 
-    background-color: #342c2a;
+    background-color: rgb(51, 43, 41);
+
     /* background-color: #9a6d61; */
 
     margin: 0px;
@@ -111,7 +112,7 @@ body {
 
     /* width: 100%; */
     /* min-height: 250%; */
-    background-color: #342c2a;
+    background-color: rgb(51, 43, 41);
     color: rgb(240, 232, 227);
 }
 
@@ -168,7 +169,9 @@ button:focus-visible {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        background-color: #342f2a;
+        /* background-color: #342f2a; */
+        background-color: rgb(51, 43, 41);
+
         color: #f0e8e3;
     }
     a:hover {
