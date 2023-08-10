@@ -24,8 +24,7 @@ const H1 = styled.h1`
 const P = styled.p`
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    justify-content: end;
+    text-align: end;
     // margin-left: 70px;
     margin-bottom: 40px;
 
@@ -36,9 +35,11 @@ const P = styled.p`
 `;
 
 const BackgroundContainer = styled.div`
-    background-image: url(${background});
-    background-size: cover;
-    background-position: center;
+    @media (min-width: 750px) {
+        background-image: url(${background});
+        background-size: cover;
+        background-position: center;
+    }
 `;
 
 const Container = styled.div`

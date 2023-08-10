@@ -8,32 +8,44 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+
     // border: solid rgb(195, 170, 154) 1px;
-    padding-left: 25px;
-    padding-right: 25px;
+    // padding-left: 25px;
+    padding-left: 15px;
+
+    @media (min-width: 750px) {
+        max-width: 80%;
+    }
 `;
 
 const CarouselContainer = styled.div`
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+
     // margin-left: -20px;
 `;
 
 const CarouselImage = styled.img`
-    max-width: 80%;
-    height: auto;
+    width: 250px;
+    height: 300px;
+    // height: auto;
     margin: 1rem 0;
+    border-radius: 30px;
+
+    @media (min-width: 750px;) {
+        width: 200px;
+    }
+`;
+
+const ArrowContainer = styled.div`
+    display: flex;
+    justify-content: space-around;
 `;
 
 const Img = styled.img`
     width: 100%;
     cursor: pointer;
-    // margin: 5px;
-
-    &:hover {
-        width: 105%;
-    }
 `;
 
 // const CarouselButton = styled.button`
@@ -52,6 +64,7 @@ const Caption = styled.p`
     // margin: 0.5rem 0;
     // margin-right: 10px;
     margin-top: 0;
+    margin-bottom: 0;
     color: rgb(195, 170, 154);
     padding: 10px;
 `;
@@ -78,12 +91,14 @@ const GlobalizeCarousel: React.FC<GlobalizeCarouselProps> = ({ images }) => {
     return (
         <Container>
             <CarouselContainer>
-                <Img onClick={prevSlide} src={prevarrow} alt={"arrow"} />
                 <CarouselImage
                     src={images[currentIndex].url}
                     alt={`Slide ${currentIndex}`}
                 />
-                <Img onClick={nextSlide} src={nextarrow} alt={"arrow"} />
+                <ArrowContainer>
+                    <Img onClick={prevSlide} src={prevarrow} alt={"arrow"} />
+                    <Img onClick={nextSlide} src={nextarrow} alt={"arrow"} />
+                </ArrowContainer>
             </CarouselContainer>
             <Caption>{images[currentIndex].caption}</Caption>
         </Container>
