@@ -360,7 +360,7 @@ Error generating stack: `+o.message+`
 `;function s1(){return d.jsx(d.Fragment,{children:d.jsxs(r1,{children:[d.jsx(e1,{children:d.jsx(xt,{className:"link",to:"/",children:"Home."})}),d.jsxs(i1,{children:[d.jsx(a1,{children:d.jsxs(o1,{children:[d.jsx(t1,{children:"Frontend Development."}),d.jsx(n1,{children:"These are the projects I've created during my first year as a student at IT-Högskolan in Gothenburg."})]})}),d.jsx(l1,{children:d.jsx(Xy,{})})]})]})})}function Vn(){return d.jsxs(d.Fragment,{children:[d.jsxs(u1,{children:[d.jsx(Ed,{children:d.jsx(xt,{className:"link",to:"/",children:"Home."})}),d.jsx(Ed,{children:d.jsx(xt,{className:"link",to:"/devprojects",children:"Projects."})})]})," "]})}const u1=j.div`
     display: flex;
     justify-content: end;
-    margin-right: 20px;
+    // margin-right: 20px;
     margin-top: 20px;
     margin-bottom: 50px;
 `,Ed=j.li`
@@ -485,6 +485,7 @@ Error generating stack: `+o.message+`
     opacity: 0;
     animation: ${I1} 1s ease forwards;
 `,P1=j.div`
+    max-width: 600px;
     @media (min-width: 750px) {
         display: flex;
         flex-direction: column;
@@ -498,6 +499,9 @@ Error generating stack: `+o.message+`
         flex-direction: column;
     }
 `,D1=j.div`
+    // max-width: 600px;
+    width: 320px;
+
     @media (min-width: 750px) {
         display: flex;
         justify-content: center;
@@ -543,7 +547,7 @@ Error generating stack: `+o.message+`
 
     // margin-left: 200px;
 
-    max-width: 800px;
+    max-width: 200px;
 
     padding: 10px;
 `,Pd=j.li`
@@ -559,6 +563,7 @@ Error generating stack: `+o.message+`
     margin-right: 0;
     // align-items: flex-end;
     // justify-content: end;
+    width: 320px;
 
     @media (min-width: 750px) {
         max-width: 1100px;

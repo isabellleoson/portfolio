@@ -26,6 +26,7 @@ const FadingText = styled.div`
 `;
 
 const WidthContainer = styled.div`
+    max-width: 600px;
     @media (min-width: 750px) {
         display: flex;
         flex-direction: column;
@@ -43,6 +44,9 @@ const Container = styled.div`
 `;
 
 const ContentContainer = styled.div`
+    // max-width: 600px;
+    width: 320px;
+
     @media (min-width: 750px) {
         display: flex;
         justify-content: center;
@@ -100,7 +104,7 @@ const ResumeLi = styled.li`
 
     // margin-left: 200px;
 
-    max-width: 800px;
+    max-width: 200px;
 
     padding: 10px;
 `;
@@ -120,6 +124,7 @@ const ButtonContainer = styled.div`
     margin-right: 0;
     // align-items: flex-end;
     // justify-content: end;
+    width: 320px;
 
     @media (min-width: 750px) {
         max-width: 1100px;

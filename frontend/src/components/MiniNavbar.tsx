@@ -28,7 +28,7 @@ function MiniNavbar() {
 const StyledMenu = styled.div`
     display: flex;
     justify-content: end;
-    margin-right: 20px;
+    // margin-right: 20px;
     margin-top: 20px;
     margin-bottom: 50px;
 `;
