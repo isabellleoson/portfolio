@@ -144,6 +144,10 @@ const P = styled.p`
 
     font-size: 14px;
     // margin-bottom: 20px;
+
+    @media (min-width: 750px) {
+        text-align: center;
+    }
 `;
 
 const Container = styled.div`
@@ -168,7 +172,17 @@ const Div = styled.div`
 `;
 
 const Span = styled.span`
-    font-size: 15px;
+    width: auto;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+
+    // margin-bottom: 20px;
+
+    @media (min-width: 750px) {
+        text-align: center;
+    }
 `;
 
 const A = styled.a`

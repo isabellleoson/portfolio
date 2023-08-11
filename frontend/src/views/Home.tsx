@@ -4,6 +4,8 @@ import styled, { keyframes } from "styled-components";
 import io from "../assets/io.jpg";
 import NavBar from "../components/NavBar";
 
+import Contact from "../components/Contact";
+
 const fadeInFromTop = keyframes`
   from {
     opacity: 0;
@@ -162,24 +164,24 @@ const P = styled.p`
     }
 `;
 
-const Button = styled.button`
-    background-color: #342f2a;
-    color: rgba(240, 232, 227, 1);
-    padding-top: 0;
-    font-size: 13px;
-    width: 100px;
-    height: 50px;
-    border-radius: 40px 40px 999em 999em;
+// const Button = styled.button`
+//     background-color: #342f2a;
+//     color: rgba(240, 232, 227, 1);
+//     padding-top: 0;
+//     font-size: 13px;
+//     width: 100px;
+//     height: 50px;
+//     border-radius: 40px 40px 999em 999em;
 
-    @media (min-width: 750px) {
-        // margin-right: 10px;
-        margin-top: 10px;
-        // margin: 0;
-        width: 200px;
-        height: 100px;
-        font-size: 20px;
-    }
-`;
+//     @media (min-width: 750px) {
+//         // margin-right: 10px;
+//         margin-top: 10px;
+//         // margin: 0;
+//         width: 200px;
+//         height: 100px;
+//         font-size: 20px;
+//     }
+// `;
 
 // const TextContainer = styled.div`
 //     @media (min-width: 750px) {
@@ -210,7 +212,9 @@ function Home() {
                                     design, and user-friendly functionality.
                                 </P>
 
-                                <Button>Let's talk!</Button>
+                                {/* <Button>Let's talk!</Button> */}
+
+                                <Contact />
                             </SmilyContainer>
                         </Container>
                     </div>

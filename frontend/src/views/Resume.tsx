@@ -87,10 +87,20 @@ const P = styled.p`
     background-color: rgba(67, 53, 49, 0.4);
 `;
 
+const Ul = styled.ul`
+    // max-width: 200px;
+`;
+
 const ResumeLi = styled.li`
     display: flex;
     flex-direction: column;
+    // align-items: flex-end;
+
     text-align: end;
+
+    // margin-left: 200px;
+
+    max-width: 800px;
 
     padding: 10px;
 `;
@@ -145,8 +155,11 @@ const Button = styled.button`
 const TechicalContainer = styled.div`
     display: flex;
     flex-direction: column;
-
+    max-width: 800px;
     text-align: end;
+    @media (min-width: 750px) {
+        margin-left: 350px;
+    }
 `;
 
 function Resume() {
@@ -325,7 +338,7 @@ function Resume() {
 
                         {showParagraph && (
                             <FadingText>
-                                <ul>
+                                <Ul>
                                     <ResumeLi>
                                         Morängatans elderly care, Gothenburg -
                                         2012-2012. Assistant nurse
@@ -362,7 +375,7 @@ function Resume() {
                                         IssaJosephine Art, 2020 - on going. My
                                         own company as an painting artist{" "}
                                     </ResumeLi>
-                                </ul>
+                                </Ul>
                             </FadingText>
                         )}
 
