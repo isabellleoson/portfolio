@@ -92,7 +92,7 @@ const P = styled.p`
 `;
 
 const Ul = styled.ul`
-    // max-width: 200px;
+    max-width: 400px;
 `;
 
 const ResumeLi = styled.li`
@@ -102,9 +102,9 @@ const ResumeLi = styled.li`
 
     text-align: end;
 
-    // margin-left: 200px;
+    margin-left: 50px;
 
-    max-width: 200px;
+    max-width: 100%;
 
     padding: 10px;
 `;

@@ -537,7 +537,7 @@ Error generating stack: `+o.message+`
     margin-left: 10px;
     background-color: rgba(67, 53, 49, 0.4);
 `,z1=j.ul`
-    // max-width: 200px;
+    max-width: 400px;
 `,It=j.li`
     display: flex;
     flex-direction: column;
@@ -545,9 +545,9 @@ Error generating stack: `+o.message+`
 
     text-align: end;
 
-    // margin-left: 200px;
+    margin-left: 50px;
 
-    max-width: 200px;
+    max-width: 100%;
 
     padding: 10px;
 `,Pd=j.li`
