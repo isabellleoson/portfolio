@@ -167,7 +167,9 @@ function Glasskiosken() {
 
                                     <ThirdP>
                                         Overall, this was my first tumbeling
-                                        steps towards
+                                        steps towards becoming a developer. When
+                                        I look back at this, I realize how far
+                                        I´ve come.
                                     </ThirdP>
                                 </PContainer>
                             </SecondContainer>

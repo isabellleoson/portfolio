@@ -14,7 +14,7 @@ const Links = styled.div`
 `;
 
 const A = styled.a`
-    font-size: 14px;
+    font-size: 10px;
     margin-right: 10px;
 `;
 
@@ -26,7 +26,7 @@ const CopywriteDiv = styled.div`
 `;
 
 const P = styled.p`
-    font-size: 10px;
+    font-size: 8px;
     margin-left: 5px;
 `;
 

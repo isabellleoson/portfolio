@@ -36,14 +36,8 @@ const HeadingDiv = styled.div`
     align-items: center;
 `;
 
-const ImgDiv = styled.div`
-    width: auto;
-    // padding-left: 30px;
-    margin: 10px;
-`;
-
 const Img = styled.img`
-    max-width: 20vh;
+    max-width: 35vh;
     // padding-left: 30px;
     margin: 10px;
 
@@ -51,8 +45,15 @@ const Img = styled.img`
         min-width: 30vh;
     }
 `;
+
+const P = styled.p`
+    margin-right: 10px;
+`;
 const Container = styled.div`
     margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+
     @media (min-width: 750px) {
         display: flex;
         flex-direction: column;
@@ -73,6 +74,7 @@ const StyledFirstPContainer = styled.div`
     max-width: 600px;
     align-items: center;
     justify-content: center;
+    text-align: center;
 `;
 
 const Span = styled.span`
@@ -135,7 +137,7 @@ function InspoSite() {
                 <Container>
                     <Div>
                         <StyledFirstPContainer>
-                            <p>
+                            <P>
                                 <Span>
                                     This project was the first time I tried out
                                     Javascript. Love at first sight?
@@ -145,19 +147,17 @@ function InspoSite() {
                                 for getting images. We also needed to fetch from
                                 a cities-api where and I created functions to
                                 add, change and delete cities.
-                            </p>
-                            <p>
-                                <Span>This thought me </Span>to
-                            </p>
-                        </StyledFirstPContainer>
-
-                        <ImgDiv>
-                            {/* <Img src={insposite} alt="" /> */}
+                            </P>
                             <Img src={cities} alt="" />
-                        </ImgDiv>
+                            <P>
+                                <Span>
+                                    Below you can see more of the site and the
+                                    different functions.
+                                </Span>
+                            </P>
+                        </StyledFirstPContainer>
                     </Div>
                     <BigCarousel images={images} />
-                    {/* <A href="">Link to Inspirationssidan</A>{" "} */}
                 </Container>{" "}
             </FadingText>
         </>

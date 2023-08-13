@@ -1,6 +1,11 @@
 import MiniNavbar from "../components/MiniNavbar";
 
 import urbangreens from "../assets/urbangreens.png";
+import navbarurban from "../assets/navbarurban.png";
+import searchurban from "../assets/searchurban.png";
+import search2urban from "../assets/search2urban.png";
+
+import BigCarousel from "../components/BigCarousel";
 
 import styled, { keyframes } from "styled-components";
 
@@ -45,10 +50,8 @@ const H2 = styled.h2`
     text-align: center;
 `;
 
-const ImgDiv = styled.div`
-    width: auto;
-    // padding-left: 30px;
-    margin: 10px;
+const SecondPDiv = styled.div`
+    display: flex;
 `;
 
 const Img = styled.img`
@@ -81,6 +84,16 @@ const Span = styled.span`
 // `;
 
 function UrbanGreens() {
+    const images = [
+        {
+            url: search2urban,
+            caption: "The searchfield within the guide",
+        },
+        {
+            url: searchurban,
+            caption: "You can see how it filtres the plant-cards.",
+        },
+    ];
     return (
         <>
             <MiniNavbar />
@@ -88,30 +101,34 @@ function UrbanGreens() {
                 <HeadingDiv>
                     <h1>Urban Greens</h1>
                     <H2>JAVASCRIPT / VUE / VITE / NODE.JS</H2>
-                    <H2> Agile / Figma / Bootstrap / Responsive design</H2>
+                    <H2> Scrum / Figma / Bootstrap / Responsive design</H2>
+
+                    <Img src={urbangreens} alt="homepage Urban Greens" />
                 </HeadingDiv>
                 <Container>
                     <Div>
                         <StyledFirstPContainer>
                             <p>
-                                <Span>This was a group project</Span> that was
-                                first designed in Figma. We worked with
-                                agile.... We created a fake backend by adding
-                                all the information in a json file and fetching
-                                to it. We used Vuex ......
+                                <Span>This was a group project</Span> that we
+                                first designed in Figma. We worked with the
+                                agile method Scrum through out the whole
+                                project. We created a fake backend by adding all
+                                the information in a json file and fetching to
+                                it.
                             </p>
-                            <p>
-                                <Span>This thought me </Span>to code with other
-                                people. I learned a lot both watching other
-                                code, and by explaining my own code.
-                            </p>
-                        </StyledFirstPContainer>
 
-                        <ImgDiv>
-                            <Img src={urbangreens} alt="" />
-                        </ImgDiv>
+                            <SecondPDiv>
+                                <p>
+                                    <Span>My main responsabilities was </Span>{" "}
+                                    the navbar and the search component, from
+                                    where the plants-cards gets filtred while
+                                    you search.
+                                </p>
+                                <Img src={navbarurban} alt="navbar" />
+                            </SecondPDiv>
+                        </StyledFirstPContainer>
                     </Div>
-                    {/* <A href="">Link to Urban Greens</A>{" "} */}
+                    <BigCarousel images={images} />
                 </Container>{" "}
             </FadingText>
         </>

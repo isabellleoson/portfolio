@@ -1,11 +1,11 @@
-import styled, { keyframes } from "styled-components";
-
 import MiniNavbar from "../components/MiniNavbar";
 import Carousel from "../components/Carousel";
 
 import closebuyimg from "../assets/closebuy.png";
 import firstmodal from "../assets/firstmodal.png";
 import bigmodal from "../assets/bigmodal.png";
+
+import styled, { keyframes } from "styled-components";
 
 const fadeInFromTop = keyframes`
   from {

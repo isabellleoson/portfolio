@@ -34,6 +34,7 @@ const CarouselImage = styled.img`
     // margin: 1rem 0;
     margin-top: 10px;
     border-radius: 10px;
+    padding: 10px;
 
     @media (min-width: 750px;) {
         width: 200px;
@@ -49,7 +50,8 @@ const ImgOne = styled.img`
     width: 40px;
     height: 40px;
     cursor: pointer;
-    margin-right: 90px;
+    margin-right: 80px;
+    margin-top: 5px;
 
     box-shadow: 0px 0px 0x;
     box-shadow: none;
@@ -60,7 +62,9 @@ const ImgTwo = styled.img`
     height: 40px;
     cursor: pointer;
 
-    margin-left: 90px;
+    margin-left: 80px;
+    margin-top: 5px;
+
     box-shadow: none;
 `;
 

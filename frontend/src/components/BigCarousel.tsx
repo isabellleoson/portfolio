@@ -30,6 +30,8 @@ const CarouselContainer = styled.div`
 
 const CarouselImage = styled.img`
     width: 100%;
+    padding: 10px;
+
     height: auto;
     // height: auto;
     // margin: 1rem 0;
@@ -51,6 +53,7 @@ const ImgOne = styled.img`
     height: 40px;
     cursor: pointer;
     margin-right: 90px;
+    margin-top: 5px;
 
     box-shadow: 0px 0px 0x;
     box-shadow: none;
@@ -60,8 +63,9 @@ const ImgTwo = styled.img`
     width: 40px;
     height: 40px;
     cursor: pointer;
-
     margin-left: 90px;
+    margin-top: 5px;
+
     box-shadow: none;
 `;
 

@@ -81,8 +81,9 @@ const StyledFirstPContainer = styled.div`
     // }
 `;
 
-const Span = styled.span`
+const P = styled.p`
     font-size: 14px;
+    text-align: center;
 `;
 
 // const A = styled.a`
@@ -129,19 +130,13 @@ function FakeStore() {
                 <Container>
                     <Div>
                         <StyledFirstPContainer>
-                            <p>
-                                <Span>
-                                    This is a dynamic Vite-application, using
-                                    Vue. and the first time I used JavaScript
-                                    with a framework. This is also the first
-                                    project I published on Github.
-                                </Span>
-                            </p>
+                            <P>
+                                This is a dynamic Vite-application, using Vue.
+                                And the first time I used JavaScript with a
+                                framework.
+                            </P>
 
                             <Carousel images={images} />
-                            <p>
-                                <Span></Span>
-                            </p>
                         </StyledFirstPContainer>
                     </Div>
                     {/* 
