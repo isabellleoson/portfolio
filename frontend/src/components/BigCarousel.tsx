@@ -8,7 +8,7 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 18px;
+    // margin-right: 18px;
 
     // border: solid rgb(195, 170, 154) 1px;
     // padding-left: 25px;

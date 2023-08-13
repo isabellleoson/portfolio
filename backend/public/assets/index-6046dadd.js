@@ -122,7 +122,7 @@ Error generating stack: `+o.message+`
     margin-top: -110px;
     display: flex;
     justify-content: end;
-    margin-right: 30px;
+    margin-right: 10px;
 `,Ed=C.a`
     font-size: 10px;
     margin-right: 10px;
@@ -130,7 +130,7 @@ Error generating stack: `+o.message+`
     display: flex;
     align-items: center;
     justify-content: end;
-    margin-right: 40px;
+    margin-right: 20px;
     padding: 0;
 `,Xy=C.p`
     font-size: 8px;
@@ -517,7 +517,7 @@ Error generating stack: `+o.message+`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 18px;
+    // margin-right: 18px;
 
     // border: solid rgb(195, 170, 154) 1px;
     // padding-left: 25px;

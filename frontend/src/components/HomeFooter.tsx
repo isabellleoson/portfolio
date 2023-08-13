@@ -10,7 +10,7 @@ const Links = styled.div`
     margin-top: -110px;
     display: flex;
     justify-content: end;
-    margin-right: 30px;
+    margin-right: 10px;
 `;
 
 const A = styled.a`
@@ -22,7 +22,7 @@ const CopywriteDiv = styled.div`
     display: flex;
     align-items: center;
     justify-content: end;
-    margin-right: 40px;
+    margin-right: 20px;
     padding: 0;
 `;
 
