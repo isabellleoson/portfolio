@@ -2,10 +2,14 @@ import styled from "styled-components";
 
 import copywrite from "../assets/copywrite.png";
 
+const Container = styled.div`
+    margin-bottom: 0;
+`;
+
 const Links = styled.div`
-    margin-top: 100px;
+    margin-top: -80px;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     margin-left: 10px;
 `;
 
@@ -17,8 +21,8 @@ const A = styled.a`
 const CopywriteDiv = styled.div`
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-top: -10px;
+    margin-left: 10px;
+    padding: 0;
 `;
 
 const P = styled.p`
@@ -29,21 +33,22 @@ const P = styled.p`
 function HomeFooter() {
     return (
         <>
-            <Links>
-                <A href="https://github.com/isabellleoson">Github</A>
-                <A href="https://www.linkedin.com/in/isabell-leoson-52a908252/">
-                    LinkedIn
-                </A>
-            </Links>
-            <CopywriteDiv style={{ marginBottom: "50px", padding: "20px" }}>
-                <img
-                    src={copywrite}
-                    alt=""
-                    style={{ width: "6%", height: "6%" }}
-                />
-
-                <P>Isabell Leoson 2023</P>
-            </CopywriteDiv>
+            <Container>
+                <Links>
+                    <A href="https://github.com/isabellleoson">Github</A>
+                    <A href="https://www.linkedin.com/in/isabell-leoson-52a908252/">
+                        LinkedIn
+                    </A>
+                </Links>
+                <CopywriteDiv>
+                    <img
+                        src={copywrite}
+                        alt="copywrite"
+                        style={{ width: "4%", height: "4%" }}
+                    />
+                    <P>Isabell Leoson 2023</P>
+                </CopywriteDiv>
+            </Container>
         </>
     );
 }

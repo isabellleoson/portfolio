@@ -115,6 +115,8 @@ const InResumeLi = styled.li`
     font-size: 12px;
     padding-top: 5px;
     text-align: end;
+    margin-left: 50px;
+    padding-right: 10px;
 `;
 
 const ButtonContainer = styled.div`
@@ -357,25 +359,26 @@ function Resume() {
                                         Falkenberg 2015-2022. Assistant nurse
                                     </ResumeLi>
                                     <ResumeLi>
-                                        Elected representative Kommunal & LO,
+                                        Kommunal & LO trade union, Elected
+                                        representative.
                                         Falkenberg/Värnamo/Gothenburg/Stockholm.
                                         2016-2019.{" "}
-                                        <InResumeLi>
-                                            Youth responsible with
-                                            responsibilities both locally, at
-                                            the department level, and centrally
-                                            within the organization. This has
-                                            included tasks such as conducting
-                                            internal training sessions.{" "}
-                                        </InResumeLi>
-                                        <InResumeLi>
-                                            School presenter. Conducted courses
-                                            for high school students, adult
-                                            learners, and Swedish for Immigrants
-                                            (SFI) students about the Swedish
-                                            model and the Swedish job market.
-                                        </InResumeLi>
                                     </ResumeLi>
+                                    <InResumeLi>
+                                        - Responsible for youth questions with
+                                        responsibilities within the whole
+                                        organization. I worked both locally and
+                                        at the head office. This has for example
+                                        included arrangeing courses to educate
+                                        new representavies.{" "}
+                                    </InResumeLi>
+                                    <InResumeLi>
+                                        - School informant. Conducted courses
+                                        for high school students, adult
+                                        learners, and Swedish for Immigrants
+                                        (SFI) students about the Swedish model
+                                        and the Swedish labor market.
+                                    </InResumeLi>
                                     <ResumeLi>
                                         IssaJosephine Art, 2020 - on going. My
                                         own company as an painting artist{" "}

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import copywrite from "../assets/copywrite.png";
 
 const Links = styled.div`
-    margin-top: 100px;
+    margin-top: 120px;
     display: flex;
     justify-content: center;
     margin-left: 10px;

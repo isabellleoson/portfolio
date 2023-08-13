@@ -52,7 +52,10 @@ const WrapDiv = styled.div`
 const ImgDiv = styled.div`
     display: flex;
     width: auto;
-    // padding-left: 30px;
+
+    justify-content: end;
+
+    // padding-right: 20px;
     // margin: 10px;
     margin-top: 30px;
 
@@ -110,7 +113,7 @@ const Img = styled.img`
 
 const SecondImg = styled.img`
     width: 50%;
-    height: 120px;
+    height: 80px;
     margin-top: 10px;
     margin-right: 20px;
 
@@ -125,6 +128,8 @@ const SecondImg = styled.img`
 const ThirdImg = styled.img`
     max-width: 50%;
     margin-top: 10px;
+    height: 80px;
+
     // margin-left: 5px;
     margin-left: 20px;
 

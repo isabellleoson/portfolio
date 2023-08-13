@@ -1,11 +1,26 @@
-import styled from "styled-components";
-
 import MiniNavbar from "../components/MiniNavbar";
 
 import glasskiosk from "../assets/glasskiosken.png";
 
 import icecreams from "../assets/icecreams.png";
 import bookingform from "../assets/form.png";
+
+import styled, { keyframes } from "styled-components";
+
+const fadeInFromTop = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
+
+const FadingText = styled.div`
+    animation: ${fadeInFromTop} 1s ease;
+`;
 
 const HeadingDiv = styled.div`
     display: flex;
@@ -113,53 +128,55 @@ function Glasskiosken() {
     return (
         <>
             <MiniNavbar />
-            <HeadingDiv>
-                <h1>Glasskiosken</h1>
-                <h2>HTML / CSS</h2>
-                <h2>Grid layout / Responsive design</h2>
-            </HeadingDiv>
-            <Container>
-                <HeadImg src={glasskiosk} alt="" />
-                <Div>
-                    <StyledFirstPContainer>
-                        <p>
-                            <Span>This was my very first time coding.</Span> The
-                            project is build with only HTML and CSS. I wanted to
-                            create a fun, colorful site that makes you happy.
-                            The website is build "mobile first", and accordning
-                            to Google's SEO recommendations and accessibility
-                            recommendations, with a focus on making semantic
-                            code.{" "}
-                        </p>
+            <FadingText>
+                <HeadingDiv>
+                    <h1>Glasskiosken</h1>
+                    <h2>HTML / CSS</h2>
+                    <h2>Grid layout / Responsive design</h2>
+                </HeadingDiv>
+                <Container>
+                    <HeadImg src={glasskiosk} alt="" />
+                    <Div>
+                        <StyledFirstPContainer>
+                            <p>
+                                <Span>This was my very first time coding.</Span>{" "}
+                                The project is build with only HTML and CSS. I
+                                wanted to create a fun, colorful site that makes
+                                you happy. The website is build "mobile first",
+                                and accordning to Google's SEO recommendations
+                                and accessibility recommendations, with a focus
+                                on making semantic code.{" "}
+                            </p>
 
-                        {/* 
+                            {/* 
                         <Carousel images={images} /> */}
 
-                        <SecondContainer>
-                            <ImgDiv>
-                                <Img src={icecreams} alt="icecreams" />
-                                <Img src={bookingform} alt="booking form" />
-                            </ImgDiv>
-                            <PContainer>
-                                <SecondP>
-                                    <Span>This thought me </Span>to write clear
-                                    code. I used prettier for making the code
-                                    look good. This also thought me that grid is
-                                    fine, but I never used it since. I heart
-                                    Flexbox.
-                                </SecondP>
+                            <SecondContainer>
+                                <ImgDiv>
+                                    <Img src={icecreams} alt="icecreams" />
+                                    <Img src={bookingform} alt="booking form" />
+                                </ImgDiv>
+                                <PContainer>
+                                    <SecondP>
+                                        <Span>This thought me </Span>to write
+                                        clear code. I used prettier for making
+                                        the code look good. This also thought me
+                                        that grid is fine, but I never used it
+                                        since. I heart Flexbox.
+                                    </SecondP>
 
-                                <ThirdP>
-                                    Overall, this was my first tumbeling steps
-                                    towards
-                                </ThirdP>
-                            </PContainer>
-                        </SecondContainer>
-                    </StyledFirstPContainer>
-                </Div>
+                                    <ThirdP>
+                                        Overall, this was my first tumbeling
+                                        steps towards
+                                    </ThirdP>
+                                </PContainer>
+                            </SecondContainer>
+                        </StyledFirstPContainer>
+                    </Div>
 
-                {/* <A href="">Link to Glasskiosken</A> */}
-            </Container>{" "}
+                    {/* <A href="">Link to Glasskiosken</A> */}
+                </Container>{" "}
+            </FadingText>
         </>
     );
 }

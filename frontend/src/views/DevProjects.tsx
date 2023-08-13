@@ -1,10 +1,26 @@
-import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 import DevNavbar from "../components/DevNavbar";
 import background from "../assets/devbackground.png";
 
 import Footer from "../components/Footer";
+
+import styled, { keyframes } from "styled-components";
+
+const fadeInFromTop = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
+
+const FadingText = styled.div`
+    animation: ${fadeInFromTop} 1s ease;
+`;
 
 const Li = styled.div`
     display: flex;
@@ -90,21 +106,24 @@ function DevProjects() {
                         Home.
                     </Link>
                 </Li>
-                <Container>
-                    <Header>
-                        <Div>
-                            <H1>Frontend Development.</H1>
-                            <P>
-                                These are the projects I've created during my
-                                first year as a student at IT-Högskolan in
-                                Gothenburg.
-                            </P>
-                        </Div>
-                    </Header>
-                    <NavbarDiv>
-                        <DevNavbar />
-                    </NavbarDiv>
-                </Container>
+
+                <FadingText>
+                    <Container>
+                        <Header>
+                            <Div>
+                                <H1>Frontend Development.</H1>
+                                <P>
+                                    These are the projects I've created during
+                                    my first year as a student at IT-Högskolan
+                                    in Gothenburg.
+                                </P>
+                            </Div>
+                        </Header>
+                        <NavbarDiv>
+                            <DevNavbar />
+                        </NavbarDiv>
+                    </Container>
+                </FadingText>
             </BackgroundContainer>
 
             <Footer />

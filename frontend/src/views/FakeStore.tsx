@@ -1,5 +1,3 @@
-import styled from "styled-components";
-
 import MiniNavbar from "../components/MiniNavbar";
 
 import Carousel from "../components/Carousel";
@@ -8,6 +6,23 @@ import homestore from "../assets/homestore.png";
 import loginstore from "../assets/loginstore.png";
 import cardstore from "../assets/cardstore.png";
 import cartstore from "../assets/cartstore.png";
+
+import styled, { keyframes } from "styled-components";
+
+const fadeInFromTop = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
+
+const FadingText = styled.div`
+    animation: ${fadeInFromTop} 1s ease;
+`;
 
 const HeadingDiv = styled.div`
     display: flex;
@@ -100,36 +115,39 @@ function FakeStore() {
     return (
         <>
             <MiniNavbar />
-            <HeadingDiv>
-                <h1>FakeStore</h1>
-                <h2>JAVASCRIPT / VUE</h2>
-                <h2>SASS / Bootstrap /Responsive design /</h2>
 
-                <ImgDiv>
-                    <Img src={homestore} alt="" />
-                </ImgDiv>
-            </HeadingDiv>
-            <Container>
-                <Div>
-                    <StyledFirstPContainer>
-                        <p>
-                            <Span>
-                                This is a dynamic Vite-application, using Vue.
-                                and the first time I used JavaScript with a
-                                framework. This is also the first project I
-                                published on Github.
-                            </Span>
-                        </p>
+            <FadingText>
+                <HeadingDiv>
+                    <h1>FakeStore</h1>
+                    <h2>JAVASCRIPT / VUE</h2>
+                    <h2>SASS / Bootstrap /Responsive design /</h2>
 
-                        <Carousel images={images} />
-                        <p>
-                            <Span></Span>
-                        </p>
-                    </StyledFirstPContainer>
-                </Div>
-                {/* 
+                    <ImgDiv>
+                        <Img src={homestore} alt="" />
+                    </ImgDiv>
+                </HeadingDiv>
+                <Container>
+                    <Div>
+                        <StyledFirstPContainer>
+                            <p>
+                                <Span>
+                                    This is a dynamic Vite-application, using
+                                    Vue. and the first time I used JavaScript
+                                    with a framework. This is also the first
+                                    project I published on Github.
+                                </Span>
+                            </p>
+
+                            <Carousel images={images} />
+                            <p>
+                                <Span></Span>
+                            </p>
+                        </StyledFirstPContainer>
+                    </Div>
+                    {/* 
                 <A href="">Link to Fake store</A> */}
-            </Container>{" "}
+                </Container>{" "}
+            </FadingText>
         </>
     );
 }
