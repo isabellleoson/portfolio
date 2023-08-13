@@ -1,8 +1,11 @@
 import styled from "styled-components";
 
 import MiniNavbar from "../components/MiniNavbar";
+import Carousel from "../components/Carousel";
 
-import glasskiosk from "../assets/glasskiosken.png";
+import closebuyimg from "../assets/closebuy.png";
+import firstmodal from "../assets/firstmodal.png";
+import bigmodal from "../assets/bigmodal.png";
 
 const HeadingDiv = styled.div`
     display: flex;
@@ -17,7 +20,7 @@ const ImgDiv = styled.div`
 `;
 
 const Img = styled.img`
-    max-width: 20vh;
+    max-width: 200px;
     // padding-left: 30px;
     margin: 10px;
 
@@ -67,6 +70,20 @@ const A = styled.a`
 `;
 
 function CloseBuy() {
+    const images = [
+        {
+            url: closebuyimg,
+            caption: "Homepage, mobile version.",
+        },
+        {
+            url: firstmodal,
+            caption: "First modal.",
+        },
+        {
+            url: bigmodal,
+            caption: "The bigger modal with more information.",
+        },
+    ];
     return (
         <>
             <MiniNavbar />
@@ -74,23 +91,31 @@ function CloseBuy() {
                 <h1>FakeStore</h1>
                 <h2>HTML / CSS</h2>
                 <h2>Grid layout / Responsive design</h2>
+
+                <ImgDiv>
+                    <Img src={closebuyimg} alt="" />
+                </ImgDiv>
             </HeadingDiv>
             <Container>
                 <Div>
                     <StyledFirstPContainer>
                         <p>
-                            <Span>This project was a group ptoject..</Span> that
-                            I, togheter with two developer from my class, and
-                            four designers from the UX design class created.
+                            <Span>This project was a group project</Span> that
+                            I, togheter with two developers from my class
+                            created after the design from students in the
+                            UX-class. The idea was an app where you can find
+                            second hand products in your nearby area.
                         </p>
-                        <p>
-                            <Span>This thought me </Span>to
-                        </p>
-                    </StyledFirstPContainer>
 
-                    <ImgDiv>
-                        <Img src={glasskiosk} alt="" />
-                    </ImgDiv>
+                        <p>
+                            <Span>I created </Span>the backend and the database
+                            for the project. I also created the modals that
+                            presented the products. I used useContext to get the
+                            right product to the right pin.
+                        </p>
+
+                        <Carousel images={images} />
+                    </StyledFirstPContainer>
                 </Div>
 
                 <A href="https://fullstack-9mbp.onrender.com/">Link CloseBuy</A>

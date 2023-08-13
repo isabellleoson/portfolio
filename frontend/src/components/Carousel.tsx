@@ -8,10 +8,11 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-right: 18px;
 
     // border: solid rgb(195, 170, 154) 1px;
     // padding-left: 25px;
-    padding-left: 15px;
+    // padding-left: 15px;
 
     @media (min-width: 750px) {
         max-width: 80%;
@@ -27,11 +28,12 @@ const CarouselContainer = styled.div`
 `;
 
 const CarouselImage = styled.img`
-    width: 250px;
+    width: 200px;
     height: 300px;
     // height: auto;
-    margin: 1rem 0;
-    border-radius: 30px;
+    // margin: 1rem 0;
+    margin-top: 10px;
+    border-radius: 10px;
 
     @media (min-width: 750px;) {
         width: 200px;
@@ -40,12 +42,26 @@ const CarouselImage = styled.img`
 
 const ArrowContainer = styled.div`
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 `;
 
-const Img = styled.img`
-    width: 100%;
+const ImgOne = styled.img`
+    width: 40px;
+    height: 40px;
     cursor: pointer;
+    margin-right: 90px;
+
+    box-shadow: 0px 0px 0x;
+    box-shadow: none;
+`;
+
+const ImgTwo = styled.img`
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+
+    margin-left: 90px;
+    box-shadow: none;
 `;
 
 // const CarouselButton = styled.button`
@@ -69,11 +85,11 @@ const Caption = styled.p`
     padding: 10px;
 `;
 
-interface GlobalizeCarouselProps {
+interface CarouselProps {
     images: { url: string; caption: string }[];
 }
 
-const GlobalizeCarousel: React.FC<GlobalizeCarouselProps> = ({ images }) => {
+const Carousel: React.FC<CarouselProps> = ({ images }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const prevSlide = () => {
@@ -96,8 +112,8 @@ const GlobalizeCarousel: React.FC<GlobalizeCarouselProps> = ({ images }) => {
                     alt={`Slide ${currentIndex}`}
                 />
                 <ArrowContainer>
-                    <Img onClick={prevSlide} src={prevarrow} alt={"arrow"} />
-                    <Img onClick={nextSlide} src={nextarrow} alt={"arrow"} />
+                    <ImgOne onClick={prevSlide} src={prevarrow} alt={"arrow"} />
+                    <ImgTwo onClick={nextSlide} src={nextarrow} alt={"arrow"} />
                 </ArrowContainer>
             </CarouselContainer>
             <Caption>{images[currentIndex].caption}</Caption>
@@ -105,4 +121,4 @@ const GlobalizeCarousel: React.FC<GlobalizeCarouselProps> = ({ images }) => {
     );
 };
 
-export default GlobalizeCarousel;
+export default Carousel;

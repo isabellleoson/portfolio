@@ -4,6 +4,9 @@ import MiniNavbar from "../components/MiniNavbar";
 
 import glasskiosk from "../assets/glasskiosken.png";
 
+import icecreams from "../assets/icecreams.png";
+import bookingform from "../assets/form.png";
+
 const HeadingDiv = styled.div`
     display: flex;
     flex-direction: column;
@@ -26,11 +29,23 @@ const Img = styled.img`
     }
 `;
 
+const HeadImg = styled.img`
+    max-width: 20vh;
+    // padding-left: 30px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (min-width: 750px) {
+        min-width: 30vh;
+    }
+`;
+
 const Container = styled.div`
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    // justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-left: 20px;
 
     @media (min-width: 750px) {
@@ -60,19 +75,41 @@ const StyledFirstPContainer = styled.div`
     // }
 `;
 
-const SecondP = styled.p``;
+const SecondContainer = styled.div`
+    display: flex;
+`;
+
+const PContainer = styled.div`
+    text-align: end;
+`;
+
+const SecondP = styled.p`
+    // text-align: end;
+`;
+
+const ThirdP = styled.p``;
 
 const Span = styled.span`
     font-size: 15px;
 `;
 
-const A = styled.a`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-`;
+// const A = styled.a`
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     margin-bottom: 30px;
+// `;
 
 function Glasskiosken() {
+    // const images = [
+    //     {
+    //         url: icecreams,
+    //         caption:
+    //             "Firstly, the logged in admin can add a product to the webshop",
+    //     },
+    //     { url: bookingform, caption: "The admin view of the added product" },
+    // ];
+
     return (
         <>
             <MiniNavbar />
@@ -82,6 +119,7 @@ function Glasskiosken() {
                 <h2>Grid layout / Responsive design</h2>
             </HeadingDiv>
             <Container>
+                <HeadImg src={glasskiosk} alt="" />
                 <Div>
                     <StyledFirstPContainer>
                         <p>
@@ -93,24 +131,34 @@ function Glasskiosken() {
                             recommendations, with a focus on making semantic
                             code.{" "}
                         </p>
-                        <SecondP>
-                            <Span>This thought me </Span>to write clear code. I
-                            used prettier for making the code look good. This
-                            also thought me that grid is fine, but I never used
-                            it since. I heart Flexbox. And the hover-effects?
-                            Well, I thought that it would be good for someone
-                            with visual impairment, but instead it just made
-                            everything look like links. I would not have done
-                            that today!
-                        </SecondP>
-                    </StyledFirstPContainer>
 
-                    <ImgDiv>
-                        <Img src={glasskiosk} alt="" />
-                    </ImgDiv>
+                        {/* 
+                        <Carousel images={images} /> */}
+
+                        <SecondContainer>
+                            <ImgDiv>
+                                <Img src={icecreams} alt="icecreams" />
+                                <Img src={bookingform} alt="booking form" />
+                            </ImgDiv>
+                            <PContainer>
+                                <SecondP>
+                                    <Span>This thought me </Span>to write clear
+                                    code. I used prettier for making the code
+                                    look good. This also thought me that grid is
+                                    fine, but I never used it since. I heart
+                                    Flexbox.
+                                </SecondP>
+
+                                <ThirdP>
+                                    Overall, this was my first tumbeling steps
+                                    towards
+                                </ThirdP>
+                            </PContainer>
+                        </SecondContainer>
+                    </StyledFirstPContainer>
                 </Div>
 
-                <A href="">Link to Glasskiosken</A>
+                {/* <A href="">Link to Glasskiosken</A> */}
             </Container>{" "}
         </>
     );

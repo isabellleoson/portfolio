@@ -1,5 +1,7 @@
 import styled, { keyframes } from "styled-components";
 
+import Carousel from "../components/Carousel";
+
 import MiniNavbar from "../components/MiniNavbar";
 
 import globalize from "../assets/globalize.png";
@@ -11,7 +13,7 @@ import addedproduct from "../assets/addedproduct.png";
 import webshopproduct from "../assets/webshopproduct.png";
 import cart from "../assets/cart.png";
 
-import GlobalizeCarousel from "../components/GlobalizeCarousel";
+// import GlobalizeCarousel from "../components/Carousel";
 
 const fadeInFromTop = keyframes`
   from {
@@ -244,7 +246,7 @@ function Globalize() {
                                 </P>
                             </StyledTextImgContiner>
                         </StyledFirstPContainer>
-                        <GlobalizeCarousel images={images} />
+                        <Carousel images={images} />
                     </Div>
 
                     <P>

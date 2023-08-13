@@ -3,6 +3,7 @@ import styled, { keyframes } from "styled-components";
 // import jag from "../assets/jag.jpg";
 import io from "../assets/io.jpg";
 import NavBar from "../components/NavBar";
+import HomeFooter from "../components/HomeFooter";
 
 import Contact from "../components/Contact";
 
@@ -122,6 +123,39 @@ const SmilyContainer = styled.div`
         margin-right: 50px;
     }
 `;
+
+const SmallSmiley = styled.div`
+    @media (max-width: 749px) {
+        background-color: rgba(255, 255, 133, 0.8);
+
+        max-width: 30%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        padding-top: 60px;
+        padding-bottom: 10px;
+        // padding-bottom: -20px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        border-radius: 50%;
+        // margin-left: 40px;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+`;
+
+// const Eye = styled.p`
+//     color: black;
+// `;
+
+// const Eyes = styled.div`
+//     display: flex;
+//     justify-content: space-around;
+//     margin: 0;
+//     padding: 0;
+// `;
+
 const Container = styled.div`
     display: flex;
     flex-direction: column;
@@ -213,13 +247,20 @@ function Home() {
                                 </P>
 
                                 {/* <Button>Let's talk!</Button> */}
-
-                                <Contact />
+                                <SmallSmiley>
+                                    {/* <Eyes>
+                                        <Eye>I</Eye>
+                                        <Eye>I</Eye>
+                                    </Eyes> */}
+                                    <Contact />
+                                </SmallSmiley>
                             </SmilyContainer>
                         </Container>
                     </div>
                 </FadingText>
             </HomePageContainer>
+
+            <HomeFooter />
         </>
     );
 }

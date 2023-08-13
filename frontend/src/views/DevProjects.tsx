@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import DevNavbar from "../components/DevNavbar";
 import background from "../assets/devbackground.png";
 
+import Footer from "../components/Footer";
+
 const Li = styled.div`
     display: flex;
     justify-content: end;
@@ -104,6 +106,8 @@ function DevProjects() {
                     </NavbarDiv>
                 </Container>
             </BackgroundContainer>
+
+            <Footer />
         </>
     );
 }
