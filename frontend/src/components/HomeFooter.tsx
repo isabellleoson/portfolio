@@ -7,7 +7,7 @@ const Container = styled.div`
 `;
 
 const Links = styled.div`
-    margin-top: -100px;
+    margin-top: -110px;
     display: flex;
     justify-content: end;
     margin-right: 30px;

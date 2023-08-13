@@ -2,6 +2,7 @@ import { useState } from "react";
 import styled, { keyframes } from "styled-components";
 
 import MiniNavbar from "../components/MiniNavbar";
+import Footer from "../components/Footer";
 
 const H2 = styled.h2`
     padding-top: 25px;
@@ -439,6 +440,7 @@ function Resume() {
                     </ContentContainer>
                 </Container>
             </WidthContainer>
+            <Footer />
         </>
     );
 }
