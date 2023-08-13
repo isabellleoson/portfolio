@@ -50,7 +50,7 @@ const P = styled.p`
     margin-right: 10px;
 `;
 const Container = styled.div`
-    margin-left: 20px;
+    // margin-left: 30px;
     display: flex;
     flex-direction: column;
 

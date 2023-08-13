@@ -119,17 +119,18 @@ Error generating stack: `+o.message+`
 `,Oh="/assets/copywrite-37ba5317.png",Zy=C.div`
     margin-bottom: 0;
 `,Qy=C.div`
-    margin-top: -80px;
+    margin-top: -100px;
     display: flex;
-    justify-content: start;
-    margin-left: 10px;
+    justify-content: end;
+    margin-right: 30px;
 `,Ed=C.a`
     font-size: 10px;
     margin-right: 10px;
 `,Ky=C.div`
     display: flex;
     align-items: center;
-    margin-left: 10px;
+    justify-content: end;
+    margin-right: 40px;
     padding: 0;
 `,Jy=C.p`
     font-size: 8px;
@@ -334,21 +335,21 @@ Error generating stack: `+o.message+`
         height: 80px;
     }
 `,h1="/assets/devbackground-e444c00a.png",m1=C.div`
-    margin-top: 120px;
+    margin-top: 140px;
     display: flex;
     justify-content: center;
     margin-left: 10px;
 `,jd=C.a`
-    font-size: 14px;
+    font-size: 12px;
     margin-right: 10px;
 `,g1=C.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -10px;
+    margin-top: -18px;
 `,v1=C.p`
-    font-size: 10px;
-    margin-left: 5px;
+    font-size: 8px;
+    margin-left: 2px;
 `;function y1(){return c.jsxs(c.Fragment,{children:[c.jsxs(m1,{children:[c.jsx(jd,{href:"https://github.com/isabellleoson",children:"Github"}),c.jsx(jd,{href:"https://www.linkedin.com/in/isabell-leoson-52a908252/",children:"LinkedIn"})]}),c.jsxs(g1,{style:{marginBottom:"50px",padding:"20px"},children:[c.jsx("img",{src:Oh,alt:"",style:{width:"6%",height:"6%"}}),c.jsx(v1,{children:"Isabell Leoson 2023"})]})]})}const x1=Kt`
   from {
     opacity: 0;
@@ -590,7 +591,7 @@ Error generating stack: `+o.message+`
     flex-direction: column;
     align-items: center;
 `,ax=C.div`
-    margin-left: 20px;
+    // margin-left: 20px;
 
     @media (min-width: 750px) {
         display: flex;
@@ -782,7 +783,7 @@ Error generating stack: `+o.message+`
 `,Md=C.p`
     margin-right: 10px;
 `,zx=C.div`
-    margin-left: 20px;
+    // margin-left: 30px;
     display: flex;
     flex-direction: column;
 

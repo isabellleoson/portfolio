@@ -7,10 +7,10 @@ const Container = styled.div`
 `;
 
 const Links = styled.div`
-    margin-top: -80px;
+    margin-top: -100px;
     display: flex;
-    justify-content: start;
-    margin-left: 10px;
+    justify-content: end;
+    margin-right: 30px;
 `;
 
 const A = styled.a`
@@ -21,7 +21,8 @@ const A = styled.a`
 const CopywriteDiv = styled.div`
     display: flex;
     align-items: center;
-    margin-left: 10px;
+    justify-content: end;
+    margin-right: 40px;
     padding: 0;
 `;
 

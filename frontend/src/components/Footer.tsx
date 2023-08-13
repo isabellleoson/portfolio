@@ -3,14 +3,14 @@ import styled from "styled-components";
 import copywrite from "../assets/copywrite.png";
 
 const Links = styled.div`
-    margin-top: 120px;
+    margin-top: 140px;
     display: flex;
     justify-content: center;
     margin-left: 10px;
 `;
 
 const A = styled.a`
-    font-size: 14px;
+    font-size: 12px;
     margin-right: 10px;
 `;
 
@@ -18,12 +18,12 @@ const CopywriteDiv = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -10px;
+    margin-top: -18px;
 `;
 
 const P = styled.p`
-    font-size: 10px;
-    margin-left: 5px;
+    font-size: 8px;
+    margin-left: 2px;
 `;
 
 function Footer() {

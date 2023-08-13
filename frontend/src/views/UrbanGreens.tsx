@@ -31,7 +31,7 @@ const HeadingDiv = styled.div`
 `;
 
 const Container = styled.div`
-    margin-left: 20px;
+    // margin-left: 20px;
 
     @media (min-width: 750px) {
         display: flex;
