@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+import Footer from "../components/Footer";
 
 import Carousel from "../components/Carousel";
 
@@ -37,6 +38,10 @@ const HeadingDiv = styled.div`
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+`;
+
+const H1 = styled.h1`
+    font-size: 24px;
 `;
 
 const WrapDiv = styled.div`
@@ -155,6 +160,7 @@ const P = styled.p`
 
     @media (min-width: 750px) {
         text-align: center;
+        font-size: 16px;
     }
 `;
 
@@ -179,17 +185,25 @@ const Div = styled.div`
     align-items: center;
 `;
 
-const Span = styled.span`
-    width: auto;
-    text-align: end;
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
+// const Span = styled.span`
+//     width: auto;
+//     text-align: end;
+//     display: flex;
+//     flex-direction: column;
+//     margin-top: 30px;
 
-    // margin-bottom: 20px;
+//     // margin-bottom: 20px;
+
+//     @media (min-width: 750px) {
+//         text-align: center;
+//     }
+// `;
+const Span = styled.span`
+    font-size: 14px;
+    color: rgb(195, 170, 154);
 
     @media (min-width: 750px) {
-        text-align: center;
+        font-size: 18px;
     }
 `;
 
@@ -198,6 +212,15 @@ const A = styled.a`
     flex-direction: column;
     align-items: center;
     margin-bottom: 40px;
+`;
+
+const FooterContainer = styled.div`
+    @media (min-width: 750px) {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    // const A = styled.a
 `;
 
 function Globalize() {
@@ -221,7 +244,7 @@ function Globalize() {
         <>
             <MiniNavbar />
             <HeadingDiv>
-                <h1>Globalize</h1>
+                <H1>Globalize</H1>
                 <WrapDiv>
                     <h2>REACT / TYPESCRIPT / MongoDB / NoSQL</h2>
                     <h2>
@@ -281,6 +304,9 @@ function Globalize() {
                     </A>
                 </FadingText>
             </Container>
+            <FooterContainer>
+                <Footer />
+            </FooterContainer>
         </>
     );
 }

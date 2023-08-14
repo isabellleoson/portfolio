@@ -3,6 +3,10 @@ import styled from "styled-components";
 import copywrite from "../assets/copywrite.png";
 
 const Container = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     @media (min-width: 750px) {
         display: flex;
         flex-direction: column;
@@ -40,6 +44,10 @@ const CopywriteDiv = styled.div`
     // justify-content: center;
     // margin-top: -18px;
 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
     @media (min-width: 750px) {
         display: flex;
         flex-direction: row;
@@ -53,6 +61,8 @@ const CopywriteDiv = styled.div`
 `;
 
 const Img = styled.img`
+    width: 12px;
+    height: 12px;
     @media (min-width: 750px) {
         width: 12px;
         height: 12px;
