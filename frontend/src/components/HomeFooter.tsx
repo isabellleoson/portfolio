@@ -23,16 +23,17 @@ const Links = styled.div`
 `;
 
 const Img = styled.img`
-    width: 1%;
-    height: 1%;
+    width: 12px;
+    height: 12px;
+    box-shadow: none;
 `;
 
 const A = styled.a`
     font-size: 10px;
     margin-right: 10px;
 
-    @media (min-width: 750px) {
-        color: black;
+    @media (min-width: 500px) {
+        color: #342f2a;
         font-size: 12px;
     }
 `;
@@ -58,8 +59,9 @@ const P = styled.p`
     font-size: 8px;
     margin-left: 5px;
 
-    @media (min-width: 750px) {
-        color: black;
+    @media (min-width: 500px) {
+        color: #342f2a;
+        font-size: 10px;
     }
 `;
 
@@ -74,11 +76,7 @@ function HomeFooter() {
                     </A>
                 </Links>
                 <CopywriteDiv>
-                    <Img
-                        src={copywrite}
-                        alt="copywrite"
-                        style={{ width: "4%", height: "4%" }}
-                    />
+                    <Img src={copywrite} alt="copywrite" />
                     <P>Isabell Leoson 2023</P>
                 </CopywriteDiv>
             </Container>

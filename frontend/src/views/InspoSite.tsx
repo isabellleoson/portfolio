@@ -1,4 +1,5 @@
 import MiniNavbar from "../components/MiniNavbar";
+import Footer from "../components/Footer";
 
 // import insposite from "../assets/insposite.png";
 import cities from "../assets/cities.png";
@@ -36,18 +37,27 @@ const HeadingDiv = styled.div`
     align-items: center;
 `;
 
+const H1 = styled.h1`
+    font-size: 24px;
+`;
+
 const Img = styled.img`
-    max-width: 35vh;
+    width: 35vh;
     // padding-left: 30px;
     margin: 10px;
 
     @media (min-width: 750px) {
-        min-width: 30vh;
+        width: 50vh;
     }
 `;
 
 const P = styled.p`
     margin-right: 10px;
+
+    @media (min-width: 750px) {
+        font-size: 16px;
+        text-align: center;
+    }
 `;
 const Container = styled.div`
     // margin-left: 30px;
@@ -60,6 +70,7 @@ const Container = styled.div`
         align-items: center;
         margin-left: 300px;
         margin-right: 300px;
+        // margin-bottom: 40px;
     }
 `;
 
@@ -79,6 +90,18 @@ const StyledFirstPContainer = styled.div`
 
 const Span = styled.span`
     font-size: 14px;
+    color: rgb(195, 170, 154);
+
+    @media (min-width: 750px) {
+        font-size: 18px;
+    }
+`;
+
+const FooterContainer = styled.div`
+    @media (min-width: 750px) {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
 `;
 
 // const A = styled.a`
@@ -129,7 +152,7 @@ function InspoSite() {
 
             <FadingText>
                 <HeadingDiv>
-                    <h1>Inspirationssidan</h1>
+                    <H1>Inspirationssidan</H1>
                     <h2>NATIVE JAVASCRIPT</h2>
                     <h2> API / CHART.JS </h2>
                     <Img src={navbarinsposite} alt="navbar" />
@@ -140,13 +163,14 @@ function InspoSite() {
                             <P>
                                 <Span>
                                     This project was the first time I tried out
-                                    Javascript. Love at first sight?
-                                </Span>{" "}
-                                Yes. The misson was to use API. I used two
-                                different API:s, one for getting colors and one
-                                for getting images. We also needed to fetch from
-                                a cities-api where and I created functions to
-                                add, change and delete cities.
+                                    Javascript.{" "}
+                                </Span>
+                                Love at first sight?
+                                <Span> Yes</Span>. The misson was to use API. I
+                                used two different API:s, one for getting colors
+                                and one for getting images. We also needed to
+                                fetch from a cities-api where and I created
+                                functions to add, change and delete cities.
                             </P>
                             <Img src={cities} alt="" />
                             <P>
@@ -160,6 +184,9 @@ function InspoSite() {
                     <BigCarousel images={images} />
                 </Container>{" "}
             </FadingText>
+            <FooterContainer>
+                <Footer />
+            </FooterContainer>
         </>
     );
 }

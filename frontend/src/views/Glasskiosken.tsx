@@ -1,4 +1,5 @@
 import MiniNavbar from "../components/MiniNavbar";
+import Footer from "../components/Footer";
 
 import glasskiosk from "../assets/glasskiosken.png";
 
@@ -28,10 +29,19 @@ const HeadingDiv = styled.div`
     align-items: center;
 `;
 
+const H1 = styled.h1`
+    font-size: 24px;
+`;
+
 const ImgDiv = styled.div`
     width: auto;
     // padding-left: 30px;
     margin: 10px;
+
+    @media (min-width: 750px) {
+        display: flex;
+        justify-content: center;
+    }
 `;
 
 const Img = styled.img`
@@ -40,7 +50,8 @@ const Img = styled.img`
     margin: 10px;
 
     @media (min-width: 750px) {
-        min-width: 30vh;
+        min-width: 40vh;
+        display: flex;
     }
 `;
 
@@ -51,8 +62,9 @@ const HeadImg = styled.img`
     display: flex;
     align-items: center;
     justify-content: center;
+
     @media (min-width: 750px) {
-        min-width: 30vh;
+        min-width: 40vh;
     }
 `;
 
@@ -92,20 +104,49 @@ const StyledFirstPContainer = styled.div`
 
 const SecondContainer = styled.div`
     display: flex;
+    @media (min-width: 750px) {
+        justify-content: center;
+        align-items: center;
+    }
 `;
 
 const PContainer = styled.div`
     text-align: end;
 `;
 
-const SecondP = styled.p`
-    // text-align: end;
+const P = styled.p`
+    @media (min-width: 750px) {
+        font-size: 16px;
+        text-align: center;
+    }
 `;
 
-const ThirdP = styled.p``;
+const SecondP = styled.p`
+    @media (min-width: 750px) {
+        font-size: 16px;
+    }
+`;
+
+const ThirdP = styled.p`
+    @media (min-width: 750px) {
+        font-size: 16px;
+    }
+`;
 
 const Span = styled.span`
     font-size: 15px;
+    color: rgb(195, 170, 154);
+
+    @media (min-width: 750px) {
+        font-size: 18px;
+    }
+`;
+
+const FooterContainer = styled.div`
+    @media (min-width: 750px) {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
 `;
 
 // const A = styled.a`
@@ -130,7 +171,7 @@ function Glasskiosken() {
             <MiniNavbar />
             <FadingText>
                 <HeadingDiv>
-                    <h1>Glasskiosken</h1>
+                    <H1>Glasskiosken</H1>
                     <h2>HTML / CSS</h2>
                     <h2>Grid layout / Responsive design</h2>
                 </HeadingDiv>
@@ -138,7 +179,7 @@ function Glasskiosken() {
                     <HeadImg src={glasskiosk} alt="" />
                     <Div>
                         <StyledFirstPContainer>
-                            <p>
+                            <P>
                                 <Span>This was my very first time coding.</Span>{" "}
                                 The project is build with only HTML and CSS. I
                                 wanted to create a fun, colorful site that makes
@@ -146,7 +187,7 @@ function Glasskiosken() {
                                 and accordning to Google's SEO recommendations
                                 and accessibility recommendations, with a focus
                                 on making semantic code.{" "}
-                            </p>
+                            </P>
 
                             {/* 
                         <Carousel images={images} /> */}
@@ -166,10 +207,10 @@ function Glasskiosken() {
                                     </SecondP>
 
                                     <ThirdP>
-                                        Overall, this was my first tumbeling
-                                        steps towards becoming a developer. When
-                                        I look back at this, I realize how far
-                                        I´ve come.
+                                        <Span>Overall,</Span> this was my first
+                                        tumbeling steps towards becoming a
+                                        developer. When I look back at this, I
+                                        realize how far I´ve come.
                                     </ThirdP>
                                 </PContainer>
                             </SecondContainer>
@@ -179,6 +220,9 @@ function Glasskiosken() {
                     {/* <A href="">Link to Glasskiosken</A> */}
                 </Container>{" "}
             </FadingText>
+            <FooterContainer>
+                <Footer />
+            </FooterContainer>
         </>
     );
 }

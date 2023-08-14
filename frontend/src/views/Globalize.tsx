@@ -95,7 +95,7 @@ const StyledTextImgContiner = styled.div`
 `;
 
 const Img = styled.img`
-    max-width: 30vh;
+    width: 30vh;
     margin-top: 20px;
     margin-left: 5px;
 
@@ -103,7 +103,7 @@ const Img = styled.img`
     align-items: center;
     justify-content: center;
     @media (min-width: 750px) {
-        max-width: 30vh;
+        width: 40vh;
         margin-top: 10px;
         height: 100%;
         margin-left: 20px;
@@ -126,7 +126,7 @@ const SecondImg = styled.img`
 `;
 
 const ThirdImg = styled.img`
-    max-width: 50%;
+    width: 50%;
     margin-top: 10px;
     height: 80px;
 
@@ -136,6 +136,7 @@ const ThirdImg = styled.img`
     @media (min-width: 750px) {
         margin-top: 10px;
         height: 50%;
+        width: 63.5%;
     }
 `;
 

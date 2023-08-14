@@ -81,7 +81,7 @@ const Div = styled.div`
 `;
 
 const NavbarDiv = styled.div`
-    margin-right: 10px;
+    margin-right: 90px;
 `;
 
 const Header = styled.div`

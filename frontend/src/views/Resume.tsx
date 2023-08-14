@@ -2,8 +2,7 @@ import { useState } from "react";
 import styled, { keyframes } from "styled-components";
 
 import MiniNavbar from "../components/MiniNavbar";
-// import Footer from "../components/Footer";
-
+import Footer from "../components/Footer";
 const H2 = styled.h2`
     padding-top: 25px;
     border-bottom: solid white 1px;
@@ -37,6 +36,9 @@ const WidthContainer = styled.div`
 const Container = styled.div`
     @media (min-width: 750px) {
         width: 98vw;
+        justify-content: end;
+        align-items: flex-end;
+        text-align: end;
 
         // padding-right: 100px;
         display: flex;
@@ -50,8 +52,11 @@ const ContentContainer = styled.div`
 
     @media (min-width: 750px) {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: end;
+        align-items: flex-end;
+        text-align: end;
+        margin-right: 200px;
+        width: 620px;
     }
 `;
 
@@ -79,10 +84,12 @@ const ButtonContainer = styled.div`
     width: 320px;
 
     @media (min-width: 750px) {
+        margin-right: 200px;
+
         width: 800px;
         // margin-right: 200px;
         // justify-content: end;
-        margin: 0px 0px 0px 260px;
+        // margin: 0px 0px 0px 260px;
     }
 `;
 
@@ -167,11 +174,11 @@ const TechicalContainer = styled.div`
     }
 `;
 
-// const FooterContainer = styled.div`
-//     display: flex;
-//     align-items: center;
-//     justify-content: start;
-// `;
+const FooterContainer = styled.div`
+    @media (min-width: 750px) {
+        margin-top: 200px;
+    }
+`;
 
 function Resume() {
     const [showAbout, setShowAbout] = useState(false);
@@ -222,19 +229,23 @@ function Resume() {
                     </Header>
                     <ButtonContainer>
                         <Button onClick={toggleAbout}>
-                            {showAbout ? "" : "About Isabell"}
+                            {showAbout ? "About Isabell" : "About Isabell"}
                         </Button>
 
                         <Button onClick={toggleParagraph}>
-                            {showParagraph ? "" : "Work experience"}
+                            {showParagraph
+                                ? "Work Experience"
+                                : "Work Experience"}
                         </Button>
 
                         <Button onClick={toggleSecondParagraph}>
-                            {showSecondParagraph ? "" : "Technical Skills "}
+                            {showSecondParagraph
+                                ? "Technical Skills"
+                                : "Technical Skills "}
                         </Button>
 
                         <Button onClick={toggleThirdParagraph}>
-                            {showThirdParagraph ? "" : "Education"}
+                            {showThirdParagraph ? "Education" : "Education"}
                         </Button>
                     </ButtonContainer>
                     <ContentContainer>
@@ -442,11 +453,11 @@ function Resume() {
                             </FadingText>
                         )}
                     </ContentContainer>
+                    <FooterContainer>
+                        <Footer />
+                    </FooterContainer>
                 </Container>
             </WidthContainer>
-            {/* <FooterContainer> */}
-            {/* <Footer /> */}
-            {/* </FooterContainer> */}
         </>
     );
 }

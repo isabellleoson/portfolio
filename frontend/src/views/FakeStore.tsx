@@ -1,4 +1,5 @@
 import MiniNavbar from "../components/MiniNavbar";
+import Footer from "../components/Footer";
 
 import Carousel from "../components/Carousel";
 
@@ -34,6 +35,10 @@ const HeadingDiv = styled.div`
     text-align: center;
 `;
 
+const H1 = styled.h1`
+    font-size: 24px;
+`;
+
 const ImgDiv = styled.div`
     width: auto;
     margin-top: 10px;
@@ -47,7 +52,7 @@ const Img = styled.img`
     // margin: 10px;
 
     @media (min-width: 750px) {
-        min-width: 30vh;
+        min-width: 40vh;
     }
 `;
 
@@ -84,9 +89,20 @@ const StyledFirstPContainer = styled.div`
 const P = styled.p`
     font-size: 14px;
     text-align: center;
+
+    @media (min-width: 750px) {
+        font-size: 16px;
+    }
 `;
 
-// const A = styled.a`
+const FooterContainer = styled.div`
+    @media (min-width: 750px) {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    // const A = styled.a
+`;
 //     display: flex;
 //     flex-direction: column;
 //     align-items: center;
@@ -119,7 +135,7 @@ function FakeStore() {
 
             <FadingText>
                 <HeadingDiv>
-                    <h1>FakeStore</h1>
+                    <H1>FakeStore</H1>
                     <h2>JAVASCRIPT / VUE / VITE / NODE.JS</h2>
                     <h2>SASS / Bootstrap / Responsive design </h2>
 
@@ -143,6 +159,9 @@ function FakeStore() {
                 <A href="">Link to Fake store</A> */}
                 </Container>{" "}
             </FadingText>
+            <FooterContainer>
+                <Footer />
+            </FooterContainer>
         </>
     );
 }

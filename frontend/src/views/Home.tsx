@@ -145,17 +145,6 @@ const SmallSmiley = styled.div`
     }
 `;
 
-// const Eye = styled.p`
-//     color: black;
-// `;
-
-// const Eyes = styled.div`
-//     display: flex;
-//     justify-content: space-around;
-//     margin: 0;
-//     padding: 0;
-// `;
-
 const Container = styled.div`
     display: flex;
     flex-direction: column;
