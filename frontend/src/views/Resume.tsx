@@ -361,9 +361,8 @@ function Resume() {
                                     </ResumeLi>
                                     <ResumeLi>
                                         Kommunal & LO trade union, Elected
-                                        representative.
-                                        Falkenberg/Värnamo/Gothenburg/Stockholm.
-                                        2016-2019.{" "}
+                                        representative. Falkenberg/Värnamo/
+                                        Gothenburg/Stockholm. 2016-2019.{" "}
                                     </ResumeLi>
                                     <InResumeLi>
                                         - Responsible for youth questions with
