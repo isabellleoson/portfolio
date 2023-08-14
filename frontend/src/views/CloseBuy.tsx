@@ -26,6 +26,7 @@ const HeadingDiv = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 `;
 
 const ImgDiv = styled.div`
@@ -78,11 +79,11 @@ const Span = styled.span`
     font-size: 14px;
 `;
 
-const A = styled.a`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-`;
+// const A = styled.a`
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+// `;
 
 function CloseBuy() {
     const images = [
@@ -105,9 +106,14 @@ function CloseBuy() {
 
             <FadingText>
                 <HeadingDiv>
-                    <h1>FakeStore</h1>
-                    <h2>HTML / CSS</h2>
-                    <h2>Grid layout / Responsive design</h2>
+                    <h1>CloseBuy</h1>
+                    <h2>
+                        TYPESCRIPT / REACT / NODE.js / ElephantSQL / EXPRESS
+                    </h2>
+                    <h2>
+                        pgAdmin 4 / Styled components / Responsive design /
+                        Axios
+                    </h2>
 
                     <ImgDiv>
                         <Img src={closebuyimg} alt="" />
@@ -128,17 +134,18 @@ function CloseBuy() {
                                 <Span>I created </Span>the backend and the
                                 database for the project. I also created the
                                 modals that presented the products. I used
-                                useContext to get the right product to the right
-                                pin.
+                                useContext hook so that the values from the
+                                backend are availeble over the whole
+                                application.
                             </p>
 
                             <Carousel images={images} />
                         </StyledFirstPContainer>
                     </Div>
 
-                    <A href="https://fullstack-9mbp.onrender.com/">
+                    {/* <A href="https://fullstack-9mbp.onrender.com/">
                         Link CloseBuy
-                    </A>
+                    </A> */}
                 </Container>{" "}
             </FadingText>
         </>

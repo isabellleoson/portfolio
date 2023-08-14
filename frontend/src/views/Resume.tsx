@@ -2,7 +2,7 @@ import { useState } from "react";
 import styled, { keyframes } from "styled-components";
 
 import MiniNavbar from "../components/MiniNavbar";
-import Footer from "../components/Footer";
+// import Footer from "../components/Footer";
 
 const H2 = styled.h2`
     padding-top: 25px;
@@ -69,6 +69,23 @@ const Header = styled.div`
     }
 `;
 
+const ButtonContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-right: 0;
+    // align-items: flex-end;
+    // justify-content: end;
+    width: 320px;
+
+    @media (min-width: 750px) {
+        width: 800px;
+        // margin-right: 200px;
+        // justify-content: end;
+        margin: 0px 0px 0px 260px;
+    }
+`;
+
 const AboutContainer = styled.div`
     display: flex;
     flex-direction: column;
@@ -120,26 +137,6 @@ const InResumeLi = styled.li`
     padding-right: 10px;
 `;
 
-const ButtonContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-right: 0;
-    // align-items: flex-end;
-    // justify-content: end;
-    width: 320px;
-
-    @media (min-width: 750px) {
-        max-width: 1100px;
-        // margin-right: 200px;
-
-        margin: 0px 200px 0px 200px;
-
-        // align-items: flex-end;
-        // justify-content: end;
-    }
-`;
-
 const Button = styled.button`
     background-color: white;
     margin: 10px;
@@ -169,6 +166,12 @@ const TechicalContainer = styled.div`
         margin-left: 350px;
     }
 `;
+
+// const FooterContainer = styled.div`
+//     display: flex;
+//     align-items: center;
+//     justify-content: start;
+// `;
 
 function Resume() {
     const [showAbout, setShowAbout] = useState(false);
@@ -394,7 +397,9 @@ function Resume() {
                                         HTML / CSS / JAVASCRIPT / TYPESCRIPT /
                                         VUE / REACT / VITE / NODE.JS
                                     </p>
-                                    <p>MongoDB / SQLite / EXPRESS </p>
+                                    <p>
+                                        MongoDB / SQLite / PostgreSQL / EXPRESS{" "}
+                                    </p>
                                     <p>
                                         GRID LAYOUT / FLEXBOX LAYOUT /
                                         RESPONSIVE DESIGN / FIGMA / BOOTSTRAP
@@ -439,7 +444,9 @@ function Resume() {
                     </ContentContainer>
                 </Container>
             </WidthContainer>
-            <Footer />
+            {/* <FooterContainer> */}
+            {/* <Footer /> */}
+            {/* </FooterContainer> */}
         </>
     );
 }

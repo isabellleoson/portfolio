@@ -222,12 +222,11 @@ function Globalize() {
             <HeadingDiv>
                 <h1>Globalize</h1>
                 <WrapDiv>
-                    <h2>REACT / TYPESCRIPT / MongoDB / BACKEND</h2>
+                    <h2>REACT / TYPESCRIPT / MongoDB / NoSQL</h2>
                     <h2>
                         {" "}
-                        Singel Page Application / React hooks (useEffect,
-                        useContext) / Formik / Styled-Components /
-                        CORS-prevention{" "}
+                        Singel Page Application / Formik / Axios /
+                        Styled-Components / CORS-prevention{" "}
                     </h2>
                 </WrapDiv>
             </HeadingDiv>

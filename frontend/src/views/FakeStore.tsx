@@ -120,8 +120,8 @@ function FakeStore() {
             <FadingText>
                 <HeadingDiv>
                     <h1>FakeStore</h1>
-                    <h2>JAVASCRIPT / VUE</h2>
-                    <h2>SASS / Bootstrap /Responsive design /</h2>
+                    <h2>JAVASCRIPT / VUE / VITE / NODE.JS</h2>
+                    <h2>SASS / Bootstrap / Responsive design </h2>
 
                     <ImgDiv>
                         <Img src={homestore} alt="" />

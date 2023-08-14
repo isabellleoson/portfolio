@@ -7,6 +7,15 @@ const Links = styled.div`
     display: flex;
     justify-content: center;
     margin-left: 10px;
+
+    @media (min-width: 750px) {
+        margin-top: -100px;
+        // margin-left: 100px;
+
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: end;
+    }
 `;
 
 const A = styled.a`
@@ -19,6 +28,15 @@ const CopywriteDiv = styled.div`
     align-items: center;
     justify-content: center;
     margin-top: -18px;
+
+    @media (min-width: 750px) {
+        margin-top: -35px;
+        margin-left: 940px;
+        width: 20%;
+        // margin-bottom: 30px;
+        display: flex;
+        justify-content: end;
+    }
 `;
 
 const P = styled.p`
