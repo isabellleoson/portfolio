@@ -159,8 +159,11 @@ const P = styled.p`
     // margin-bottom: 20px;
 
     @media (min-width: 750px) {
+        align-items: center;
+        justify-content: center;
         text-align: center;
         font-size: 16px;
+        margin-top: 40px;
     }
 `;
 

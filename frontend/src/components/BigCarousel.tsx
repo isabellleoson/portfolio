@@ -30,7 +30,7 @@ const CarouselContainer = styled.div`
 
 const CarouselImage = styled.img`
     width: 100%;
-    padding: 10px;
+    padding: 20px;
 
     height: auto;
     // height: auto;
@@ -40,6 +40,7 @@ const CarouselImage = styled.img`
 
     @media (min-width: 750px;) {
         width: 200px;
+        padding: 0px;
     }
 `;
 

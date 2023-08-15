@@ -81,7 +81,7 @@ const Div = styled.div`
 `;
 
 const NavbarDiv = styled.div`
-    margin-right: 90px;
+    // margin-right: 90px;
 `;
 
 const Header = styled.div`
@@ -95,6 +95,10 @@ const Header = styled.div`
     }
     // padding-top: 40px;
     // padding-right: 40px;
+`;
+
+const FooterContainer = styled.div`
+    margin-top: 100px;
 `;
 
 function DevProjects() {
@@ -125,8 +129,9 @@ function DevProjects() {
                     </Container>
                 </FadingText>
             </BackgroundContainer>
-
-            <Footer />
+            <FooterContainer>
+                <Footer />
+            </FooterContainer>
         </>
     );
 }

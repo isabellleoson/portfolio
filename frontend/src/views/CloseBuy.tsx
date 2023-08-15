@@ -1,4 +1,6 @@
 import MiniNavbar from "../components/MiniNavbar";
+import Footer from "../components/Footer";
+
 import Carousel from "../components/Carousel";
 
 import closebuyimg from "../assets/closebuy.png";
@@ -29,6 +31,10 @@ const HeadingDiv = styled.div`
     text-align: center;
 `;
 
+const H1 = styled.h1`
+    font-size: 24px;
+`;
+
 const ImgDiv = styled.div`
     width: auto;
     // padding-left: 30px;
@@ -36,12 +42,12 @@ const ImgDiv = styled.div`
 `;
 
 const Img = styled.img`
-    max-width: 200px;
+    width: 200px;
     // padding-left: 30px;
     margin: 10px;
 
     @media (min-width: 750px) {
-        min-width: 30vh;
+        width: 40vh;
     }
 `;
 
@@ -75,8 +81,30 @@ const StyledFirstPContainer = styled.div`
     // }
 `;
 
+const P = styled.div`
+    @media (min-width: 750px) {
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+`;
+
 const Span = styled.span`
     font-size: 14px;
+    color: rgb(195, 170, 154);
+
+    @media (min-width: 750px) {
+        font-size: 18px;
+    }
+`;
+
+const FooterContainer = styled.div`
+    @media (min-width: 750px) {
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+
+    // const A = styled.a
 `;
 
 // const A = styled.a`
@@ -106,7 +134,7 @@ function CloseBuy() {
 
             <FadingText>
                 <HeadingDiv>
-                    <h1>CloseBuy</h1>
+                    <H1>CloseBuy</H1>
                     <h2>
                         TYPESCRIPT / REACT / NODE.js / ElephantSQL / EXPRESS
                     </h2>
@@ -122,22 +150,22 @@ function CloseBuy() {
                 <Container>
                     <Div>
                         <StyledFirstPContainer>
-                            <p>
+                            <P>
                                 <Span>This project was a group project</Span>{" "}
                                 that I, togheter with two developers from my
                                 class created after the design from students in
                                 the UX-class. The idea was an app where you can
                                 find second hand products in your nearby area.
-                            </p>
+                            </P>
 
-                            <p>
+                            <P>
                                 <Span>I created </Span>the backend and the
                                 database for the project. I also created the
                                 modals that presented the products. I used
                                 useContext hook so that the values from the
                                 backend are availeble over the whole
                                 application.
-                            </p>
+                            </P>
 
                             <Carousel images={images} />
                         </StyledFirstPContainer>
@@ -148,6 +176,9 @@ function CloseBuy() {
                     </A> */}
                 </Container>{" "}
             </FadingText>
+            <FooterContainer>
+                <Footer />
+            </FooterContainer>
         </>
     );
 }

@@ -34,10 +34,10 @@ const CarouselImage = styled.img`
     // margin: 1rem 0;
     margin-top: 10px;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
 
     @media (min-width: 750px;) {
-        width: 200px;
+        width: 300px;
     }
 `;
 
