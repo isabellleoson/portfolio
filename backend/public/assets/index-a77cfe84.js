@@ -1322,6 +1322,9 @@ Error generating stack: `+o.message+`
     //     padding-right: 150px;
     // }
 `,Bd=w.div`
+    font-size: 12px;
+    letter-spacing: 1px;
+
     @media (min-width: 750px) {
         text-align: center;
         font-size: 16px;

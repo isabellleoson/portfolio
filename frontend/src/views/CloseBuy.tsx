@@ -82,6 +82,9 @@ const StyledFirstPContainer = styled.div`
 `;
 
 const P = styled.div`
+    font-size: 12px;
+    letter-spacing: 1px;
+
     @media (min-width: 750px) {
         text-align: center;
         font-size: 16px;
