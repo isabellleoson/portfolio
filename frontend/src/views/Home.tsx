@@ -239,10 +239,6 @@ function Home() {
 
                                 {/* <Button>Let's talk!</Button> */}
                                 <SmallSmiley>
-                                    {/* <Eyes>
-                                        <Eye>I</Eye>
-                                        <Eye>I</Eye>
-                                    </Eyes> */}
                                     <Contact />
                                 </SmallSmiley>
                             </SmilyContainer>

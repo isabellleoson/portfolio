@@ -175,6 +175,7 @@ Error generating stack: `+o.message+`
     width: 100px;
     height: 50px;
     border-radius: 40px 40px 999em 999em;
+    box-shadow: 0px 0px 10px rgba(52, 44, 42, 0.5);
 
     @media (min-width: 750px) {
         // margin-right: 10px;
@@ -518,12 +519,6 @@ Error generating stack: `+o.message+`
     margin-left: 10px;
     padding-left: 10px;
     list-style: none;
-
-    // &:hover {
-    //     background-color: #f0f0f0;
-
-    //     cursor: pointer;
-    // }
 `,$1="/assets/glasskiosken-77a48cff.png",U1="/assets/icecreams-d6982137.png",B1="/assets/form-ca69b0eb.png",H1=Kt`
   from {
     opacity: 0;

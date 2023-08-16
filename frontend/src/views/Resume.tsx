@@ -175,6 +175,7 @@ const TechicalContainer = styled.div`
 `;
 
 const FooterContainer = styled.div`
+    margin-top: 100px;
     @media (min-width: 750px) {
         margin-top: 200px;
     }
@@ -275,8 +276,8 @@ function Resume() {
                                             interpersonal and caregiving skills
                                             as an <Span>assistant nurse</Span>.
                                             This experience not only allowed me
-                                            bto get a deep sense of empathy and
-                                            a commitment to making a positive
+                                            to get a deep sense of empathy and a
+                                            commitment to making a positive
                                             impact on people's lives, but also
                                             experiences (and interest) of the
                                             digitalization of healthcare, witch
@@ -446,8 +447,9 @@ function Resume() {
                                     </ResumeLi>
                                     <ResumeLi>
                                         Caregiving Program, assistans nurse with
-                                        a specialization in healtcare. Göteborgs
-                                        Praktiska (high school) 2009-2012
+                                        a specialization in healthcare.
+                                        Göteborgs Praktiska (high school)
+                                        2009-2012
                                     </ResumeLi>
                                 </ul>
                             </FadingText>

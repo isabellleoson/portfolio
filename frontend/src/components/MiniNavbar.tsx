@@ -43,12 +43,6 @@ const Li = styled.li`
     margin-left: 10px;
     padding-left: 10px;
     list-style: none;
-
-    // &:hover {
-    //     background-color: #f0f0f0;
-
-    //     cursor: pointer;
-    // }
 `;
 
 export default MiniNavbar;

@@ -8,6 +8,7 @@ const Button = styled.button`
     width: 100px;
     height: 50px;
     border-radius: 40px 40px 999em 999em;
+    box-shadow: 0px 0px 10px rgba(52, 44, 42, 0.5);
 
     @media (min-width: 750px) {
         // margin-right: 10px;

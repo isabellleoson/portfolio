@@ -68,16 +68,6 @@ const ImgTwo = styled.img`
     box-shadow: none;
 `;
 
-// const CarouselButton = styled.button`
-//     background-color: #333;
-//     color: white;
-//     border: none;
-//     padding: 5px;
-//     margin: 0.5rem;
-//     cursor: pointer;
-//     font-size: 10px;
-// `;
-
 const Caption = styled.p`
     font-size: 14px;
     text-align: center;
