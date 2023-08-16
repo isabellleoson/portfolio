@@ -28,7 +28,7 @@ const FadingText = styled.div`
 const HeadingDiv = styled.div`
     display: flex;
     flex-direction: column;
-
+    margin-left: 10px;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -58,6 +58,7 @@ const Img = styled.img`
 
 const Container = styled.div`
     margin-left: 20px;
+    margin-bottom: 50px;
 
     @media (min-width: 750px) {
         display: flex;
@@ -92,6 +93,15 @@ const P = styled.p`
 
     @media (min-width: 750px) {
         font-size: 16px;
+    }
+`;
+
+const Span = styled.span`
+    font-size: 14px;
+    color: rgb(195, 170, 154);
+
+    @media (min-width: 750px) {
+        font-size: 18px;
     }
 `;
 
@@ -147,9 +157,15 @@ function FakeStore() {
                     <Div>
                         <StyledFirstPContainer>
                             <P>
-                                This is a dynamic Vite-application, using Vue.
-                                And the first time I used JavaScript with a
-                                framework.
+                                <Span>This is a webshop</Span> where you can add
+                                products to a cart. This was a short project
+                                where the focus was at the functions rather than
+                                the design.
+                            </P>
+                            <P>
+                                <Span>It is a dynamic Vite-application</Span>,
+                                using <Span>Vue.</Span> And the first time I
+                                used JavaScript with a framework.
                             </P>
 
                             <Carousel images={images} />

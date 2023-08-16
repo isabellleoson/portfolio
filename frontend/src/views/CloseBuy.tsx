@@ -52,7 +52,8 @@ const Img = styled.img`
 `;
 
 const Container = styled.div`
-    margin-left: 20px;
+    margin-left: 30px;
+    margin-bottom: 50px;
 
     @media (min-width: 750px) {
         display: flex;

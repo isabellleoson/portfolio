@@ -27,6 +27,7 @@ const HeadingDiv = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 30px;
 `;
 
 const H1 = styled.h1`
@@ -56,7 +57,7 @@ const Img = styled.img`
 `;
 
 const HeadImg = styled.img`
-    max-width: 20vh;
+    max-width: 30vh;
     // padding-left: 30px;
     margin: 10px;
     display: flex;
@@ -73,7 +74,8 @@ const Container = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-left: 20px;
+    margin-left: 30px;
+    margin-bottom: 50px;
 
     @media (min-width: 750px) {
         display: flex;
@@ -181,12 +183,20 @@ function Glasskiosken() {
                         <StyledFirstPContainer>
                             <P>
                                 <Span>This was my very first time coding.</Span>{" "}
-                                The project is build with only HTML and CSS. I
-                                wanted to create a fun, colorful site that makes
-                                you happy. The website is build "mobile first",
-                                and accordning to Google's SEO recommendations
-                                and accessibility recommendations, with a focus
-                                on making semantic code.{" "}
+                                The fictional costumer is an ice cream foodtruck
+                                for whom I created a website to present the menu
+                                and to book the truck.
+                            </P>
+                            <P>
+                                <Span>
+                                    The project is build with only HTML and CSS.
+                                </Span>{" "}
+                                I wanted to create a fun, colorful site that
+                                makes you happy. The website is build "mobile
+                                first", and accordning to Google's SEO
+                                recommendations and accessibility
+                                recommendations, with a focus on making semantic
+                                code.{" "}
                             </P>
 
                             {/* 

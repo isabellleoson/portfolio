@@ -36,6 +36,8 @@ const H1 = styled.h1`
 
 const Container = styled.div`
     // margin-left: 20px;
+    margin-left: 20px;
+    margin-bottom: 50px;
 
     @media (min-width: 750px) {
         display: flex;
@@ -64,7 +66,7 @@ const SecondPDiv = styled.div`
 `;
 
 const Img = styled.img`
-    max-width: 20vh;
+    max-width: 30vh;
     // padding-left: 30px;
     margin: 10px;
 
@@ -158,15 +160,23 @@ function UrbanGreens() {
 
                             <SecondPDiv>
                                 <P>
-                                    <Span>My main responsabilities was </Span>{" "}
-                                    the navbar and the search component, from
-                                    where the plants-cards gets filtred while
-                                    you search.
+                                    <Span>Urbans Greens is a plant-app </Span>{" "}
+                                    where you can search for plants, both by
+                                    name or category if you for example are
+                                    looking for herbs or only green plants. You
+                                    can add plants to "your windowsill"
+                                    (favorits). But also to get tips on how to
+                                    take care of them.
                                 </P>
                                 <Img2 src={navbarurban} alt="navbar" />
                             </SecondPDiv>
                         </StyledFirstPContainer>
                     </Div>
+                    <P>
+                        <Span>My main responsabilities was </Span> the navbar
+                        and the search component, from where the plants-cards
+                        gets filtred while you search.
+                    </P>
                     <BigCarousel images={images} />
                 </Container>{" "}
             </FadingText>

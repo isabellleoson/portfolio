@@ -63,6 +63,7 @@ const ImgDiv = styled.div`
     // padding-right: 20px;
     // margin: 10px;
     margin-top: 30px;
+    margin-bottom: 50px;
 
     @media (min-width: 750px) {
         display: flex;
@@ -148,9 +149,9 @@ const ThirdImg = styled.img`
 const P = styled.p`
     width: auto;
 
-    align-items: end;
-    justify-content: end;
-    text-align: end;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     display: flex;
     flex-direction: column;
     margin-top: 30px;
@@ -188,33 +189,13 @@ const Div = styled.div`
     align-items: center;
 `;
 
-// const Span = styled.span`
-//     width: auto;
-//     text-align: end;
-//     display: flex;
-//     flex-direction: column;
-//     margin-top: 30px;
-
-//     // margin-bottom: 20px;
-
-//     @media (min-width: 750px) {
-//         text-align: center;
-//     }
-// `;
 const Span = styled.span`
-    font-size: 14px;
+    font-size: 15px;
     color: rgb(195, 170, 154);
 
     @media (min-width: 750px) {
         font-size: 18px;
     }
-`;
-
-const A = styled.a`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 40px;
 `;
 
 const FooterContainer = styled.div`
@@ -270,10 +251,16 @@ function Globalize() {
                                     having events. Beside presenting the menu
                                     and having a booking request component for
                                     the catering, I created a solution for an
-                                    admin to handle their webshop. I created a
-                                    database using MongoDB and created a backend
-                                    that handels adding, changing and deleting
-                                    products to the webshop using the database.
+                                    admin to handle their webshop.
+                                </P>
+
+                                <P>
+                                    <Span>
+                                        I created a database using MongoDB{" "}
+                                    </Span>
+                                    and created a backend that handels adding,
+                                    changing and deleting products to the
+                                    webshop using the database.
                                 </P>
                             </StyledTextImgContiner>
                         </StyledFirstPContainer>
@@ -293,7 +280,7 @@ function Globalize() {
                         <ThirdImg src={adminnavbar} alt="admin navbar" />
                     </ImgDiv>
 
-                    <P>
+                    {/* <P>
                         At the moment, the backend is not connected to the
                         server (due to swapping from mongodb to fit the
                         render-server better), so the webshop and the login is
@@ -304,7 +291,7 @@ function Globalize() {
 
                     <A href="https://globalize.onrender.com/">
                         Go to Globalize
-                    </A>
+                    </A> */}
                 </FadingText>
             </Container>
             <FooterContainer>

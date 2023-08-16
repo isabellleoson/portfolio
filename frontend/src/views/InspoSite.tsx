@@ -63,6 +63,8 @@ const Container = styled.div`
     // margin-left: 30px;
     display: flex;
     flex-direction: column;
+    margin-left: 20px;
+    margin-bottom: 50px;
 
     @media (min-width: 750px) {
         display: flex;
@@ -160,6 +162,14 @@ function InspoSite() {
                 <Container>
                     <Div>
                         <StyledFirstPContainer>
+                            <P>
+                                <Span>
+                                    This is a site for finding insiration.
+                                </Span>{" "}
+                                Here you can find different colors, shades &
+                                images that will make it easier to find a little
+                                creativity.
+                            </P>
                             <P>
                                 <Span>
                                     This project was the first time I tried out

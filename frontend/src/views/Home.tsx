@@ -112,6 +112,7 @@ const SmilyContainer = styled.div`
         flex-direction: column;
         // background-color: rgb(235, 230, 162);
         background-color: rgba(255, 255, 133, 0.7);
+        box-shadow: 0px 0px 10px rgba(52, 44, 42, 0.5);
 
         max-width: 27%;
         height: 300px;
@@ -125,8 +126,9 @@ const SmilyContainer = styled.div`
 `;
 
 const SmallSmiley = styled.div`
-    @media (max-width: 749px) {
+    @media (max-width: 750px) {
         background-color: rgba(255, 255, 133, 0.7);
+        box-shadow: 0px 0px 10px rgba(52, 44, 42, 0.5);
 
         max-width: 30%;
         height: auto;
