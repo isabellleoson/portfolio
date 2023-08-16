@@ -105,6 +105,7 @@ const SmilyContainer = styled.div`
     flex-direction: column;
     justify-content: end;
     align-items: flex-end;
+
     // padding-right: 30px;
 
     @media (min-width: 750px) {
@@ -176,6 +177,7 @@ const P = styled.p`
     color: #342f2a;
     // background-color: rgba(240, 232, 227, 0.5);
     margin-top: 0;
+    margin-bottom: 70px;
 
     @media (min-width: 750px) {
         margin-top: 10px;
@@ -183,6 +185,7 @@ const P = styled.p`
         text-align: center;
         justify-content: center;
         align-items: center;
+        margin-bottom: 10px;
 
         // font-weight: bold;
         // margin-left: 50px;

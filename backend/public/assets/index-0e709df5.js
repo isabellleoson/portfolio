@@ -261,6 +261,7 @@ Error generating stack: `+o.message+`
     flex-direction: column;
     justify-content: end;
     align-items: flex-end;
+
     // padding-right: 30px;
 
     @media (min-width: 750px) {
@@ -326,6 +327,7 @@ Error generating stack: `+o.message+`
     color: #342f2a;
     // background-color: rgba(240, 232, 227, 0.5);
     margin-top: 0;
+    margin-bottom: 70px;
 
     @media (min-width: 750px) {
         margin-top: 10px;
@@ -333,6 +335,7 @@ Error generating stack: `+o.message+`
         text-align: center;
         justify-content: center;
         align-items: center;
+        margin-bottom: 10px;
 
         // font-weight: bold;
         // margin-left: 50px;
