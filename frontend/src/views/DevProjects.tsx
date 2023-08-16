@@ -99,6 +99,10 @@ const Header = styled.div`
 
 const FooterContainer = styled.div`
     margin-top: 100px;
+
+    @media (min-width: 750px) {
+        margin-top: 0px;
+    }
 `;
 
 function DevProjects() {

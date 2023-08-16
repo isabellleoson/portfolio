@@ -506,6 +506,10 @@ Error generating stack: `+o.message+`
     // padding-right: 40px;
 `,_1=w.div`
     margin-top: 100px;
+
+    @media (min-width: 750px) {
+        margin-top: 0px;
+    }
 `;function O1(){return c.jsxs(c.Fragment,{children:[c.jsxs(z1,{children:[c.jsx(R1,{children:c.jsx(xt,{className:"link",to:"/",children:"Home."})}),c.jsx(A1,{children:c.jsxs(D1,{children:[c.jsx(M1,{children:c.jsxs(N1,{children:[c.jsx(P1,{children:"Frontend Development."}),c.jsx(T1,{children:"These are the projects I've created during my first year as a student at IT-Högskolan in Gothenburg."})]})}),c.jsx(L1,{children:c.jsx(v1,{})})]})})]}),c.jsx(_1,{children:c.jsx(Cn,{})})]})}function Vn(){return c.jsxs(c.Fragment,{children:[c.jsxs(F1,{children:[c.jsx(Ld,{children:c.jsx(xt,{className:"link",to:"/",children:"Home."})}),c.jsx(Ld,{children:c.jsx(xt,{className:"link",to:"/devprojects",children:"Projects."})})]})," "]})}const F1=w.div`
     display: flex;
     justify-content: end;
