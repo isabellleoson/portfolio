@@ -42,7 +42,7 @@ function Contact() {
     return (
         <>
             {" "}
-            <Button onClick={Submit}>Contact Me!</Button>
+            <Button onClick={Submit}>Contact Me</Button>
         </>
     );
 }

@@ -191,7 +191,7 @@ Error generating stack: `+o.message+`
         font-size: 20px;
     }
 `;function l1(){const e=()=>{const t="isabell.leoson@gmail.com",n="Hejsan!",r=`
-                    `,i=`mailto:${t}?subject=${encodeURIComponent(n)}&body=${encodeURIComponent(r)}`;window.location.href=i};return c.jsxs(c.Fragment,{children:[" ",c.jsx(o1,{onClick:e,children:"Contact Me!"})]})}const a1=Kt`
+                    `,i=`mailto:${t}?subject=${encodeURIComponent(n)}&body=${encodeURIComponent(r)}`;window.location.href=i};return c.jsxs(c.Fragment,{children:[" ",c.jsx(o1,{onClick:e,children:"Contact Me"})]})}const a1=Kt`
   from {
     opacity: 0;
     transform: translateY(-20px);
