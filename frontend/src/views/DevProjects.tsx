@@ -115,23 +115,23 @@ function DevProjects() {
                     </Link>
                 </Li>
 
-                <FadingText>
-                    <Container>
-                        <Header>
-                            <Div>
-                                <H1>Frontend Development.</H1>
-                                <P>
-                                    These are the projects I've created during
-                                    my first year as a student at IT-Högskolan
-                                    in Gothenburg.
-                                </P>
-                            </Div>
-                        </Header>
+                <Container>
+                    <Header>
+                        <Div>
+                            <H1>Frontend Development.</H1>
+                            <P>
+                                These are the projects I've created during my
+                                first year as a student at IT-Högskolan in
+                                Gothenburg.
+                            </P>
+                        </Div>
+                    </Header>
+                    <FadingText>
                         <NavbarDiv>
                             <DevNavbar />
                         </NavbarDiv>
-                    </Container>
-                </FadingText>
+                    </FadingText>
+                </Container>
             </BackgroundContainer>
             <FooterContainer>
                 <Footer />

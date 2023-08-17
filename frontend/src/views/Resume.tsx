@@ -228,27 +228,29 @@ function Resume() {
                     <Header>
                         <H2>Resumé.</H2>
                     </Header>
-                    <ButtonContainer>
-                        <Button onClick={toggleAbout}>
-                            {showAbout ? "About Isabell" : "About Isabell"}
-                        </Button>
+                    <FadingText>
+                        <ButtonContainer>
+                            <Button onClick={toggleAbout}>
+                                {showAbout ? "About Isabell" : "About Isabell"}
+                            </Button>
 
-                        <Button onClick={toggleParagraph}>
-                            {showParagraph
-                                ? "Work Experience"
-                                : "Work Experience"}
-                        </Button>
+                            <Button onClick={toggleParagraph}>
+                                {showParagraph
+                                    ? "Work Experience"
+                                    : "Work Experience"}
+                            </Button>
 
-                        <Button onClick={toggleSecondParagraph}>
-                            {showSecondParagraph
-                                ? "Technical Skills"
-                                : "Technical Skills "}
-                        </Button>
+                            <Button onClick={toggleSecondParagraph}>
+                                {showSecondParagraph
+                                    ? "Technical Skills"
+                                    : "Technical Skills "}
+                            </Button>
 
-                        <Button onClick={toggleThirdParagraph}>
-                            {showThirdParagraph ? "Education" : "Education"}
-                        </Button>
-                    </ButtonContainer>
+                            <Button onClick={toggleThirdParagraph}>
+                                {showThirdParagraph ? "Education" : "Education"}
+                            </Button>
+                        </ButtonContainer>
+                    </FadingText>
                     <ContentContainer>
                         {showAbout && (
                             <>

@@ -58,8 +58,9 @@ const Img = styled.img`
 
 const HeadImg = styled.img`
     max-width: 30vh;
-    // padding-left: 30px;
-    margin: 10px;
+    margin-left: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: center;

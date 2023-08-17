@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import FooterContact from "./FooterContact";
+
 import copywrite from "../assets/copywrite.png";
 
 const Container = styled.div`
@@ -35,7 +37,7 @@ const Links = styled.div`
 
 const A = styled.a`
     font-size: 12px;
-    // margin-right: 10px;
+    margin-left: 10px;
 `;
 
 const CopywriteDiv = styled.div`
@@ -69,6 +71,16 @@ const Img = styled.img`
     }
 `;
 
+// const ContactDiv = styled.div`
+//     text-align: end;
+//     margin-top: 20px;
+// `;
+
+// const ContactP = styled.p`
+//     font-size: 10px;
+//     margin-top: -10px;
+// `;
+
 const P = styled.p`
     font-size: 8px;
     margin-left: 2px;
@@ -84,6 +96,12 @@ function Footer() {
                         LinkedIn
                     </A>
                 </Links>
+                {/* <ContactDiv>
+                    <ContactP>isabell.leoson@gmail.com</ContactP>
+                    <ContactP>073-9 132150</ContactP>
+                </ContactDiv> */}
+                <FooterContact />
+
                 <CopywriteDiv>
                     <Img src={copywrite} alt="copywrite" />
 
