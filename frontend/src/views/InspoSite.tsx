@@ -122,6 +122,7 @@ function InspoSite() {
         {
             url: imagesinfo,
             caption: "You can view (and hide) information about each photo",
+            width: "400px",
         },
         {
             url: shufflesearch,

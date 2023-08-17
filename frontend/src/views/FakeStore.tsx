@@ -132,7 +132,7 @@ function FakeStore() {
         {
             url: cardstore,
             caption:
-                "I used an API to present the products and I stored the added products with Vuex.",
+                "I used an API to present the products and I stored the added products using Vuex.",
         },
         {
             url: cartstore,
