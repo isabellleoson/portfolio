@@ -11,6 +11,16 @@ const P = styled.p`
     }
 `;
 
+const Smile = styled.p`
+    margin-top: -20px;
+    cursor: pointer;
+    text-align: center;
+
+    @media (min-width: 750px) {
+        display: none;
+    }
+`;
+
 function FooterContact() {
     const Submit = () => {
         const recipient = "isabell.leoson@gmail.com";
@@ -28,7 +38,10 @@ function FooterContact() {
     return (
         <>
             {" "}
-            <P onClick={Submit}>Contact me</P>
+            <label onClick={Submit}>
+                <P>Contact me</P>
+                <Smile>&#128578;</Smile>
+            </label>
         </>
     );
 }

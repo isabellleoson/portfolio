@@ -14,7 +14,7 @@ const Container = styled.div`
         flex-direction: column;
         justify-content: end;
         align-items: end;
-        margin-top: -40px;
+        margin-top: -100px;
         padding-right: 20px;
     }
 `;
@@ -45,7 +45,7 @@ const CopywriteDiv = styled.div`
     // align-items: center;
     // justify-content: center;
     // margin-top: -18px;
-
+    margin-left: 5px;
     display: flex;
     flex-direction: row;
     align-items: center;

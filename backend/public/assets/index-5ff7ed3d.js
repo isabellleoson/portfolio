@@ -386,8 +386,16 @@ Error generating stack: `+o.message+`
         cursor: pointer;
         color: #706a66;
     }
-`;function C1(){const e=()=>{const t="isabell.leoson@gmail.com",n="Hejsan!",r=`
-                    `,i=`mailto:${t}?subject=${encodeURIComponent(n)}&body=${encodeURIComponent(r)}`;window.location.href=i};return c.jsxs(c.Fragment,{children:[" ",c.jsx(S1,{onClick:e,children:"Contact me"})]})}const k1=w.div`
+`,C1=w.p`
+    margin-top: -20px;
+    cursor: pointer;
+    text-align: center;
+
+    @media (min-width: 750px) {
+        display: none;
+    }
+`;function k1(){const e=()=>{const t="isabell.leoson@gmail.com",n="Hejsan!",r=`
+                    `,i=`mailto:${t}?subject=${encodeURIComponent(n)}&body=${encodeURIComponent(r)}`;window.location.href=i};return c.jsxs(c.Fragment,{children:[" ",c.jsxs("label",{onClick:e,children:[c.jsx(S1,{children:"Contact me"}),c.jsx(C1,{children:"🙂"})]})]})}const j1=w.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -397,10 +405,10 @@ Error generating stack: `+o.message+`
         flex-direction: column;
         justify-content: end;
         align-items: end;
-        margin-top: -40px;
+        margin-top: -100px;
         padding-right: 20px;
     }
-`,j1=w.div`
+`,E1=w.div`
     // margin-top: 140px;
     // display: flex;
     // justify-content: center;
@@ -417,12 +425,12 @@ Error generating stack: `+o.message+`
 `,Nd=w.a`
     font-size: 12px;
     margin-left: 10px;
-`,E1=w.div`
+`,I1=w.div`
     // display: flex;
     // align-items: center;
     // justify-content: center;
     // margin-top: -18px;
-
+    margin-left: 5px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -437,17 +445,17 @@ Error generating stack: `+o.message+`
         // display: flex;
         // justify-content: end;
     }
-`,I1=w.img`
+`,A1=w.img`
     width: 12px;
     height: 12px;
     @media (min-width: 750px) {
         width: 12px;
         height: 12px;
     }
-`,A1=w.p`
+`,R1=w.p`
     font-size: 8px;
     margin-left: 2px;
-`;function kn(){return c.jsx(c.Fragment,{children:c.jsxs(k1,{children:[c.jsxs(j1,{children:[c.jsx(Nd,{href:"https://github.com/isabellleoson",children:"Github"}),c.jsx(Nd,{href:"https://www.linkedin.com/in/isabell-leoson-52a908252/",children:"LinkedIn"})]}),c.jsx(C1,{}),c.jsxs(E1,{children:[c.jsx(I1,{src:Hh,alt:"copywrite"}),c.jsx(A1,{children:"Isabell Leoson 2023"})]})]})})}const R1=Kt`
+`;function kn(){return c.jsx(c.Fragment,{children:c.jsxs(j1,{children:[c.jsxs(E1,{children:[c.jsx(Nd,{href:"https://github.com/isabellleoson",children:"Github"}),c.jsx(Nd,{href:"https://www.linkedin.com/in/isabell-leoson-52a908252/",children:"LinkedIn"})]}),c.jsx(k1,{}),c.jsxs(I1,{children:[c.jsx(A1,{src:Hh,alt:"copywrite"}),c.jsx(R1,{children:"Isabell Leoson 2023"})]})]})})}const P1=Kt`
   from {
     opacity: 0;
     transform: translateY(-20px);
@@ -456,9 +464,9 @@ Error generating stack: `+o.message+`
     opacity: 1;
     transform: translateY(0);
   }
-`,P1=w.div`
-    animation: ${R1} 1s ease;
 `,T1=w.div`
+    animation: ${P1} 1s ease;
+`,z1=w.div`
     display: flex;
     justify-content: end;
     font-size: 10px;
@@ -466,14 +474,14 @@ Error generating stack: `+o.message+`
     @media (min-width: 750px) {
         padding: 20px;
     }
-`,z1=w.h1`
+`,D1=w.h1`
     margin-bottom: 0;
 
     @media (min-width: 750px) {
         margin-top: 0;
         font-size: 25px;
     }
-`,D1=w.p`
+`,N1=w.p`
     display: flex;
     flex-direction: column;
     text-align: end;
@@ -484,20 +492,20 @@ Error generating stack: `+o.message+`
         font-size: 14px;
         max-width: 320px;
     }
-`,N1=w.div`
+`,L1=w.div`
     @media (min-width: 750px) {
         background-image: url(${w1});
         background-size: cover;
         background-position: center;
     }
-`,L1=w.div`
+`,M1=w.div`
     @media (min-width: 750px) {
         display: flex;
         // flex-direction: column;
 
         flex-direction: row-reverse;
     }
-`,M1=w.div`
+`,_1=w.div`
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -506,11 +514,12 @@ Error generating stack: `+o.message+`
     @media (min-width: 750px) {
         padding: 20px;
     }
-`,_1=w.div`
-    // margin-right: 90px;
 `,F1=w.div`
+    // margin-right: 90px;
+`,O1=w.div`
     display: flex;
     flex-direction: column;
+    color: rgb(195, 170, 154);
     // align-items: flex-end;
     // justify-content: end;
 
@@ -519,13 +528,13 @@ Error generating stack: `+o.message+`
     }
     // padding-top: 40px;
     // padding-right: 40px;
-`,O1=w.div`
+`,$1=w.div`
     margin-top: 100px;
 
     @media (min-width: 750px) {
         margin-top: 0px;
     }
-`;function $1(){return c.jsxs(c.Fragment,{children:[c.jsxs(N1,{children:[c.jsx(T1,{children:c.jsx(xt,{className:"link",to:"/",children:"Home."})}),c.jsxs(L1,{children:[c.jsx(F1,{children:c.jsxs(M1,{children:[c.jsx(z1,{children:"Frontend Development."}),c.jsx(D1,{children:"These are the projects I've created during my first year as a student at IT-Högskolan in Gothenburg."})]})}),c.jsx(P1,{children:c.jsx(_1,{children:c.jsx(v1,{})})})]})]}),c.jsx(O1,{children:c.jsx(kn,{})})]})}function Vn(){return c.jsxs(c.Fragment,{children:[c.jsxs(U1,{children:[c.jsx(Ld,{children:c.jsx(xt,{className:"link",to:"/",children:"Home."})}),c.jsx(Ld,{children:c.jsx(xt,{className:"link",to:"/devprojects",children:"Projects."})})]})," "]})}const U1=w.div`
+`;function U1(){return c.jsxs(c.Fragment,{children:[c.jsxs(L1,{children:[c.jsx(z1,{children:c.jsx(xt,{className:"link",to:"/",children:"Home."})}),c.jsxs(M1,{children:[c.jsx(O1,{children:c.jsxs(_1,{children:[c.jsx(D1,{children:"Frontend Development."}),c.jsx(N1,{children:"These are the projects I've created during my first year as a student at IT-Högskolan in Gothenburg."})]})}),c.jsx(T1,{children:c.jsx(F1,{children:c.jsx(v1,{})})})]})]}),c.jsx($1,{children:c.jsx(kn,{})})]})}function Vn(){return c.jsxs(c.Fragment,{children:[c.jsxs(B1,{children:[c.jsx(Ld,{children:c.jsx(xt,{className:"link",to:"/",children:"Home."})}),c.jsx(Ld,{children:c.jsx(xt,{className:"link",to:"/devprojects",children:"Projects."})})]})," "]})}const B1=w.div`
     display: flex;
     justify-content: end;
     // margin-right: 20px;
@@ -541,7 +550,7 @@ Error generating stack: `+o.message+`
     margin-left: 10px;
     padding-left: 10px;
     list-style: none;
-`,B1="/assets/glasskiosken-77a48cff.png",H1="/assets/icecreams-d6982137.png",b1="/assets/form-ca69b0eb.png",W1=Kt`
+`,H1="/assets/glasskiosken-77a48cff.png",b1="/assets/icecreams-d6982137.png",W1="/assets/form-ca69b0eb.png",Y1=Kt`
   from {
     opacity: 0;
     transform: translateY(-20px);
@@ -550,16 +559,16 @@ Error generating stack: `+o.message+`
     opacity: 1;
     transform: translateY(0);
   }
-`,Y1=w.div`
-    animation: ${W1} 1s ease;
 `,G1=w.div`
+    animation: ${Y1} 1s ease;
+`,V1=w.div`
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: 30px;
-`,V1=w.h1`
+`,Z1=w.h1`
     font-size: 24px;
-`,Z1=w.div`
+`,Q1=w.div`
     width: auto;
     // padding-left: 30px;
     margin: 10px;
@@ -577,7 +586,7 @@ Error generating stack: `+o.message+`
         min-width: 40vh;
         display: flex;
     }
-`,Q1=w.img`
+`,K1=w.img`
     max-width: 30vh;
     margin-left: 25px;
     margin-top: 10px;
@@ -589,7 +598,7 @@ Error generating stack: `+o.message+`
     @media (min-width: 750px) {
         min-width: 40vh;
     }
-`,K1=w.div`
+`,J1=w.div`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -604,9 +613,9 @@ Error generating stack: `+o.message+`
         margin-left: 150px;
         margin-right: 150px;
     }
-`,J1=w.div`
-    display: flex;
 `,X1=w.div`
+    display: flex;
+`,q1=w.div`
     display: flex;
     flex-direction: column;
     // max-width: 600px;
@@ -618,24 +627,24 @@ Error generating stack: `+o.message+`
     //     padding-left: 150px;
     //     padding-right: 150px;
     // }
-`,q1=w.div`
+`,ex=w.div`
     display: flex;
     @media (min-width: 750px) {
         justify-content: center;
         align-items: center;
     }
-`,ex=w.div`
+`,tx=w.div`
     text-align: end;
 `,_d=w.p`
     @media (min-width: 750px) {
         font-size: 16px;
         text-align: center;
     }
-`,tx=w.p`
+`,nx=w.p`
     @media (min-width: 750px) {
         font-size: 16px;
     }
-`,nx=w.p`
+`,rx=w.p`
     @media (min-width: 750px) {
         font-size: 16px;
     }
@@ -646,12 +655,12 @@ Error generating stack: `+o.message+`
     @media (min-width: 750px) {
         font-size: 18px;
     }
-`,rx=w.div`
+`,ix=w.div`
     @media (min-width: 750px) {
         margin-top: 40px;
         margin-bottom: 40px;
     }
-`;function ix(){return c.jsxs(c.Fragment,{children:[c.jsx(Vn,{}),c.jsxs(Y1,{children:[c.jsxs(G1,{children:[c.jsx(V1,{children:"Glasskiosken"}),c.jsx("h2",{children:"HTML / CSS"}),c.jsx("h2",{children:"Grid layout / Responsive design"})]}),c.jsxs(K1,{children:[c.jsx(Q1,{src:B1,alt:""}),c.jsx(J1,{children:c.jsxs(X1,{children:[c.jsxs(_d,{children:[c.jsx(mo,{children:"This was my very first time coding."})," ","The fictional costumer is an ice cream foodtruck for whom I created a website to present the menu and to book the truck."]}),c.jsxs(_d,{children:[c.jsx(mo,{children:"The project is build with only HTML and CSS."})," ",`I wanted to create a fun, colorful site that makes you happy. The website is build "mobile first", and accordning to Google's SEO recommendations and accessibility recommendations, with a focus on making semantic code.`," "]}),c.jsxs(q1,{children:[c.jsxs(Z1,{children:[c.jsx(Md,{src:H1,alt:"icecreams"}),c.jsx(Md,{src:b1,alt:"booking form"})]}),c.jsxs(ex,{children:[c.jsxs(tx,{children:[c.jsx(mo,{children:"This thought me "}),"to write clear code. I used prettier for making the code look good. This also thought me that grid is fine, but I never used it since. I heart Flexbox."]}),c.jsxs(nx,{children:[c.jsx(mo,{children:"Overall,"})," this was my first tumbeling steps towards becoming a developer. When I look back at this, I realize how far I´ve come."]})]})]})]})})]})," "]}),c.jsx(rx,{children:c.jsx(kn,{})})]})}const ox="/assets/urbangreens-79f0e67d.png",lx="/assets/navbarurban-4d249c2e.png",ax="/assets/searchurban-709591c1.png",sx="/assets/search2urban-6a19e3ec.png",bh="data:image/png;base64,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",Wh="data:image/png;base64,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",ux=w.div`
+`;function ox(){return c.jsxs(c.Fragment,{children:[c.jsx(Vn,{}),c.jsxs(G1,{children:[c.jsxs(V1,{children:[c.jsx(Z1,{children:"Glasskiosken"}),c.jsx("h2",{children:"HTML / CSS"}),c.jsx("h2",{children:"Grid layout / Responsive design"})]}),c.jsxs(J1,{children:[c.jsx(K1,{src:H1,alt:""}),c.jsx(X1,{children:c.jsxs(q1,{children:[c.jsxs(_d,{children:[c.jsx(mo,{children:"This was my very first time coding."})," ","The fictional costumer is an ice cream foodtruck for whom I created a website to present the menu and to book the truck."]}),c.jsxs(_d,{children:[c.jsx(mo,{children:"The project is build with only HTML and CSS."})," ",`I wanted to create a fun, colorful site that makes you happy. The website is build "mobile first", and accordning to Google's SEO recommendations and accessibility recommendations, with a focus on making semantic code.`," "]}),c.jsxs(ex,{children:[c.jsxs(Q1,{children:[c.jsx(Md,{src:b1,alt:"icecreams"}),c.jsx(Md,{src:W1,alt:"booking form"})]}),c.jsxs(tx,{children:[c.jsxs(nx,{children:[c.jsx(mo,{children:"This thought me "}),"to write clear code. I used prettier for making the code look good. This also thought me that grid is fine, but I never used it since. I heart Flexbox."]}),c.jsxs(rx,{children:[c.jsx(mo,{children:"Overall,"})," this was my first tumbeling steps towards becoming a developer. When I look back at this, I realize how far I´ve come."]})]})]})]})})]})," "]}),c.jsx(ix,{children:c.jsx(kn,{})})]})}const lx="/assets/urbangreens-79f0e67d.png",ax="/assets/navbarurban-4d249c2e.png",sx="/assets/searchurban-709591c1.png",ux="/assets/search2urban-6a19e3ec.png",bh="data:image/png;base64,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",Wh="data:image/png;base64,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",cx=w.div`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -664,14 +673,14 @@ Error generating stack: `+o.message+`
     @media (min-width: 750px) {
         max-width: 80%;
     }
-`,cx=w.div`
+`,dx=w.div`
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 300px;
 
     // margin-left: -20px;
-`,dx=w.img`
+`,fx=w.img`
     width: 100%;
     padding: 20px;
 
@@ -685,10 +694,10 @@ Error generating stack: `+o.message+`
         width: 200px;
         padding: 0px;
     }
-`,fx=w.div`
+`,px=w.div`
     display: flex;
     justify-content: space-between;
-`,px=w.img`
+`,hx=w.img`
     width: 40px;
     height: 40px;
     cursor: pointer;
@@ -697,7 +706,7 @@ Error generating stack: `+o.message+`
 
     box-shadow: 0px 0px 0x;
     box-shadow: none;
-`,hx=w.img`
+`,mx=w.img`
     width: 40px;
     height: 40px;
     cursor: pointer;
@@ -705,7 +714,7 @@ Error generating stack: `+o.message+`
     margin-top: 5px;
 
     box-shadow: none;
-`,mx=w.p`
+`,gx=w.p`
     font-size: 14px;
     text-align: center;
     // margin: 0.5rem 0;
@@ -714,7 +723,7 @@ Error generating stack: `+o.message+`
     margin-bottom: 0;
     color: rgb(195, 170, 154);
     padding: 10px;
-`,Yh=({images:e})=>{const[t,n]=T.useState(0),r=()=>{n(o=>o===0?e.length-1:o-1)},i=()=>{n(o=>o===e.length-1?0:o+1)};return c.jsxs(ux,{children:[c.jsxs(cx,{children:[c.jsx(dx,{src:e[t].url,alt:`Slide ${t}`}),c.jsxs(fx,{children:[c.jsx(px,{onClick:r,src:Wh,alt:"arrow"}),c.jsx(hx,{onClick:i,src:bh,alt:"arrow"})]})]}),c.jsx(mx,{children:e[t].caption})]})},gx=Kt`
+`,Yh=({images:e})=>{const[t,n]=T.useState(0),r=()=>{n(o=>o===0?e.length-1:o-1)},i=()=>{n(o=>o===e.length-1?0:o+1)};return c.jsxs(cx,{children:[c.jsxs(dx,{children:[c.jsx(fx,{src:e[t].url,alt:`Slide ${t}`}),c.jsxs(px,{children:[c.jsx(hx,{onClick:r,src:Wh,alt:"arrow"}),c.jsx(mx,{onClick:i,src:bh,alt:"arrow"})]})]}),c.jsx(gx,{children:e[t].caption})]})},yx=Kt`
   from {
     opacity: 0;
     transform: translateY(-20px);
@@ -723,15 +732,15 @@ Error generating stack: `+o.message+`
     opacity: 1;
     transform: translateY(0);
   }
-`,yx=w.div`
-    animation: ${gx} 1s ease;
 `,vx=w.div`
+    animation: ${yx} 1s ease;
+`,xx=w.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-`,xx=w.h1`
+`,wx=w.h1`
     font-size: 24px;
-`,wx=w.div`
+`,Sx=w.div`
     // margin-left: 20px;
     margin-left: 20px;
     margin-bottom: 50px;
@@ -743,18 +752,18 @@ Error generating stack: `+o.message+`
         margin-left: 300px;
         margin-right: 300px;
     }
-`,Sx=w.div`
+`,Cx=w.div`
     display: flex;
 `,Fd=w.h2`
     text-align: center;
-`,Cx=w.div`
+`,kx=w.div`
     display: flex;
 
     @media (min-width: 750px) {
         width: 400px;
         align-items: center;
     }
-`,kx=w.img`
+`,jx=w.img`
     max-width: 30vh;
     // padding-left: 30px;
     margin: 10px;
@@ -763,7 +772,7 @@ Error generating stack: `+o.message+`
         min-width: 40vh;
         display: flex;
     }
-`,jx=w.img`
+`,Ex=w.img`
     max-width: 20vh;
     // padding-left: 30px;
     margin: 10px;
@@ -773,7 +782,7 @@ Error generating stack: `+o.message+`
         display: flex;
         margin: 30px;
     }
-`,Ex=w.div`
+`,Ix=w.div`
     display: flex;
     flex-direction: column;
 
@@ -791,16 +800,17 @@ Error generating stack: `+o.message+`
     @media (min-width: 750px) {
         font-size: 18px;
     }
-`,Ix=w.div`
+`,Ax=w.div`
     @media (min-width: 750px) {
         margin-top: 40px;
         margin-bottom: 40px;
     }
-`;function Ax(){const e=[{url:sx,caption:"The searchfield within the guide"},{url:ax,caption:"You can see how it filtres the plant-cards."}];return c.jsxs(c.Fragment,{children:[c.jsx(Vn,{}),c.jsxs(yx,{children:[c.jsxs(vx,{children:[c.jsx(xx,{children:"Urban Greens"}),c.jsx(Fd,{children:"JAVASCRIPT / VUE / VITE / NODE.JS"}),c.jsx(Fd,{children:" Scrum / Figma / Bootstrap / Responsive design"}),c.jsx(kx,{src:ox,alt:"homepage Urban Greens"})]}),c.jsxs(wx,{children:[c.jsx(Sx,{children:c.jsxs(Ex,{children:[c.jsxs(xa,{children:[c.jsx(wa,{children:"This was a group project"})," that we first designed in Figma. We worked with the agile method Scrum through out the whole project. We created a fake backend by adding all the information in a json file and fetching to it."]}),c.jsxs(Cx,{children:[c.jsxs(xa,{children:[c.jsx(wa,{children:"Urbans Greens is a plant-app "})," ",'where you can search for plants, both by name or category if you for example are looking for herbs or only green plants. You can add plants to "your windowsill" (favorits). But also to get tips on how to take care of them.']}),c.jsx(jx,{src:lx,alt:"navbar"})]})]})}),c.jsxs(xa,{children:[c.jsx(wa,{children:"My main responsabilities was "})," the navbar and the search component, from where the plants-cards gets filtred while you search."]}),c.jsx(Yh,{images:e})]})," "]}),c.jsx(Ix,{children:c.jsx(kn,{})})]})}const Od=w.h2`
+`;function Rx(){const e=[{url:ux,caption:"The searchfield within the guide"},{url:sx,caption:"You can see how it filtres the plant-cards."}];return c.jsxs(c.Fragment,{children:[c.jsx(Vn,{}),c.jsxs(vx,{children:[c.jsxs(xx,{children:[c.jsx(wx,{children:"Urban Greens"}),c.jsx(Fd,{children:"JAVASCRIPT / VUE / VITE / NODE.JS"}),c.jsx(Fd,{children:" Scrum / Figma / Bootstrap / Responsive design"}),c.jsx(jx,{src:lx,alt:"homepage Urban Greens"})]}),c.jsxs(Sx,{children:[c.jsx(Cx,{children:c.jsxs(Ix,{children:[c.jsxs(xa,{children:[c.jsx(wa,{children:"This was a group project"})," that we first designed in Figma. We worked with the agile method Scrum through out the whole project. We created a fake backend by adding all the information in a json file and fetching to it."]}),c.jsxs(kx,{children:[c.jsxs(xa,{children:[c.jsx(wa,{children:"Urbans Greens is a plant-app "})," ",'where you can search for plants, both by name or category if you for example are looking for herbs or only green plants. You can add plants to "your windowsill" (favorits). But also to get tips on how to take care of them.']}),c.jsx(Ex,{src:ax,alt:"navbar"})]})]})}),c.jsxs(xa,{children:[c.jsx(wa,{children:"My main responsabilities was "})," the navbar and the search component, from where the plants-cards gets filtred while you search."]}),c.jsx(Yh,{images:e})]})," "]}),c.jsx(Ax,{children:c.jsx(kn,{})})]})}const Od=w.h2`
     padding-top: 25px;
-    border-bottom: solid white 1px;
+    border-bottom: solid rgb(195, 170, 154) 1px;
     margin-left: 12px;
-`,Rx=Kt`
+    color: rgb(195, 170, 154);
+`,Px=Kt`
   from {
     opacity: 0;
     transform: translateX(-20px);
@@ -811,14 +821,14 @@ Error generating stack: `+o.message+`
   }
 `,Rt=w.div`
     opacity: 0;
-    animation: ${Rx} 1s ease forwards;
-`,Px=w.div`
+    animation: ${Px} 1s ease forwards;
+`,Tx=w.div`
     max-width: 600px;
     @media (min-width: 750px) {
         display: flex;
         flex-direction: column;
     }
-`,Tx=w.div`
+`,zx=w.div`
     @media (min-width: 750px) {
         width: 98vw;
         justify-content: end;
@@ -829,7 +839,7 @@ Error generating stack: `+o.message+`
         display: flex;
         flex-direction: column;
     }
-`,zx=w.div`
+`,Dx=w.div`
     // max-width: 600px;
     width: 320px;
 
@@ -841,7 +851,8 @@ Error generating stack: `+o.message+`
         margin-right: 200px;
         width: 620px;
     }
-`,Dx=w.div`
+`,Nx=w.div`
+
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -853,7 +864,7 @@ Error generating stack: `+o.message+`
         margin-right: 200px;
         margin-left 300px;
     }
-`,Nx=w.div`
+`,Lx=w.div`
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -870,7 +881,7 @@ Error generating stack: `+o.message+`
         // justify-content: end;
         // margin: 0px 0px 0px 260px;
     }
-`,Lx=w.div`
+`,Mx=w.div`
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -887,7 +898,7 @@ Error generating stack: `+o.message+`
     font-size: 14px;
     margin-left: 10px;
     background-color: rgba(67, 53, 49, 0.4);
-`,Mx=w.ul`
+`,_x=w.ul`
     max-width: 400px;
 `,Pt=w.li`
     display: flex;
@@ -927,7 +938,7 @@ Error generating stack: `+o.message+`
         padding: 6px 12px;
         font-size: 12px;
     }
-`,_x=w.div`
+`,Fx=w.div`
     display: flex;
     flex-direction: column;
     max-width: 800px;
@@ -935,12 +946,12 @@ Error generating stack: `+o.message+`
     @media (min-width: 750px) {
         margin-left: 350px;
     }
-`,Fx=w.div`
+`,Ox=w.div`
     margin-top: 100px;
     @media (min-width: 750px) {
         margin-top: 200px;
     }
-`;function Ox(){const[e,t]=T.useState(!1),[n,r]=T.useState(!1),[i,o]=T.useState(!1),[l,a]=T.useState(!1),s=()=>{t(!e),r(!1),o(!1),a(!1)},u=()=>{t(!1),r(!n),o(!1),a(!1)},p=()=>{t(!1),r(!1),o(!i),a(!1)},y=()=>{t(!1),r(!1),o(!1),a(!l)};return c.jsx(c.Fragment,{children:c.jsx(Px,{children:c.jsxs(Tx,{children:[c.jsx(Vn,{}),c.jsx(Dx,{children:c.jsx(Od,{children:"Resumé."})}),c.jsx(Rt,{children:c.jsxs(Nx,{children:[c.jsx(go,{onClick:s,children:"About Isabell"}),c.jsx(go,{onClick:u,children:"Work Experience"}),c.jsx(go,{onClick:p,children:i?"Technical Skills":"Technical Skills "}),c.jsx(go,{onClick:y,children:"Education"})]})}),c.jsxs(zx,{children:[e&&c.jsx(c.Fragment,{children:c.jsxs(Lx,{children:[c.jsxs(Rt,{children:[c.jsx(Od,{children:"About Isabell"}),c.jsxs(Xn,{children:[c.jsx(en,{children:"Hello"}),", I'm Isabell, a versatile professional with a"," ",c.jsx(en,{children:"passion for healthcare, artistic expression, and technology"}),". With a solid foundation as an assistant nurse and a background in painting, I am currently harnessing my creativity and determination to embark on an exciting journey as a frontend developer."]})]}),c.jsx(Rt,{children:c.jsxs(Xn,{children:["For over 12 years, I honed my interpersonal and caregiving skills as an ",c.jsx(en,{children:"assistant nurse"}),". This experience not only allowed me to get a deep sense of empathy and a commitment to making a positive impact on people's lives, but also experiences (and interest) of the digitalization of healthcare, witch led to my current career change."]})}),c.jsx(Rt,{children:c.jsxs(Xn,{children:["Beyond the healthcare field, I explored my artistic inclinations as a ",c.jsx(en,{children:"painting artist"}),". This endeavor cultivated my"," ",c.jsx(en,{children:"eye for detail, innovative thinking, and the ability to transform abstract concepts into tangible creations"}),". These artistic skills have seamlessly translated into my pursuit of becoming a skilled Frontend Developer."]})}),c.jsx(Rt,{children:c.jsxs(Xn,{children:["Currently enrolled as a Frontend Developer student, I am excited to leverage my diverse background to bring a unique perspective to the world of web development. My experience as an assistant nurse taught me the value of"," ",c.jsx(en,{children:"precision, adaptability, and teamwork"}),"—qualities that resonate in the realm of coding and design."]})}),c.jsx(Rt,{children:c.jsxs(Xn,{children:["As a dedicated learner and aspiring developer, I am committed to continuous growth and enhancing my technical expertise. My goal is to"," ",c.jsx(en,{children:"merge my passion for aesthetics, problem-solving, and user-centric design"})," ","to craft seamless and captivating digital experiences."]})}),c.jsx(Rt,{children:c.jsxs(Xn,{children:["I am eagerly seeking opportunities to apply my skills and embark on a new chapter in my career journey. With a solid foundation in healthcare, a flair for artistic expression, and"," ",c.jsx(en,{children:"a drive to excel as a Frontend Developer"}),", I am excited to contribute my unique perspective and dedication to any innovative team."]})})]})}),n&&c.jsx(Rt,{children:c.jsxs(Mx,{children:[c.jsx(Pt,{children:"Morängatans elderly care, Gothenburg - 2012-2012. Assistant nurse"}),c.jsx(Pt,{children:"La Gran Becca, Cervinia, Italy. Winter season work 2013-2015. Bartender/barista"}),c.jsx(Pt,{children:"Tallgläntan short term home, rehab, Falkenberg 2015-2022. Assistant nurse"}),c.jsxs(Pt,{children:["Kommunal & LO trade union, Elected representative. Falkenberg/Värnamo/ Gothenburg/Stockholm. 2016-2019."," "]}),c.jsxs($d,{children:["- Responsible for youth questions with responsibilities within the whole organization. I worked both locally and at the head office. This has for example included arrangeing courses to educate new representavies."," "]}),c.jsx($d,{children:"- School informant. Conducted courses for high school students, adult learners, and Swedish for Immigrants (SFI) students about the Swedish model and the Swedish labor market."}),c.jsxs(Pt,{children:["IssaJosephine Art, 2020 - on going. My own company as an painting artist"," "]})]})}),i&&c.jsx(Rt,{children:c.jsxs(_x,{children:[c.jsx("p",{children:"HTML / CSS / JAVASCRIPT / TYPESCRIPT / VUE / REACT / VITE / NODE.JS"}),c.jsxs("p",{children:["MongoDB / SQLite / PostgreSQL / EXPRESS"," "]}),c.jsx("p",{children:"GRID LAYOUT / FLEXBOX LAYOUT / RESPONSIVE DESIGN / FIGMA / BOOTSTRAP"}),c.jsx("p",{children:"During my education I've also worked with agile methods such as Scrum."})]})}),l&&c.jsx(Rt,{children:c.jsxs("ul",{children:[c.jsx(Pt,{children:"Frontend Developer, IT-Högskolan Gothenburg, 2022 - on going"}),c.jsx(Pt,{children:"Portfolio och graphic design 15hp, University of Borås 2023"}),c.jsx(Pt,{children:"Fashion sketching and illustation 15hp, University of Borås 2021"}),c.jsx(Pt,{children:"Occupational psychology and health 15hp, University of Halmstad 2015"}),c.jsx(Pt,{children:"Caregiving Program, assistans nurse with a specialization in healthcare. Göteborgs Praktiska (high school) 2009-2012"})]})})]}),c.jsx(Fx,{children:c.jsx(kn,{})})]})})})}const $x="/assets/cities-1945799d.png",Ux="/assets/navbarinsposite-b4d2f244.png",Bx="/assets/imgsearch-87d00afc.png",Hx="/assets/imagesinfo-a7fa76ca.png",bx="/assets/shufflesearch-544903f5.png",Wx="/assets/colorsearch-118b6f57.png",Yx="/assets/chartjs-88e60632.png",Gx="/assets/imgcolorcode-584f19e1.png",Vx="/assets/colorcode-afb0cac0.png",Zx=Kt`
+`;function $x(){const[e,t]=T.useState(!1),[n,r]=T.useState(!1),[i,o]=T.useState(!1),[l,a]=T.useState(!1),s=()=>{t(!e),r(!1),o(!1),a(!1)},u=()=>{t(!1),r(!n),o(!1),a(!1)},p=()=>{t(!1),r(!1),o(!i),a(!1)},y=()=>{t(!1),r(!1),o(!1),a(!l)};return c.jsx(c.Fragment,{children:c.jsx(Tx,{children:c.jsxs(zx,{children:[c.jsx(Vn,{}),c.jsx(Nx,{children:c.jsx(Od,{children:"Resumé."})}),c.jsx(Rt,{children:c.jsxs(Lx,{children:[c.jsx(go,{onClick:s,children:"About Isabell"}),c.jsx(go,{onClick:u,children:"Work Experience"}),c.jsx(go,{onClick:p,children:i?"Technical Skills":"Technical Skills "}),c.jsx(go,{onClick:y,children:"Education"})]})}),c.jsxs(Dx,{children:[e&&c.jsx(c.Fragment,{children:c.jsxs(Mx,{children:[c.jsxs(Rt,{children:[c.jsx(Od,{children:"About Isabell"}),c.jsxs(Xn,{children:[c.jsx(en,{children:"Hello"}),", I'm Isabell, a versatile professional with a"," ",c.jsx(en,{children:"passion for healthcare, artistic expression, and technology"}),". With a solid foundation as an assistant nurse and a background in painting, I am currently harnessing my creativity and determination to embark on an exciting journey as a frontend developer."]})]}),c.jsx(Rt,{children:c.jsxs(Xn,{children:["For over 12 years, I honed my interpersonal and caregiving skills as an ",c.jsx(en,{children:"assistant nurse"}),". This experience not only allowed me to get a deep sense of empathy and a commitment to making a positive impact on people's lives, but also experiences (and interest) of the digitalization of healthcare, witch led to my current career change."]})}),c.jsx(Rt,{children:c.jsxs(Xn,{children:["Beyond the healthcare field, I explored my artistic inclinations as a ",c.jsx(en,{children:"painting artist"}),". This endeavor cultivated my"," ",c.jsx(en,{children:"eye for detail, innovative thinking, and the ability to transform abstract concepts into tangible creations"}),". These artistic skills have seamlessly translated into my pursuit of becoming a skilled Frontend Developer."]})}),c.jsx(Rt,{children:c.jsxs(Xn,{children:["Currently enrolled as a Frontend Developer student, I am excited to leverage my diverse background to bring a unique perspective to the world of web development. My experience as an assistant nurse taught me the value of"," ",c.jsx(en,{children:"precision, adaptability, and teamwork"}),"—qualities that resonate in the realm of coding and design."]})}),c.jsx(Rt,{children:c.jsxs(Xn,{children:["As a dedicated learner and aspiring developer, I am committed to continuous growth and enhancing my technical expertise. My goal is to"," ",c.jsx(en,{children:"merge my passion for aesthetics, problem-solving, and user-centric design"})," ","to craft seamless and captivating digital experiences."]})}),c.jsx(Rt,{children:c.jsxs(Xn,{children:["I am eagerly seeking opportunities to apply my skills and embark on a new chapter in my career journey. With a solid foundation in healthcare, a flair for artistic expression, and"," ",c.jsx(en,{children:"a drive to excel as a Frontend Developer"}),", I am excited to contribute my unique perspective and dedication to any innovative team."]})})]})}),n&&c.jsx(Rt,{children:c.jsxs(_x,{children:[c.jsx(Pt,{children:"Morängatans elderly care, Gothenburg - 2012-2012. Assistant nurse"}),c.jsx(Pt,{children:"La Gran Becca, Cervinia, Italy. Winter season work 2013-2015. Bartender/barista"}),c.jsx(Pt,{children:"Tallgläntan short term home, rehab, Falkenberg 2015-2022. Assistant nurse"}),c.jsxs(Pt,{children:["Kommunal & LO trade union, Elected representative. Falkenberg/Värnamo/ Gothenburg/Stockholm. 2016-2019."," "]}),c.jsxs($d,{children:["- Responsible for youth questions with responsibilities within the whole organization. I worked both locally and at the head office. This has for example included arrangeing courses to educate new representavies."," "]}),c.jsx($d,{children:"- School informant. Conducted courses for high school students, adult learners, and Swedish for Immigrants (SFI) students about the Swedish model and the Swedish labor market."}),c.jsxs(Pt,{children:["IssaJosephine Art, 2020 - on going. My own company as an painting artist"," "]})]})}),i&&c.jsx(Rt,{children:c.jsxs(Fx,{children:[c.jsx("p",{children:"HTML / CSS / JAVASCRIPT / TYPESCRIPT / VUE / REACT / VITE / NODE.JS"}),c.jsxs("p",{children:["MongoDB / SQLite / PostgreSQL / EXPRESS"," "]}),c.jsx("p",{children:"GRID LAYOUT / FLEXBOX LAYOUT / RESPONSIVE DESIGN / FIGMA / BOOTSTRAP"}),c.jsx("p",{children:"During my education I've also worked with agile methods such as Scrum."})]})}),l&&c.jsx(Rt,{children:c.jsxs("ul",{children:[c.jsx(Pt,{children:"Frontend Developer, IT-Högskolan Gothenburg, 2022 - on going"}),c.jsx(Pt,{children:"Portfolio och graphic design 15hp, University of Borås 2023"}),c.jsx(Pt,{children:"Fashion sketching and illustation 15hp, University of Borås 2021"}),c.jsx(Pt,{children:"Occupational psychology and health 15hp, University of Halmstad 2015"}),c.jsx(Pt,{children:"Caregiving Program, assistans nurse with a specialization in healthcare. Göteborgs Praktiska (high school) 2009-2012"})]})})]}),c.jsx(Ox,{children:c.jsx(kn,{})})]})})})}const Ux="/assets/cities-1945799d.png",Bx="/assets/navbarinsposite-b4d2f244.png",Hx="/assets/imgsearch-87d00afc.png",bx="/assets/imagesinfo-a7fa76ca.png",Wx="/assets/shufflesearch-544903f5.png",Yx="/assets/colorsearch-118b6f57.png",Gx="/assets/chartjs-88e60632.png",Vx="/assets/imgcolorcode-584f19e1.png",Zx="/assets/colorcode-afb0cac0.png",Qx=Kt`
   from {
     opacity: 0;
     transform: translateY(-20px);
@@ -949,13 +960,13 @@ Error generating stack: `+o.message+`
     opacity: 1;
     transform: translateY(0);
   }
-`,Qx=w.div`
-    animation: ${Zx} 1s ease;
 `,Kx=w.div`
+    animation: ${Qx} 1s ease;
+`,Jx=w.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-`,Jx=w.h1`
+`,Xx=w.h1`
     font-size: 24px;
 `,Ud=w.img`
     width: 35vh;
@@ -972,7 +983,7 @@ Error generating stack: `+o.message+`
         font-size: 16px;
         text-align: center;
     }
-`,Xx=w.div`
+`,qx=w.div`
     // margin-left: 30px;
     display: flex;
     flex-direction: column;
@@ -987,9 +998,9 @@ Error generating stack: `+o.message+`
         margin-right: 300px;
         // margin-bottom: 40px;
     }
-`,qx=w.div`
-    display: flex;
 `,ew=w.div`
+    display: flex;
+`,tw=w.div`
     display: flex;
     flex-direction: column;
 
@@ -1004,12 +1015,12 @@ Error generating stack: `+o.message+`
     @media (min-width: 750px) {
         font-size: 18px;
     }
-`,tw=w.div`
+`,nw=w.div`
     @media (min-width: 750px) {
         margin-top: 40px;
         margin-bottom: 40px;
     }
-`;function nw(){const e=[{url:Bx,caption:"You can search for photos, and choose the amount you want to see"},{url:Hx,caption:"You can view (and hide) information about each photo"},{url:bx,caption:"Here, you can shuffle random colors, and choose in witch kind of color code you want them in. I used localStorage so you also can choose to see previous searches."},{url:Vx,caption:"If you choose all, it would look something like this. "},{url:Wx,caption:"You can also search for different shades of a color, and choose to see images in the choosen color."},{url:Yx,caption:"I used chartJS to present the amount of red, blue and green in the shades."},{url:Gx,caption:"And here are the images in the color, and the main hex color in the photo."}];return c.jsxs(c.Fragment,{children:[c.jsx(Vn,{}),c.jsxs(Qx,{children:[c.jsxs(Kx,{children:[c.jsx(Jx,{children:"Inspirationssidan"}),c.jsx("h2",{children:"NATIVE JAVASCRIPT"}),c.jsx("h2",{children:" API / CHART.JS "}),c.jsx(Ud,{src:Ux,alt:"navbar"})]}),c.jsxs(Xx,{children:[c.jsx(qx,{children:c.jsxs(ew,{children:[c.jsxs(Sa,{children:[c.jsx(yo,{children:"This is a site for finding insiration."})," ","Here you can find different colors, shades & images that will make it easier to find a little creativity."]}),c.jsxs(Sa,{children:[c.jsxs(yo,{children:["This project was the first time I tried out Javascript."," "]}),"Love at first sight?",c.jsx(yo,{children:" Yes"}),". The misson was to use API. I used two different API:s, one for getting colors and one for getting images. We also needed to fetch from a cities-api where and I created functions to add, change and delete cities."]}),c.jsx(Ud,{src:$x,alt:""}),c.jsx(Sa,{children:c.jsx(yo,{children:"Below you can see more of the site and the different functions."})})]})}),c.jsx(Yh,{images:e})]})," "]}),c.jsx(tw,{children:c.jsx(kn,{})})]})}const rw=w.div`
+`;function rw(){const e=[{url:Hx,caption:"You can search for photos, and choose the amount you want to see"},{url:bx,caption:"You can view (and hide) information about each photo"},{url:Wx,caption:"Here, you can shuffle random colors, and choose in witch kind of color code you want them in. I used localStorage so you also can choose to see previous searches."},{url:Zx,caption:"If you choose all, it would look something like this. "},{url:Yx,caption:"You can also search for different shades of a color, and choose to see images in the choosen color."},{url:Gx,caption:"I used chartJS to present the amount of red, blue and green in the shades."},{url:Vx,caption:"And here are the images in the color, and the main hex color in the photo."}];return c.jsxs(c.Fragment,{children:[c.jsx(Vn,{}),c.jsxs(Kx,{children:[c.jsxs(Jx,{children:[c.jsx(Xx,{children:"Inspirationssidan"}),c.jsx("h2",{children:"NATIVE JAVASCRIPT"}),c.jsx("h2",{children:" API / CHART.JS "}),c.jsx(Ud,{src:Bx,alt:"navbar"})]}),c.jsxs(qx,{children:[c.jsx(ew,{children:c.jsxs(tw,{children:[c.jsxs(Sa,{children:[c.jsx(yo,{children:"This is a site for finding insiration."})," ","Here you can find different colors, shades & images that will make it easier to find a little creativity."]}),c.jsxs(Sa,{children:[c.jsxs(yo,{children:["This project was the first time I tried out Javascript."," "]}),"Love at first sight?",c.jsx(yo,{children:" Yes"}),". The misson was to use API. I used two different API:s, one for getting colors and one for getting images. We also needed to fetch from a cities-api where and I created functions to add, change and delete cities."]}),c.jsx(Ud,{src:Ux,alt:""}),c.jsx(Sa,{children:c.jsx(yo,{children:"Below you can see more of the site and the different functions."})})]})}),c.jsx(Yh,{images:e})]})," "]}),c.jsx(nw,{children:c.jsx(kn,{})})]})}const iw=w.div`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1022,13 +1033,13 @@ Error generating stack: `+o.message+`
     @media (min-width: 750px) {
         max-width: 80%;
     }
-`,iw=w.div`
+`,ow=w.div`
     display: flex;
     flex-direction: column;
     align-items: center;
 
     // margin-left: -20px;
-`,ow=w.img`
+`,lw=w.img`
     width: 200px;
     height: 300px;
     // height: auto;
@@ -1040,10 +1051,10 @@ Error generating stack: `+o.message+`
     @media (min-width: 750px;) {
         width: 300px;
     }
-`,lw=w.div`
+`,aw=w.div`
     display: flex;
     justify-content: space-between;
-`,aw=w.img`
+`,sw=w.img`
     width: 40px;
     height: 40px;
     cursor: pointer;
@@ -1052,7 +1063,7 @@ Error generating stack: `+o.message+`
 
     box-shadow: 0px 0px 0x;
     box-shadow: none;
-`,sw=w.img`
+`,uw=w.img`
     width: 40px;
     height: 40px;
     cursor: pointer;
@@ -1061,7 +1072,7 @@ Error generating stack: `+o.message+`
     margin-top: 5px;
 
     box-shadow: none;
-`,uw=w.p`
+`,cw=w.p`
     font-size: 14px;
     text-align: center;
     // margin: 0.5rem 0;
@@ -1070,7 +1081,7 @@ Error generating stack: `+o.message+`
     margin-bottom: 0;
     color: rgb(195, 170, 154);
     padding: 10px;
-`,Nu=({images:e})=>{const[t,n]=T.useState(0),r=()=>{n(o=>o===0?e.length-1:o-1)},i=()=>{n(o=>o===e.length-1?0:o+1)};return c.jsxs(rw,{children:[c.jsxs(iw,{children:[c.jsx(ow,{src:e[t].url,alt:`Slide ${t}`}),c.jsxs(lw,{children:[c.jsx(aw,{onClick:r,src:Wh,alt:"arrow"}),c.jsx(sw,{onClick:i,src:bh,alt:"arrow"})]})]}),c.jsx(uw,{children:e[t].caption})]})},cw="/assets/globalize-22f89da9.png",dw="/assets/drawnsymbols-6fb44857.png",fw="/assets/adminnavbar-ef6bbbaf.png",pw="/assets/addproduct-24d5db99.png",hw="/assets/addedproduct-85900a77.png",mw="/assets/webshopproduct-c175858b.png",gw="/assets/cart-4638ce36.png",yw=Kt`
+`,Nu=({images:e})=>{const[t,n]=T.useState(0),r=()=>{n(o=>o===0?e.length-1:o-1)},i=()=>{n(o=>o===e.length-1?0:o+1)};return c.jsxs(iw,{children:[c.jsxs(ow,{children:[c.jsx(lw,{src:e[t].url,alt:`Slide ${t}`}),c.jsxs(aw,{children:[c.jsx(sw,{onClick:r,src:Wh,alt:"arrow"}),c.jsx(uw,{onClick:i,src:bh,alt:"arrow"})]})]}),c.jsx(cw,{children:e[t].caption})]})},dw="/assets/globalize-22f89da9.png",fw="/assets/drawnsymbols-6fb44857.png",pw="/assets/adminnavbar-ef6bbbaf.png",hw="/assets/addproduct-24d5db99.png",mw="/assets/addedproduct-85900a77.png",gw="/assets/webshopproduct-c175858b.png",yw="/assets/cart-4638ce36.png",vw=Kt`
   from {
     opacity: 0;
     transform: translateY(-20px);
@@ -1079,18 +1090,18 @@ Error generating stack: `+o.message+`
     opacity: 1;
     transform: translateY(0);
   }
-`,vw=w.div`
-    animation: ${yw} 1s ease;
 `,xw=w.div`
+    animation: ${vw} 1s ease;
+`,ww=w.div`
     display: flex;
     flex-direction: column;
 
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-`,ww=w.h1`
+`,Sw=w.h1`
     font-size: 24px;
-`,Sw=w.div`
+`,Cw=w.div`
     display: flex;
 
     flex-wrap: wrap;
@@ -1098,7 +1109,7 @@ Error generating stack: `+o.message+`
     text-align: center;
     align-items: center;
     justify-content: center;
-`,Cw=w.div`
+`,kw=w.div`
     display: flex;
     width: auto;
 
@@ -1112,7 +1123,7 @@ Error generating stack: `+o.message+`
     @media (min-width: 750px) {
         display: flex;
     }
-`,kw=w.div`
+`,jw=w.div`
     display: flex;
 
     max-width: 600px;
@@ -1124,10 +1135,10 @@ Error generating stack: `+o.message+`
         flex-direction: column;
         align-items: center;
     }
-`,jw=w.div`
+`,Ew=w.div`
     display: flex;
     flex-direction: column;
-`,Ew=w.img`
+`,Iw=w.img`
     width: 30vh;
     margin-top: 20px;
     margin-left: 5px;
@@ -1142,7 +1153,7 @@ Error generating stack: `+o.message+`
         margin-left: 20px;
         margin-right: 20px;
     }
-`,Iw=w.img`
+`,Aw=w.img`
     width: 50%;
     height: 80px;
     margin-top: 10px;
@@ -1154,7 +1165,7 @@ Error generating stack: `+o.message+`
         margin-top: 10px;
         height: 50%;
     }
-`,Aw=w.img`
+`,Rw=w.img`
     width: 50%;
     margin-top: 10px;
     height: 80px;
@@ -1187,7 +1198,7 @@ Error generating stack: `+o.message+`
         font-size: 16px;
         margin-top: 40px;
     }
-`,Rw=w.div`
+`,Pw=w.div`
     margin-left: 20px;
     display: flex;
     align-items: center;
@@ -1200,7 +1211,7 @@ Error generating stack: `+o.message+`
         margin-left: 300px;
         margin-right: 300px;
     }
-`,Pw=w.div`
+`,Tw=w.div`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1211,14 +1222,14 @@ Error generating stack: `+o.message+`
     @media (min-width: 750px) {
         font-size: 18px;
     }
-`,Tw=w.div`
+`,zw=w.div`
     @media (min-width: 750px) {
         margin-top: 40px;
         margin-bottom: 40px;
     }
 
     // const A = styled.a
-`;function zw(){const e=[{url:pw,caption:"Firstly, the logged in admin can add a product to the webshop"},{url:hw,caption:"The admin view of the added product"},{url:mw,caption:"The new product from the costumer view in the webshop"},{url:gw,caption:"The custumers cart "}];return c.jsxs(c.Fragment,{children:[c.jsx(Vn,{}),c.jsxs(xw,{children:[c.jsx(ww,{children:"Globalize"}),c.jsxs(Sw,{children:[c.jsx("h2",{children:"REACT / TYPESCRIPT / MongoDB / NoSQL"}),c.jsxs("h2",{children:[" ","Singel Page Application / Formik / Axios / Styled-Components / CORS-prevention"," "]})]})]}),c.jsx(Rw,{children:c.jsxs(vw,{children:[c.jsxs(Pw,{children:[c.jsx(Ew,{src:cw,alt:"website"}),c.jsx(kw,{children:c.jsxs(jw,{children:[c.jsxs(Ca,{children:[c.jsx(ka,{children:"This is a fullstack project."})," ","The customer is a foodtruck & a resturant that also sells merge, does catering and having events. Beside presenting the menu and having a booking request component for the catering, I created a solution for an admin to handle their webshop."]}),c.jsxs(Ca,{children:[c.jsxs(ka,{children:["I created a database using MongoDB"," "]}),"and created a backend that handels adding, changing and deleting products to the webshop using the database."]})]})}),c.jsx(Nu,{images:e})]}),c.jsxs(Ca,{children:[c.jsx(ka,{children:"I made the background and the logos "}),"(such as the hamburgermenu symbol (pun intended), for the cart etc). The customer asked for a orange and blue design, and I choose to add a light pink background to capture the feeling of the physical resturant."]}),c.jsxs(Cw,{children:[c.jsx(Iw,{src:dw,alt:" logos"}),c.jsx(Aw,{src:fw,alt:"admin navbar"})]})]})}),c.jsx(Tw,{children:c.jsx(kn,{})})]})}const Bd="/assets/homestore-db512a34.png",Dw="/assets/loginstore-7305fc60.png",Nw="/assets/cardstore-e415f8ce.png",Lw="/assets/cartstore-dd92a337.png",Mw=Kt`
+`;function Dw(){const e=[{url:hw,caption:"Firstly, the logged in admin can add a product to the webshop"},{url:mw,caption:"The admin view of the added product"},{url:gw,caption:"The new product from the costumer view in the webshop"},{url:yw,caption:"The custumers cart "}];return c.jsxs(c.Fragment,{children:[c.jsx(Vn,{}),c.jsxs(ww,{children:[c.jsx(Sw,{children:"Globalize"}),c.jsxs(Cw,{children:[c.jsx("h2",{children:"REACT / TYPESCRIPT / MongoDB / NoSQL"}),c.jsxs("h2",{children:[" ","Singel Page Application / Formik / Axios / Styled-Components / CORS-prevention"," "]})]})]}),c.jsx(Pw,{children:c.jsxs(xw,{children:[c.jsxs(Tw,{children:[c.jsx(Iw,{src:dw,alt:"website"}),c.jsx(jw,{children:c.jsxs(Ew,{children:[c.jsxs(Ca,{children:[c.jsx(ka,{children:"This is a fullstack project."})," ","The customer is a foodtruck & a resturant that also sells merge, does catering and having events. Beside presenting the menu and having a booking request component for the catering, I created a solution for an admin to handle their webshop."]}),c.jsxs(Ca,{children:[c.jsxs(ka,{children:["I created a database using MongoDB"," "]}),"and created a backend that handels adding, changing and deleting products to the webshop using the database."]})]})}),c.jsx(Nu,{images:e})]}),c.jsxs(Ca,{children:[c.jsx(ka,{children:"I made the background and the logos "}),"(such as the hamburgermenu symbol (pun intended), for the cart etc). The customer asked for a orange and blue design, and I choose to add a light pink background to capture the feeling of the physical resturant."]}),c.jsxs(kw,{children:[c.jsx(Aw,{src:fw,alt:" logos"}),c.jsx(Rw,{src:pw,alt:"admin navbar"})]})]})}),c.jsx(zw,{children:c.jsx(kn,{})})]})}const Bd="/assets/homestore-db512a34.png",Nw="/assets/loginstore-7305fc60.png",Lw="/assets/cardstore-e415f8ce.png",Mw="/assets/cartstore-dd92a337.png",_w=Kt`
   from {
     opacity: 0;
     transform: translateY(-20px);
@@ -1227,9 +1238,9 @@ Error generating stack: `+o.message+`
     opacity: 1;
     transform: translateY(0);
   }
-`,_w=w.div`
-    animation: ${Mw} 1s ease;
 `,Fw=w.div`
+    animation: ${_w} 1s ease;
+`,Ow=w.div`
     display: flex;
     flex-direction: column;
     margin-left: 10px;
@@ -1237,14 +1248,14 @@ Error generating stack: `+o.message+`
     align-items: center;
     justify-content: center;
     text-align: center;
-`,Ow=w.h1`
+`,$w=w.h1`
     font-size: 24px;
-`,$w=w.div`
+`,Uw=w.div`
     width: auto;
     margin-top: 10px;
     // padding-left: 30px;
     // margin: 10px;
-`,Uw=w.img`
+`,Bw=w.img`
     max-width: 200px;
     // padding-left: 30px;
     // margin: 10px;
@@ -1252,7 +1263,7 @@ Error generating stack: `+o.message+`
     @media (min-width: 750px) {
         min-width: 40vh;
     }
-`,Bw=w.div`
+`,Hw=w.div`
     margin-left: 20px;
     margin-bottom: 50px;
 
@@ -1263,9 +1274,9 @@ Error generating stack: `+o.message+`
         margin-left: 300px;
         margin-right: 300px;
     }
-`,Hw=w.div`
-    display: flex;
 `,bw=w.div`
+    display: flex;
+`,Ww=w.div`
     display: flex;
     flex-direction: column;
     max-width: 600px;
@@ -1291,14 +1302,14 @@ Error generating stack: `+o.message+`
     @media (min-width: 750px) {
         font-size: 18px;
     }
-`,Ww=w.div`
+`,Yw=w.div`
     @media (min-width: 750px) {
         margin-top: 40px;
         margin-bottom: 40px;
     }
 
     // const A = styled.a
-`;function Yw(){const e=[{url:Dw,caption:"A very simple login page to the shop"},{url:Bd,caption:"I used Vue router and a query parameter for the  'welcome'-message and the username"},{url:Nw,caption:"I used an API to present the products and I stored the added products with Vuex."},{url:Lw,caption:"The custumers cart "}];return c.jsxs(c.Fragment,{children:[c.jsx(Vn,{}),c.jsxs(_w,{children:[c.jsxs(Fw,{children:[c.jsx(Ow,{children:"FakeStore"}),c.jsx("h2",{children:"JAVASCRIPT / VUE / VITE / NODE.JS"}),c.jsx("h2",{children:"SASS / Bootstrap / Responsive design "}),c.jsx($w,{children:c.jsx(Uw,{src:Bd,alt:""})})]}),c.jsx(Bw,{children:c.jsx(Hw,{children:c.jsxs(bw,{children:[c.jsxs(Hd,{children:[c.jsx(ja,{children:"This is a webshop"})," where you can add products to a cart. This was a short project where the focus was at the functions rather than the design."]}),c.jsxs(Hd,{children:[c.jsx(ja,{children:"It is a dynamic Vite-application"}),", using ",c.jsx(ja,{children:"Vue."})," And the first time I used JavaScript with a framework."]}),c.jsx(Nu,{images:e})]})})})," "]}),c.jsx(Ww,{children:c.jsx(kn,{})})]})}const bd="/assets/closebuy-3dd1a024.png",Gw="/assets/firstmodal-c368f770.png",Vw="/assets/bigmodal-b123cb59.png",Zw=Kt`
+`;function Gw(){const e=[{url:Nw,caption:"A very simple login page to the shop"},{url:Bd,caption:"I used Vue router and a query parameter for the  'welcome'-message and the username"},{url:Lw,caption:"I used an API to present the products and I stored the added products with Vuex."},{url:Mw,caption:"The custumers cart "}];return c.jsxs(c.Fragment,{children:[c.jsx(Vn,{}),c.jsxs(Fw,{children:[c.jsxs(Ow,{children:[c.jsx($w,{children:"FakeStore"}),c.jsx("h2",{children:"JAVASCRIPT / VUE / VITE / NODE.JS"}),c.jsx("h2",{children:"SASS / Bootstrap / Responsive design "}),c.jsx(Uw,{children:c.jsx(Bw,{src:Bd,alt:""})})]}),c.jsx(Hw,{children:c.jsx(bw,{children:c.jsxs(Ww,{children:[c.jsxs(Hd,{children:[c.jsx(ja,{children:"This is a webshop"})," where you can add products to a cart. This was a short project where the focus was at the functions rather than the design."]}),c.jsxs(Hd,{children:[c.jsx(ja,{children:"It is a dynamic Vite-application"}),", using ",c.jsx(ja,{children:"Vue."})," And the first time I used JavaScript with a framework."]}),c.jsx(Nu,{images:e})]})})})," "]}),c.jsx(Yw,{children:c.jsx(kn,{})})]})}const bd="/assets/closebuy-3dd1a024.png",Vw="/assets/firstmodal-c368f770.png",Zw="/assets/bigmodal-b123cb59.png",Qw=Kt`
   from {
     opacity: 0;
     transform: translateY(-20px);
@@ -1307,20 +1318,20 @@ Error generating stack: `+o.message+`
     opacity: 1;
     transform: translateY(0);
   }
-`,Qw=w.div`
-    animation: ${Zw} 1s ease;
 `,Kw=w.div`
+    animation: ${Qw} 1s ease;
+`,Jw=w.div`
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-`,Jw=w.h1`
+`,Xw=w.h1`
     font-size: 24px;
-`,Xw=w.div`
+`,qw=w.div`
     width: auto;
     // padding-left: 30px;
     margin: 10px;
-`,qw=w.img`
+`,eS=w.img`
     width: 200px;
     // padding-left: 30px;
     margin: 10px;
@@ -1328,7 +1339,7 @@ Error generating stack: `+o.message+`
     @media (min-width: 750px) {
         width: 40vh;
     }
-`,eS=w.div`
+`,tS=w.div`
     margin-left: 30px;
     margin-bottom: 50px;
 
@@ -1339,9 +1350,9 @@ Error generating stack: `+o.message+`
         margin-left: 300px;
         margin-right: 300px;
     }
-`,tS=w.div`
-    display: flex;
 `,nS=w.div`
+    display: flex;
+`,rS=w.div`
     display: flex;
     flex-direction: column;
     max-width: 600px;
@@ -1369,11 +1380,11 @@ Error generating stack: `+o.message+`
     @media (min-width: 750px) {
         font-size: 18px;
     }
-`,rS=w.div`
+`,iS=w.div`
     @media (min-width: 750px) {
         margin-top: 60px;
         margin-bottom: 40px;
     }
 
     // const A = styled.a
-`;function iS(){const e=[{url:bd,caption:"Homepage, mobile version."},{url:Gw,caption:"First modal."},{url:Vw,caption:"The bigger modal with more information."}];return c.jsxs(c.Fragment,{children:[c.jsx(Vn,{}),c.jsxs(Qw,{children:[c.jsxs(Kw,{children:[c.jsx(Jw,{children:"CloseBuy"}),c.jsx("h2",{children:"TYPESCRIPT / REACT / NODE.js / ElephantSQL / EXPRESS"}),c.jsx("h2",{children:"pgAdmin 4 / Styled components / Responsive design / Axios"}),c.jsx(Xw,{children:c.jsx(qw,{src:bd,alt:""})})]}),c.jsx(eS,{children:c.jsx(tS,{children:c.jsxs(nS,{children:[c.jsxs(Wd,{children:[c.jsx(Yd,{children:"This project was a group project"})," ","that I, togheter with two developers from my class created after the design from students in the UX-class. The idea was an app where you can find second hand products in your nearby area."]}),c.jsxs(Wd,{children:[c.jsx(Yd,{children:"I created "}),"the backend and the database for the project. I also created the modals that presented the products. I used useContext hook so that the values from the backend are availeble over the whole application."]}),c.jsx(Nu,{images:e})]})})})," "]}),c.jsx(rS,{children:c.jsx(kn,{})})]})}function oS(){const e=by([{children:[{element:c.jsx(y1,{}),path:"/"},{element:c.jsx($1,{}),path:"/devprojects"},{element:c.jsx(Ox,{}),path:"/resume"},{element:c.jsx(ix,{}),path:"/glasskiosken"},{element:c.jsx(Ax,{}),path:"/urbangreens"},{element:c.jsx(nw,{}),path:"/insposite"},{element:c.jsx(zw,{}),path:"/globalize"},{element:c.jsx(Yw,{}),path:"/fakestore"},{element:c.jsx(iS,{}),path:"/closebuy"}],element:c.jsx(Qy,{})}]);return c.jsxs(c.Fragment,{children:[" ",c.jsx(Ly,{router:e})]})}Ea.createRoot(document.getElementById("root")).render(c.jsx(Fn.StrictMode,{children:c.jsx(oS,{})}));
+`;function oS(){const e=[{url:bd,caption:"Homepage, mobile version."},{url:Vw,caption:"First modal."},{url:Zw,caption:"The bigger modal with more information."}];return c.jsxs(c.Fragment,{children:[c.jsx(Vn,{}),c.jsxs(Kw,{children:[c.jsxs(Jw,{children:[c.jsx(Xw,{children:"CloseBuy"}),c.jsx("h2",{children:"TYPESCRIPT / REACT / NODE.js / ElephantSQL / EXPRESS"}),c.jsx("h2",{children:"pgAdmin 4 / Styled components / Responsive design / Axios"}),c.jsx(qw,{children:c.jsx(eS,{src:bd,alt:""})})]}),c.jsx(tS,{children:c.jsx(nS,{children:c.jsxs(rS,{children:[c.jsxs(Wd,{children:[c.jsx(Yd,{children:"This project was a group project"})," ","that I, togheter with two developers from my class created after the design from students in the UX-class. The idea was an app where you can find second hand products in your nearby area."]}),c.jsxs(Wd,{children:[c.jsx(Yd,{children:"I created "}),"the backend and the database for the project. I also created the modals that presented the products. I used useContext hook so that the values from the backend are availeble over the whole application."]}),c.jsx(Nu,{images:e})]})})})," "]}),c.jsx(iS,{children:c.jsx(kn,{})})]})}function lS(){const e=by([{children:[{element:c.jsx(y1,{}),path:"/"},{element:c.jsx(U1,{}),path:"/devprojects"},{element:c.jsx($x,{}),path:"/resume"},{element:c.jsx(ox,{}),path:"/glasskiosken"},{element:c.jsx(Rx,{}),path:"/urbangreens"},{element:c.jsx(rw,{}),path:"/insposite"},{element:c.jsx(Dw,{}),path:"/globalize"},{element:c.jsx(Gw,{}),path:"/fakestore"},{element:c.jsx(oS,{}),path:"/closebuy"}],element:c.jsx(Qy,{})}]);return c.jsxs(c.Fragment,{children:[" ",c.jsx(Ly,{router:e})]})}Ea.createRoot(document.getElementById("root")).render(c.jsx(Fn.StrictMode,{children:c.jsx(lS,{})}));

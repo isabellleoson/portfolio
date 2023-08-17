@@ -5,8 +5,9 @@ import MiniNavbar from "../components/MiniNavbar";
 import Footer from "../components/Footer";
 const H2 = styled.h2`
     padding-top: 25px;
-    border-bottom: solid white 1px;
+    border-bottom: solid rgb(195, 170, 154) 1px;
     margin-left: 12px;
+    color: rgb(195, 170, 154);
 `;
 
 const fadeInFromLeft = keyframes`
@@ -61,6 +62,7 @@ const ContentContainer = styled.div`
 `;
 
 const Header = styled.div`
+
     display: flex;
     flex-direction: column;
     align-items: flex-end;

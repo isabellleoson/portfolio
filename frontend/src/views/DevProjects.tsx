@@ -87,6 +87,7 @@ const NavbarDiv = styled.div`
 const Header = styled.div`
     display: flex;
     flex-direction: column;
+    color: rgb(195, 170, 154);
     // align-items: flex-end;
     // justify-content: end;
 
